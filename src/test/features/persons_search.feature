@@ -1,5 +1,5 @@
 @TestSSG
-Feature: Persons Crud operations
+Feature: Persons Crud operations testing
 
   Background:
     * def tokenQA = callonce read('..//features/Token.feature')

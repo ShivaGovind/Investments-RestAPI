@@ -1,0 +1,129 @@
+{
+  "data":[
+    {	  "managerId": [13640],
+      "managerNameContains": "",
+      "managerLongNameContains": "",
+      "eqInstId": [],
+      "isYourOrg": "Y",
+      "includeContacts": "N",
+      "datasheetSearch": [
+        {
+          "datasheetName": "DS_BROKER_INFO",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": "DS_BROKER_NAME",
+          "datasheetFieldValue": ["BRKNAMESSG", "Brk Two"]
+        },
+        {
+          "datasheetName": "DS_GICS",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": "DS_GICS_CODE",
+          "datasheetFieldValue": ["4030"]
+        }
+      ],
+      "datasheetResponse": [
+        {
+          "datasheetName": "DS_BROKER_INFO",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": ["DS_BROKER_CODE", "DS_BROKER_NAME"]
+        },
+        {
+          "datasheetName": "DS_GICS",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": ["DS_GICS_CODE"]
+        }
+      ]
+    },
+    {	  "managerId": [],
+      "managerNameContains": "SSG Manager1",
+      "managerLongNameContains": "",
+      "eqInstId": [],
+      "isYourOrg": "Y",
+      "includeContacts": "N",
+      "datasheetSearch": [
+        {
+          "datasheetName": "DS_BROKER_INFO",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": "DS_BROKER_NAME",
+          "datasheetFieldValue": ["BRKNAMESSG", "Brk Two"]
+        },
+        {
+          "datasheetName": "DS_GICS",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": "DS_GICS_CODE",
+          "datasheetFieldValue": ["4030"]
+        }
+      ],
+      "datasheetResponse": [
+        {
+          "datasheetName": "DS_BROKER_INFO",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": ["DS_BROKER_CODE", "DS_BROKER_NAME"]
+        },
+        {
+          "datasheetName": "DS_GICS",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": ["DS_GICS_CODE"]
+        }
+      ]
+    },
+    {	  "managerId": [],
+      "managerNameContains": "",
+      "managerLongNameContains": "",
+      "eqInstId": [],
+      "isYourOrg": "Y",
+      "includeContacts": "N",
+      "datasheetSearch": [
+        {
+          "datasheetName": "DS_BROKER_INFO",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": "DS_BROKER_NAME",
+          "datasheetFieldValue": ["BRKNAMESSG", "Brk Two"]
+        },
+        {
+          "datasheetName": "DS_GICS",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": "DS_GICS_CODE",
+          "datasheetFieldValue": ["4030"]
+        }
+      ],
+      "datasheetResponse": [
+        {
+          "datasheetName": "DS_BROKER_INFO",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": ["DS_BROKER_CODE", "DS_BROKER_NAME"]
+        },
+        {
+          "datasheetName": "DS_GICS",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": ["DS_GICS_CODE"]
+        }
+      ]
+    },
+    {
+      "managerId": [],
+      "managerNameContains": "SSG Manager1",
+      "managerLongNameContains": "",
+      "eqInstId": [],
+      "isYourOrg": "Y",
+      "includeContacts": "N",
+      "datasheetSearch": [],
+      "datasheetResponse": []
+    },
+    {
+      "managerId": [],
+      "managerNameContains": "SSG Manager1",
+      "managerLongNameContains": "",
+      "eqInstId": [],
+      "isYourOrg": "Y",
+      "includeContacts": "N",
+      "datasheetSearch": [],
+      "datasheetResponse": [
+        {
+          "datasheetName": "DS_BROKER_INFO",
+          "datasheetInstanceName": [],
+          "datasheetFieldName": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.features.persons_search</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-06-01 06:41:32 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:13]"><span>[1:13]</span> <span>search the Person data.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/features/persons_search.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Persons Crud operations</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:13]</span>
+                <span class="scenario-name">search the Person data.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1719</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenQA = callonce read(&#39;..//features/Token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1459</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">06:41:32.115 &lt;&lt; lock released, cached callonce: read(&#39;..//features/Token.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.features.features.Token</div>
+      </div>
+      <div class="time-cell passed">1267</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://goldmanqa.v3locitydev.com/api/v1&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.5">06:41:30.833 &gt;&gt; lock acquired, begin callonce: read(&#39;..//features/Token.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;..//resources/data/token_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">75</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;oauth2/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1150</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.12">06:41:31.471 request:
+1 &gt; POST https://goldmanqa.v3locitydev.com/api/v1/oauth2/token
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 77
+1 &gt; Host: goldmanqa.v3locitydev.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;123456&quot;,&quot;scope&quot;:&quot;USER&quot;,&quot;grantType&quot;:&quot;PASSWORD&quot;,&quot;username&quot;:&quot;mary&quot;}
+
+06:41:32.092 response time in milliseconds: 611
+1 &lt; 200
+1 &lt; Date: Thu, 01 Jun 2023 10:41:32 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-XSS-Protection: 1
+1 &lt; Expires: Tue, 03 Jul 2001 06:00:00 GMT
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0, private
+1 &lt; Pragma: no-cache
+1 &lt; Last-Modified: Thu, 01 Jun 2023 10:41:31 GMT
+1 &lt; X-FRAME-OPTIONS: SAMEORIGIN
+1 &lt; X-FRAME-OPTIONS: SAMEORIGIN
+1 &lt; X-V3-APP: 995bc541-3abe-4ff8-aa53-5b7c1b28274a
+1 &lt; Content-Security-Policy: script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; form-action &#39;self&#39; ; connect-src &#39;self&#39;; reflected-xss block
+1 &lt; Vary: Accept-Encoding
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Set-Cookie: AWSALB=7NB3VllC2oUUzOIs0JwmjlbFOqmWeKT/e+pQuUi4VwOxeh7YEtfKUAd/T7zVWTR3P8+j2VQXSbRAJ2JdunD35GUAh9iz4DmIGit1opVB+p/kk8IyCQaTbtV6kbYU; Max-Age=1686220891000; Expires=Mon, 17 Aug 55457 22:38:12 GMT; Domain=goldmanqa.v3locitydev.com
+1 &lt; Set-Cookie: AWSALBCORS=7NB3VllC2oUUzOIs0JwmjlbFOqmWeKT/e+pQuUi4VwOxeh7YEtfKUAd/T7zVWTR3P8+j2VQXSbRAJ2JdunD35GUAh9iz4DmIGit1opVB+p/kk8IyCQaTbtV6kbYU; Max-Age=1686220891000; Expires=Mon, 17 Aug 55457 22:38:12 GMT; Domain=goldmanqa.v3locitydev.com; Secure
+{&quot;expiresIn&quot;:1440,&quot;eulaRequired&quot;:true,&quot;roles&quot;:{&quot;items&quot;:[{&quot;insertedDate&quot;:&quot;1664424000000&quot;,&quot;securityDepartmentRoleId&quot;:&quot;1538&quot;,&quot;securityUserId&quot;:&quot;122980&quot;,&quot;id&quot;:&quot;13024&quot;,&quot;priority&quot;:&quot;1&quot;,&quot;applicationId&quot;:&quot;1003&quot;,&quot;securityRole&quot;:{&quot;code&quot;:&quot;Executive Approver&quot;,&quot;entityName&quot;:&quot;SECURITY_ROLE&quot;,&quot;name&quot;:&quot;Executive Approver&quot;,&quot;location&quot;:&quot;\/v1\/metadata\/securityRoles\/Executive Approver&quot;,&quot;id&quot;:&quot;1820&quot;},&quot;applicationName&quot;:&quot;Core Admin&quot;,&quot;securityDepartmentRole&quot;:&quot;Executive Approver - All Users&quot;},{&quot;insertedDate&quot;:&quot;1393563600000&quot;,&quot;securityDepartmentRoleId&quot;:&quot;188&quot;,&quot;securityUserId&quot;:&quot;122980&quot;,&quot;id&quot;:&quot;12210&quot;,&quot;priority&quot;:&quot;2&quot;,&quot;applicationId&quot;:&quot;1003&quot;,&quot;securityRole&quot;:{&quot;code&quot;:&quot;_LOB_USER&quot;,&quot;entityName&quot;:&quot;SECURITY_ROLE&quot;,&quot;name&quot;:&quot;LOB User&quot;,&quot;location&quot;:&quot;\/v1\/metadata\/securityRoles\/_LOB_USER&quot;,&quot;id&quot;:&quot;8&quot;},&quot;applicationName&quot;:&quot;Core Admin&quot;,&quot;securityDepartmentRole&quot;:&quot;LOB User - All Users&quot;}],&quot;totalRecordsCount&quot;:2},&quot;language&quot;:&quot;en&quot;,&quot;lastLoginDate&quot;:&quot;1685616014845&quot;,&quot;individualId&quot;:&quot;428531&quot;,&quot;serverTimeZone&quot;:&quot;America\/New_York&quot;,&quot;tokenType&quot;:&quot;BEARER&quot;,&quot;passwordResetRequired&quot;:false,&quot;token&quot;:&quot;7ac48f30-2b50-4fa6-a02e-6763ca7870f1&quot;,&quot;refreshToken&quot;:&quot;b4360079-2b8c-4b08-840c-d09ce21cc81d&quot;,&quot;username&quot;:&quot;MARY&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.14">06:41:32.112 [print] {
+  &quot;expiresIn&quot;: 1440,
+  &quot;eulaRequired&quot;: true,
+  &quot;roles&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;insertedDate&quot;: &quot;1664424000000&quot;,
+        &quot;securityDepartmentRoleId&quot;: &quot;1538&quot;,
+        &quot;securityUserId&quot;: &quot;122980&quot;,
+        &quot;id&quot;: &quot;13024&quot;,
+        &quot;priority&quot;: &quot;1&quot;,
+        &quot;applicationId&quot;: &quot;1003&quot;,
+        &quot;securityRole&quot;: {
+          &quot;code&quot;: &quot;Executive Approver&quot;,
+          &quot;entityName&quot;: &quot;SECURITY_ROLE&quot;,
+          &quot;name&quot;: &quot;Executive Approver&quot;,
+          &quot;location&quot;: &quot;/v1/metadata/securityRoles/Executive Approver&quot;,
+          &quot;id&quot;: &quot;1820&quot;
+        },
+        &quot;applicationName&quot;: &quot;Core Admin&quot;,
+        &quot;securityDepartmentRole&quot;: &quot;Executive Approver - All Users&quot;
+      },
+      {
+        &quot;insertedDate&quot;: &quot;1393563600000&quot;,
+        &quot;securityDepartmentRoleId&quot;: &quot;188&quot;,
+        &quot;securityUserId&quot;: &quot;122980&quot;,
+        &quot;id&quot;: &quot;12210&quot;,
+        &quot;priority&quot;: &quot;2&quot;,
+        &quot;applicationId&quot;: &quot;1003&quot;,
+        &quot;securityRole&quot;: {
+          &quot;code&quot;: &quot;_LOB_USER&quot;,
+          &quot;entityName&quot;: &quot;SECURITY_ROLE&quot;,
+          &quot;name&quot;: &quot;LOB User&quot;,
+          &quot;location&quot;: &quot;/v1/metadata/securityRoles/_LOB_USER&quot;,
+          &quot;id&quot;: &quot;8&quot;
+        },
+        &quot;applicationName&quot;: &quot;Core Admin&quot;,
+        &quot;securityDepartmentRole&quot;: &quot;LOB User - All Users&quot;
+      }
+    ],
+    &quot;totalRecordsCount&quot;: 2
+  },
+  &quot;language&quot;: &quot;en&quot;,
+  &quot;lastLoginDate&quot;: &quot;1685616014845&quot;,
+  &quot;individualId&quot;: &quot;428531&quot;,
+  &quot;serverTimeZone&quot;: &quot;America/New_York&quot;,
+  &quot;tokenType&quot;: &quot;BEARER&quot;,
+  &quot;passwordResetRequired&quot;: false,
+  &quot;token&quot;: &quot;7ac48f30-2b50-4fa6-a02e-6763ca7870f1&quot;,
+  &quot;refreshToken&quot;: &quot;b4360079-2b8c-4b08-840c-d09ce21cc81d&quot;,
+  &quot;username&quot;: &quot;MARY&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header token = tokenQA.response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print tokenQA</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">06:41:32.119 [print] {
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 01 Jun 2023 10:41:32 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;Apache&quot;
+    ],
+    &quot;X-Frame-Options&quot;: [
+      &quot;SAMEORIGIN&quot;,
+      &quot;SAMEORIGIN&quot;
+    ],
+    &quot;X-Content-Type-Options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;X-XSS-Protection&quot;: [
+      &quot;1; mode=block&quot;,
+      &quot;1&quot;
+    ],
+    &quot;Expires&quot;: [
+      &quot;Tue, 03 Jul 2001 06:00:00 GMT&quot;
+    ],
+    &quot;Cache-Control&quot;: [
+      &quot;no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0, private&quot;
+    ],
+    &quot;Pragma&quot;: [
+      &quot;no-cache&quot;
+    ],
+    &quot;Last-Modified&quot;: [
+      &quot;Thu, 01 Jun 2023 10:41:31 GMT&quot;
+    ],
+    &quot;X-FRAME-OPTIONS&quot;: [
+      &quot;SAMEORIGIN&quot;,
+      &quot;SAMEORIGIN&quot;
+    ],
+    &quot;X-V3-APP&quot;: [
+      &quot;995bc541-3abe-4ff8-aa53-5b7c1b28274a&quot;
+    ],
+    &quot;Content-Security-Policy&quot;: [
+      &quot;script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; form-action &#39;self&#39; ; connect-src &#39;self&#39;; reflected-xss block&quot;
+    ],
+    &quot;Vary&quot;: [
+      &quot;Accept-Encoding&quot;
+    ],
+    &quot;Strict-Transport-Security&quot;: [
+      &quot;max-age=31536000; includeSubDomains; preload&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+      &quot;AWSALB=7NB3VllC2oUUzOIs0JwmjlbFOqmWeKT/e+pQuUi4VwOxeh7YEtfKUAd/T7zVWTR3P8+j2VQXSbRAJ2JdunD35GUAh9iz4DmIGit1opVB+p/kk8IyCQaTbtV6kbYU; Max-Age=1686220891000; Expires=Mon, 17 Aug 55457 22:38:12 GMT; Domain=goldmanqa.v3locitydev.com&quot;,
+      &quot;AWSALBCORS=7NB3VllC2oUUzOIs0JwmjlbFOqmWeKT/e+pQuUi4VwOxeh7YEtfKUAd/T7zVWTR3P8+j2VQXSbRAJ2JdunD35GUAh9iz4DmIGit1opVB+p/kk8IyCQaTbtV6kbYU; Max-Age=1686220891000; Expires=Mon, 17 Aug 55457 22:38:12 GMT; Domain=goldmanqa.v3locitydev.com; Secure&quot;
+    ]
+  },
+  &quot;responseStatus&quot;: 200,
+  &quot;requestBody&quot;: {
+    &quot;grantType&quot;: &quot;PASSWORD&quot;,
+    &quot;password&quot;: &quot;123456&quot;,
+    &quot;scope&quot;: &quot;USER&quot;,
+    &quot;username&quot;: &quot;mary&quot;
+  },
+  &quot;response&quot;: {
+    &quot;expiresIn&quot;: 1440,
+    &quot;eulaRequired&quot;: true,
+    &quot;roles&quot;: {
+      &quot;items&quot;: [
+        {
+          &quot;insertedDate&quot;: &quot;1664424000000&quot;,
+          &quot;securityDepartmentRoleId&quot;: &quot;1538&quot;,
+          &quot;securityUserId&quot;: &quot;122980&quot;,
+          &quot;id&quot;: &quot;13024&quot;,
+          &quot;priority&quot;: &quot;1&quot;,
+          &quot;applicationId&quot;: &quot;1003&quot;,
+          &quot;securityRole&quot;: {
+            &quot;code&quot;: &quot;Executive Approver&quot;,
+            &quot;entityName&quot;: &quot;SECURITY_ROLE&quot;,
+            &quot;name&quot;: &quot;Executive Approver&quot;,
+            &quot;location&quot;: &quot;/v1/metadata/securityRoles/Executive Approver&quot;,
+            &quot;id&quot;: &quot;1820&quot;
+          },
+          &quot;applicationName&quot;: &quot;Core Admin&quot;,
+          &quot;securityDepartmentRole&quot;: &quot;Executive Approver - All Users&quot;
+        },
+        {
+          &quot;insertedDate&quot;: &quot;1393563600000&quot;,
+          &quot;securityDepartmentRoleId&quot;: &quot;188&quot;,
+          &quot;securityUserId&quot;: &quot;122980&quot;,
+          &quot;id&quot;: &quot;12210&quot;,
+          &quot;priority&quot;: &quot;2&quot;,
+          &quot;applicationId&quot;: &quot;1003&quot;,
+          &quot;securityRole&quot;: {
+            &quot;code&quot;: &quot;_LOB_USER&quot;,
+            &quot;entityName&quot;: &quot;SECURITY_ROLE&quot;,
+            &quot;name&quot;: &quot;LOB User&quot;,
+            &quot;location&quot;: &quot;/v1/metadata/securityRoles/_LOB_USER&quot;,
+            &quot;id&quot;: &quot;8&quot;
+          },
+          &quot;applicationName&quot;: &quot;Core Admin&quot;,
+          &quot;securityDepartmentRole&quot;: &quot;LOB User - All Users&quot;
+        }
+      ],
+      &quot;totalRecordsCount&quot;: 2
+    },
+    &quot;language&quot;: &quot;en&quot;,
+    &quot;lastLoginDate&quot;: &quot;1685616014845&quot;,
+    &quot;individualId&quot;: &quot;428531&quot;,
+    &quot;serverTimeZone&quot;: &quot;America/New_York&quot;,
+    &quot;tokenType&quot;: &quot;BEARER&quot;,
+    &quot;passwordResetRequired&quot;: false,
+    &quot;token&quot;: &quot;7ac48f30-2b50-4fa6-a02e-6763ca7870f1&quot;,
+    &quot;refreshToken&quot;: &quot;b4360079-2b8c-4b08-840c-d09ce21cc81d&quot;,
+    &quot;username&quot;: &quot;MARY&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://goldmanqavil.v3locitydev.com/api/v1/queries&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:13]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header content-type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;persons/search&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def requestBodySearch = read(&#39;..//resources/data/persons/person_search.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBodySearch</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">206</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">06:41:32.126 request:
+1 &gt; POST https://goldmanqavil.v3locitydev.com/api/v1/queries/persons/search
+1 &gt; token: 7ac48f30-2b50-4fa6-a02e-6763ca7870f1
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 131
+1 &gt; Host: goldmanqavil.v3locitydev.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;repCode&quot;:[],&quot;investorEntityId&quot;:[],&quot;lastNameContains&quot;:&quot;&quot;,&quot;companyId&quot;:[],&quot;firstNameContains&quot;:&quot;&quot;,&quot;personId&quot;:[188250],&quot;managerId&quot;:[]}
+
+06:41:32.328 response time in milliseconds: 202
+1 &lt; 200
+1 &lt; Date: Thu, 01 Jun 2023 10:41:32 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Vary: Accept-Encoding
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; object-src &#39;self&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; &#39;unsafe-inline&#39; data: blob:; form-action &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;self&#39;; plugin-types application/pdf application/x-shockwave-flash; reflected-xss block
+[{&quot;repCode&quot;:&quot;SG83073&quot;,&quot;firstName&quot;:&quot;KARATESGF3&quot;,&quot;lastName&quot;:&quot;KARATESGLN3&quot;,&quot;personId&quot;:188250,&quot;middleName&quot;:&quot;ST1&quot;,&quot;salutation&quot;:&quot;Jr&quot;,&quot;primaryAddress&quot;:{&quot;zip&quot;:&quot;641050000&quot;,&quot;country&quot;:&quot;USA&quot;,&quot;address3&quot;:null,&quot;address2&quot;:null,&quot;city&quot;:&quot;Kansas City&quot;,&quot;address1&quot;:&quot;1055 Broadway&quot;,&quot;state&quot;:&quot;MISSOURI&quot;},&quot;title&quot;:null,&quot;email&quot;:&quot;SGS2@gmail.com&quot;,&quot;datasheet&quot;:null,&quot;eqPersonId&quot;:null}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">06:41:32.331 [print] [
+  {
+    &quot;repCode&quot;: &quot;SG83073&quot;,
+    &quot;firstName&quot;: &quot;KARATESGF3&quot;,
+    &quot;lastName&quot;: &quot;KARATESGLN3&quot;,
+    &quot;personId&quot;: 188250,
+    &quot;middleName&quot;: &quot;ST1&quot;,
+    &quot;salutation&quot;: &quot;Jr&quot;,
+    &quot;primaryAddress&quot;: {
+      &quot;zip&quot;: &quot;641050000&quot;,
+      &quot;country&quot;: &quot;USA&quot;,
+      &quot;address3&quot;: null,
+      &quot;address2&quot;: null,
+      &quot;city&quot;: &quot;Kansas City&quot;,
+      &quot;address1&quot;: &quot;1055 Broadway&quot;,
+      &quot;state&quot;: &quot;MISSOURI&quot;
+    },
+    &quot;title&quot;: null,
+    &quot;email&quot;: &quot;SGS2@gmail.com&quot;,
+    &quot;datasheet&quot;: null,
+    &quot;eqPersonId&quot;: null
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def personId = response[0].personId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response[0].personId == requestBodySearch.[0].personId</span>
+      </div>
+    </div>
+    <div class="time-cell failed">38</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">06:41:32.377 src/test/features/persons_search.feature:21
+And match response[0].personId == requestBodySearch.[0].personId
+&gt;&gt;&gt;&gt; js failed:
+01: requestBodySearch.[0].personId
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:18 Expected ident but found [
+requestBodySearch.[0].personId
+                  ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2202)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1822)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:185)
+
+src/test/features/persons_search.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

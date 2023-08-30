@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.features.Token</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-12-22 05:56:51 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Application authorization token</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/features/Token.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Authorization Token creation</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Application authorization token</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2489</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://goldmanqa.v3locitydev.com/api/v1&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">85</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;..//resources/data/token_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">118</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;oauth2/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2234</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">05:56:50.083 request:
+1 &gt; POST https://goldmanqa.v3locitydev.com/api/v1/oauth2/token
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 77
+1 &gt; Host: goldmanqa.v3locitydev.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;123456&quot;,&quot;scope&quot;:&quot;USER&quot;,&quot;grantType&quot;:&quot;PASSWORD&quot;,&quot;username&quot;:&quot;mary&quot;}
+
+05:56:51.460 response time in milliseconds: 1363
+1 &lt; 200
+1 &lt; Date: Thu, 22 Dec 2022 10:56:51 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-XSS-Protection: 1
+1 &lt; Expires: Tue, 03 Jul 2001 06:00:00 GMT
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0, private
+1 &lt; Pragma: no-cache
+1 &lt; Last-Modified: Thu, 22 Dec 2022 10:56:51 GMT
+1 &lt; X-FRAME-OPTIONS: SAMEORIGIN
+1 &lt; X-FRAME-OPTIONS: SAMEORIGIN
+1 &lt; X-V3-APP: 1758ced4-ec9d-4c04-84b8-8115c76a8fc4
+1 &lt; Content-Security-Policy: script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; form-action &#39;self&#39; ; connect-src &#39;self&#39;; reflected-xss block
+1 &lt; Vary: Accept-Encoding
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Set-Cookie: AWSALB=5rpr7GykTPIZwyvpwOVXi57jZ/N0Tp26yHR71lGhzxgySu2UPAKs7fCDMqlhaefccuRxj/8gAEgLV7XBlVISKuRpjXvmg2Mq8utk16Rem56vzRBfnZC1y2c/FkzB; Max-Age=1672311411000; Expires=Fri, 31 May 55016 14:26:51 GMT; Domain=goldmanqa.v3locitydev.com
+1 &lt; Set-Cookie: AWSALBCORS=5rpr7GykTPIZwyvpwOVXi57jZ/N0Tp26yHR71lGhzxgySu2UPAKs7fCDMqlhaefccuRxj/8gAEgLV7XBlVISKuRpjXvmg2Mq8utk16Rem56vzRBfnZC1y2c/FkzB; Max-Age=1672311411000; Expires=Fri, 31 May 55016 14:26:51 GMT; Domain=goldmanqa.v3locitydev.com; Secure
+{&quot;expiresIn&quot;:1440,&quot;eulaRequired&quot;:true,&quot;roles&quot;:{&quot;items&quot;:[{&quot;insertedDate&quot;:&quot;1664424000000&quot;,&quot;securityDepartmentRoleId&quot;:&quot;1538&quot;,&quot;securityUserId&quot;:&quot;122980&quot;,&quot;id&quot;:&quot;13024&quot;,&quot;priority&quot;:&quot;1&quot;,&quot;applicationId&quot;:&quot;1003&quot;,&quot;securityRole&quot;:{&quot;code&quot;:&quot;Executive Approver&quot;,&quot;entityName&quot;:&quot;SECURITY_ROLE&quot;,&quot;name&quot;:&quot;Executive Approver&quot;,&quot;location&quot;:&quot;\/v1\/metadata\/securityRoles\/Executive Approver&quot;,&quot;id&quot;:&quot;1820&quot;},&quot;applicationName&quot;:&quot;Core Admin&quot;,&quot;securityDepartmentRole&quot;:&quot;Executive Approver - All Users&quot;},{&quot;insertedDate&quot;:&quot;1393563600000&quot;,&quot;securityDepartmentRoleId&quot;:&quot;188&quot;,&quot;securityUserId&quot;:&quot;122980&quot;,&quot;id&quot;:&quot;12210&quot;,&quot;priority&quot;:&quot;2&quot;,&quot;applicationId&quot;:&quot;1003&quot;,&quot;securityRole&quot;:{&quot;code&quot;:&quot;_LOB_USER&quot;,&quot;entityName&quot;:&quot;SECURITY_ROLE&quot;,&quot;name&quot;:&quot;LOB User&quot;,&quot;location&quot;:&quot;\/v1\/metadata\/securityRoles\/_LOB_USER&quot;,&quot;id&quot;:&quot;8&quot;},&quot;applicationName&quot;:&quot;Core Admin&quot;,&quot;securityDepartmentRole&quot;:&quot;LOB User - All Users&quot;}],&quot;totalRecordsCount&quot;:2},&quot;language&quot;:&quot;en&quot;,&quot;lastLoginDate&quot;:&quot;1671704840770&quot;,&quot;individualId&quot;:&quot;428531&quot;,&quot;serverTimeZone&quot;:&quot;America\/New_York&quot;,&quot;tokenType&quot;:&quot;BEARER&quot;,&quot;passwordResetRequired&quot;:false,&quot;token&quot;:&quot;8f114755-249b-419d-b062-e6abac17cbed&quot;,&quot;refreshToken&quot;:&quot;baa7f380-7f79-4a8c-be1b-301815c86d3c&quot;,&quot;username&quot;:&quot;MARY&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">05:56:51.489 [print] {
+  &quot;expiresIn&quot;: 1440,
+  &quot;eulaRequired&quot;: true,
+  &quot;roles&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;insertedDate&quot;: &quot;1664424000000&quot;,
+        &quot;securityDepartmentRoleId&quot;: &quot;1538&quot;,
+        &quot;securityUserId&quot;: &quot;122980&quot;,
+        &quot;id&quot;: &quot;13024&quot;,
+        &quot;priority&quot;: &quot;1&quot;,
+        &quot;applicationId&quot;: &quot;1003&quot;,
+        &quot;securityRole&quot;: {
+          &quot;code&quot;: &quot;Executive Approver&quot;,
+          &quot;entityName&quot;: &quot;SECURITY_ROLE&quot;,
+          &quot;name&quot;: &quot;Executive Approver&quot;,
+          &quot;location&quot;: &quot;/v1/metadata/securityRoles/Executive Approver&quot;,
+          &quot;id&quot;: &quot;1820&quot;
+        },
+        &quot;applicationName&quot;: &quot;Core Admin&quot;,
+        &quot;securityDepartmentRole&quot;: &quot;Executive Approver - All Users&quot;
+      },
+      {
+        &quot;insertedDate&quot;: &quot;1393563600000&quot;,
+        &quot;securityDepartmentRoleId&quot;: &quot;188&quot;,
+        &quot;securityUserId&quot;: &quot;122980&quot;,
+        &quot;id&quot;: &quot;12210&quot;,
+        &quot;priority&quot;: &quot;2&quot;,
+        &quot;applicationId&quot;: &quot;1003&quot;,
+        &quot;securityRole&quot;: {
+          &quot;code&quot;: &quot;_LOB_USER&quot;,
+          &quot;entityName&quot;: &quot;SECURITY_ROLE&quot;,
+          &quot;name&quot;: &quot;LOB User&quot;,
+          &quot;location&quot;: &quot;/v1/metadata/securityRoles/_LOB_USER&quot;,
+          &quot;id&quot;: &quot;8&quot;
+        },
+        &quot;applicationName&quot;: &quot;Core Admin&quot;,
+        &quot;securityDepartmentRole&quot;: &quot;LOB User - All Users&quot;
+      }
+    ],
+    &quot;totalRecordsCount&quot;: 2
+  },
+  &quot;language&quot;: &quot;en&quot;,
+  &quot;lastLoginDate&quot;: &quot;1671704840770&quot;,
+  &quot;individualId&quot;: &quot;428531&quot;,
+  &quot;serverTimeZone&quot;: &quot;America/New_York&quot;,
+  &quot;tokenType&quot;: &quot;BEARER&quot;,
+  &quot;passwordResetRequired&quot;: false,
+  &quot;token&quot;: &quot;8f114755-249b-419d-b062-e6abac17cbed&quot;,
+  &quot;refreshToken&quot;: &quot;baa7f380-7f79-4a8c-be1b-301815c86d3c&quot;,
+  &quot;username&quot;: &quot;MARY&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

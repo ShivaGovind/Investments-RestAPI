@@ -1,0 +1,3185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.features.managers_search</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">5</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-02-08 04:01:54 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1.1:22]"><span>[1.1:22]</span> <span>Retrieve the Managers data.</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.2:23]"><span>[1.2:23]</span> <span>Retrieve the Managers data.</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.3:24]"><span>[1.3:24]</span> <span>Retrieve the Managers data.</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.4:25]"><span>[1.4:25]</span> <span>Retrieve the Managers data.</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[1.5:26]"><span>[1.5:26]</span> <span>Retrieve the Managers data.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/features/managers_search.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Retrieve the Managers information by given API resource.</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Resource</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:22]</span>
+                <span class="scenario-name">Retrieve the Managers data.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2148</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://goldmanqavil.v3locitydev.com/api/v1/queries&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">115</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header content-type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * header token = &quot;8f114755-249b-419d-b062-e6abac17cbed&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenQA = callonce read(&#39;..//features/Token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1806</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">04:01:54.130 &lt;&lt; lock released, cached callonce: read(&#39;..//features/Token.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="1.8.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.features.features.Token</div>
+      </div>
+      <div class="time-cell passed">1638</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.8.0.call">
+    <div class="step-container" id="1.8.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://goldmanqa.v3locitydev.com/api/v1&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8.0.call.0.5">04:01:52.439 &gt;&gt; lock acquired, begin callonce: read(&#39;..//features/Token.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.8.0.call">
+    <div class="step-container" id="1.8.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;..//resources/data/token_request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">88</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.8.0.call">
+    <div class="step-container" id="1.8.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;oauth2/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">31</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.8.0.call">
+    <div class="step-container" id="1.8.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.8.0.call">
+    <div class="step-container" id="1.8.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1496</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8.0.call.0.12">04:01:53.519 request:
+1 &gt; POST https://goldmanqa.v3locitydev.com/api/v1/oauth2/token
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 77
+1 &gt; Host: goldmanqa.v3locitydev.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;password&quot;:&quot;123456&quot;,&quot;scope&quot;:&quot;USER&quot;,&quot;grantType&quot;:&quot;PASSWORD&quot;,&quot;username&quot;:&quot;mary&quot;}
+
+04:01:54.070 response time in milliseconds: 540
+1 &lt; 200
+1 &lt; Date: Wed, 08 Feb 2023 09:01:54 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-XSS-Protection: 1
+1 &lt; Expires: Tue, 03 Jul 2001 06:00:00 GMT
+1 &lt; Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0, private
+1 &lt; Pragma: no-cache
+1 &lt; Last-Modified: Wed, 08 Feb 2023 09:01:53 GMT
+1 &lt; X-FRAME-OPTIONS: SAMEORIGIN
+1 &lt; X-FRAME-OPTIONS: SAMEORIGIN
+1 &lt; X-V3-APP: 9544e5da-4b66-4b38-afb9-fae3885def6e
+1 &lt; Content-Security-Policy: script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; form-action &#39;self&#39; ; connect-src &#39;self&#39;; reflected-xss block
+1 &lt; Vary: Accept-Encoding
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Set-Cookie: AWSALB=UslCTXay9+pvcmg03nBzFuTCXsN/xnnHvIGQbcjyGg6hOCPqTRRxbg+/mmbxkgEULvsRFOm7Jx6bd+wNpbdGGny6ih/WAB6HM936BpF590JfQL+T9EuUisvbhfLG; Max-Age=1676451713000; Expires=Tue, 30 Sep 55147 16:25:14 GMT; Domain=goldmanqa.v3locitydev.com
+1 &lt; Set-Cookie: AWSALBCORS=UslCTXay9+pvcmg03nBzFuTCXsN/xnnHvIGQbcjyGg6hOCPqTRRxbg+/mmbxkgEULvsRFOm7Jx6bd+wNpbdGGny6ih/WAB6HM936BpF590JfQL+T9EuUisvbhfLG; Max-Age=1676451713000; Expires=Tue, 30 Sep 55147 16:25:14 GMT; Domain=goldmanqa.v3locitydev.com; Secure
+{&quot;expiresIn&quot;:1440,&quot;eulaRequired&quot;:true,&quot;roles&quot;:{&quot;items&quot;:[{&quot;insertedDate&quot;:&quot;1664424000000&quot;,&quot;securityDepartmentRoleId&quot;:&quot;1538&quot;,&quot;securityUserId&quot;:&quot;122980&quot;,&quot;id&quot;:&quot;13024&quot;,&quot;priority&quot;:&quot;1&quot;,&quot;applicationId&quot;:&quot;1003&quot;,&quot;securityRole&quot;:{&quot;code&quot;:&quot;Executive Approver&quot;,&quot;entityName&quot;:&quot;SECURITY_ROLE&quot;,&quot;name&quot;:&quot;Executive Approver&quot;,&quot;location&quot;:&quot;\/v1\/metadata\/securityRoles\/Executive Approver&quot;,&quot;id&quot;:&quot;1820&quot;},&quot;applicationName&quot;:&quot;Core Admin&quot;,&quot;securityDepartmentRole&quot;:&quot;Executive Approver - All Users&quot;},{&quot;insertedDate&quot;:&quot;1393563600000&quot;,&quot;securityDepartmentRoleId&quot;:&quot;188&quot;,&quot;securityUserId&quot;:&quot;122980&quot;,&quot;id&quot;:&quot;12210&quot;,&quot;priority&quot;:&quot;2&quot;,&quot;applicationId&quot;:&quot;1003&quot;,&quot;securityRole&quot;:{&quot;code&quot;:&quot;_LOB_USER&quot;,&quot;entityName&quot;:&quot;SECURITY_ROLE&quot;,&quot;name&quot;:&quot;LOB User&quot;,&quot;location&quot;:&quot;\/v1\/metadata\/securityRoles\/_LOB_USER&quot;,&quot;id&quot;:&quot;8&quot;},&quot;applicationName&quot;:&quot;Core Admin&quot;,&quot;securityDepartmentRole&quot;:&quot;LOB User - All Users&quot;}],&quot;totalRecordsCount&quot;:2},&quot;language&quot;:&quot;en&quot;,&quot;lastLoginDate&quot;:&quot;1675846830894&quot;,&quot;individualId&quot;:&quot;428531&quot;,&quot;serverTimeZone&quot;:&quot;America\/New_York&quot;,&quot;tokenType&quot;:&quot;BEARER&quot;,&quot;passwordResetRequired&quot;:false,&quot;token&quot;:&quot;5b5ebe5e-b1c6-4a5d-90e7-1025e307091d&quot;,&quot;refreshToken&quot;:&quot;4ded2a57-d9df-4e77-9ced-da36d2d6e67b&quot;,&quot;username&quot;:&quot;MARY&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.8.0.call">
+    <div class="step-container" id="1.8.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.8.0.call">
+    <div class="step-container" id="1.8.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8.0.call.0.14">04:01:54.100 [print] {
+  &quot;expiresIn&quot;: 1440,
+  &quot;eulaRequired&quot;: true,
+  &quot;roles&quot;: {
+    &quot;items&quot;: [
+      {
+        &quot;insertedDate&quot;: &quot;1664424000000&quot;,
+        &quot;securityDepartmentRoleId&quot;: &quot;1538&quot;,
+        &quot;securityUserId&quot;: &quot;122980&quot;,
+        &quot;id&quot;: &quot;13024&quot;,
+        &quot;priority&quot;: &quot;1&quot;,
+        &quot;applicationId&quot;: &quot;1003&quot;,
+        &quot;securityRole&quot;: {
+          &quot;code&quot;: &quot;Executive Approver&quot;,
+          &quot;entityName&quot;: &quot;SECURITY_ROLE&quot;,
+          &quot;name&quot;: &quot;Executive Approver&quot;,
+          &quot;location&quot;: &quot;/v1/metadata/securityRoles/Executive Approver&quot;,
+          &quot;id&quot;: &quot;1820&quot;
+        },
+        &quot;applicationName&quot;: &quot;Core Admin&quot;,
+        &quot;securityDepartmentRole&quot;: &quot;Executive Approver - All Users&quot;
+      },
+      {
+        &quot;insertedDate&quot;: &quot;1393563600000&quot;,
+        &quot;securityDepartmentRoleId&quot;: &quot;188&quot;,
+        &quot;securityUserId&quot;: &quot;122980&quot;,
+        &quot;id&quot;: &quot;12210&quot;,
+        &quot;priority&quot;: &quot;2&quot;,
+        &quot;applicationId&quot;: &quot;1003&quot;,
+        &quot;securityRole&quot;: {
+          &quot;code&quot;: &quot;_LOB_USER&quot;,
+          &quot;entityName&quot;: &quot;SECURITY_ROLE&quot;,
+          &quot;name&quot;: &quot;LOB User&quot;,
+          &quot;location&quot;: &quot;/v1/metadata/securityRoles/_LOB_USER&quot;,
+          &quot;id&quot;: &quot;8&quot;
+        },
+        &quot;applicationName&quot;: &quot;Core Admin&quot;,
+        &quot;securityDepartmentRole&quot;: &quot;LOB User - All Users&quot;
+      }
+    ],
+    &quot;totalRecordsCount&quot;: 2
+  },
+  &quot;language&quot;: &quot;en&quot;,
+  &quot;lastLoginDate&quot;: &quot;1675846830894&quot;,
+  &quot;individualId&quot;: &quot;428531&quot;,
+  &quot;serverTimeZone&quot;: &quot;America/New_York&quot;,
+  &quot;tokenType&quot;: &quot;BEARER&quot;,
+  &quot;passwordResetRequired&quot;: false,
+  &quot;token&quot;: &quot;5b5ebe5e-b1c6-4a5d-90e7-1025e307091d&quot;,
+  &quot;refreshToken&quot;: &quot;4ded2a57-d9df-4e77-9ced-da36d2d6e67b&quot;,
+  &quot;username&quot;: &quot;MARY&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;..//resources/data/request_manager.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;managers/search&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">04:01:54.152 [print] {
+  &quot;data&quot;: [
+    {
+      &quot;managerId&quot;: [
+        13640
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+          ]
+        }
+      ]
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody.data[0]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">192</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">04:01:54.167 request:
+1 &gt; POST https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 650
+1 &gt; Host: goldmanqavil.v3locitydev.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eqInstId&quot;:[],&quot;datasheetResponse&quot;:[{&quot;datasheetName&quot;:&quot;DS_BROKER_INFO&quot;,&quot;datasheetFieldName&quot;:[&quot;DS_BROKER_CODE&quot;,&quot;DS_BROKER_NAME&quot;],&quot;datasheetInstanceName&quot;:[]},{&quot;datasheetName&quot;:&quot;DS_GICS&quot;,&quot;datasheetFieldName&quot;:[&quot;DS_GICS_CODE&quot;],&quot;datasheetInstanceName&quot;:[]}],&quot;managerLongNameContains&quot;:&quot;&quot;,&quot;isYourOrg&quot;:&quot;Y&quot;,&quot;datasheetSearch&quot;:[{&quot;datasheetName&quot;:&quot;DS_BROKER_INFO&quot;,&quot;datasheetFieldName&quot;:&quot;DS_BROKER_NAME&quot;,&quot;datasheetInstanceName&quot;:[],&quot;datasheetFieldValue&quot;:[&quot;BRKNAMESSG&quot;,&quot;Brk Two&quot;]},{&quot;datasheetName&quot;:&quot;DS_GICS&quot;,&quot;datasheetFieldName&quot;:&quot;DS_GICS_CODE&quot;,&quot;datasheetInstanceName&quot;:[],&quot;datasheetFieldValue&quot;:[&quot;4030&quot;]}],&quot;managerId&quot;:[13640],&quot;managerNameContains&quot;:&quot;&quot;,&quot;includeContacts&quot;:&quot;N&quot;}
+
+04:01:54.354 response time in milliseconds: 181
+1 &lt; 500
+1 &lt; Date: Wed, 08 Feb 2023 09:01:54 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 186
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; object-src &#39;self&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; &#39;unsafe-inline&#39; data: blob:; form-action &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;self&#39;; plugin-types application/pdf application/x-shockwave-flash; reflected-xss block
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.16">04:01:54.357 src/test/features/managers_search.feature:16
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 181, url: https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search, response: 
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+src/test/features/managers_search.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response[0].managerName == requestBody.data[1].managerNameContains</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Resource</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:23]</span>
+                <span class="scenario-name">Retrieve the Managers data.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>146</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://goldmanqavil.v3locitydev.com/api/v1/queries&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header content-type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * header token = &quot;8f114755-249b-419d-b062-e6abac17cbed&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenQA = callonce read(&#39;..//features/Token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;..//resources/data/request_manager.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;managers/search&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.13">04:01:54.407 [print] {
+  &quot;data&quot;: [
+    {
+      &quot;managerId&quot;: [
+        13640
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+          ]
+        }
+      ]
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody.data[1]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">112</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.15">04:01:54.413 request:
+1 &gt; POST https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 657
+1 &gt; Host: goldmanqavil.v3locitydev.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eqInstId&quot;:[],&quot;datasheetResponse&quot;:[{&quot;datasheetName&quot;:&quot;DS_BROKER_INFO&quot;,&quot;datasheetFieldName&quot;:[&quot;DS_BROKER_CODE&quot;,&quot;DS_BROKER_NAME&quot;],&quot;datasheetInstanceName&quot;:[]},{&quot;datasheetName&quot;:&quot;DS_GICS&quot;,&quot;datasheetFieldName&quot;:[&quot;DS_GICS_CODE&quot;],&quot;datasheetInstanceName&quot;:[]}],&quot;managerLongNameContains&quot;:&quot;&quot;,&quot;isYourOrg&quot;:&quot;Y&quot;,&quot;datasheetSearch&quot;:[{&quot;datasheetName&quot;:&quot;DS_BROKER_INFO&quot;,&quot;datasheetFieldName&quot;:&quot;DS_BROKER_NAME&quot;,&quot;datasheetInstanceName&quot;:[],&quot;datasheetFieldValue&quot;:[&quot;BRKNAMESSG&quot;,&quot;Brk Two&quot;]},{&quot;datasheetName&quot;:&quot;DS_GICS&quot;,&quot;datasheetFieldName&quot;:&quot;DS_GICS_CODE&quot;,&quot;datasheetInstanceName&quot;:[],&quot;datasheetFieldValue&quot;:[&quot;4030&quot;]}],&quot;managerId&quot;:[],&quot;managerNameContains&quot;:&quot;SSG Manager1&quot;,&quot;includeContacts&quot;:&quot;N&quot;}
+
+04:01:54.519 response time in milliseconds: 105
+1 &lt; 500
+1 &lt; Date: Wed, 08 Feb 2023 09:01:54 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 186
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; object-src &#39;self&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; &#39;unsafe-inline&#39; data: blob:; form-action &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;self&#39;; plugin-types application/pdf application/x-shockwave-flash; reflected-xss block
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.16">04:01:54.520 src/test/features/managers_search.feature:16
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 105, url: https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search, response: 
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+src/test/features/managers_search.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response[0].managerName == requestBody.data[1].managerNameContains</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Resource</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:24]</span>
+                <span class="scenario-name">Retrieve the Managers data.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>99</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://goldmanqavil.v3locitydev.com/api/v1/queries&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header content-type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:24]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * header token = &quot;8f114755-249b-419d-b062-e6abac17cbed&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenQA = callonce read(&#39;..//features/Token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;..//resources/data/request_manager.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;managers/search&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.13">04:01:54.561 [print] {
+  &quot;data&quot;: [
+    {
+      &quot;managerId&quot;: [
+        13640
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+          ]
+        }
+      ]
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody.data[2]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">83</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.15">04:01:54.565 request:
+1 &gt; POST https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 645
+1 &gt; Host: goldmanqavil.v3locitydev.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eqInstId&quot;:[],&quot;datasheetResponse&quot;:[{&quot;datasheetName&quot;:&quot;DS_BROKER_INFO&quot;,&quot;datasheetFieldName&quot;:[&quot;DS_BROKER_CODE&quot;,&quot;DS_BROKER_NAME&quot;],&quot;datasheetInstanceName&quot;:[]},{&quot;datasheetName&quot;:&quot;DS_GICS&quot;,&quot;datasheetFieldName&quot;:[&quot;DS_GICS_CODE&quot;],&quot;datasheetInstanceName&quot;:[]}],&quot;managerLongNameContains&quot;:&quot;&quot;,&quot;isYourOrg&quot;:&quot;Y&quot;,&quot;datasheetSearch&quot;:[{&quot;datasheetName&quot;:&quot;DS_BROKER_INFO&quot;,&quot;datasheetFieldName&quot;:&quot;DS_BROKER_NAME&quot;,&quot;datasheetInstanceName&quot;:[],&quot;datasheetFieldValue&quot;:[&quot;BRKNAMESSG&quot;,&quot;Brk Two&quot;]},{&quot;datasheetName&quot;:&quot;DS_GICS&quot;,&quot;datasheetFieldName&quot;:&quot;DS_GICS_CODE&quot;,&quot;datasheetInstanceName&quot;:[],&quot;datasheetFieldValue&quot;:[&quot;4030&quot;]}],&quot;managerId&quot;:[],&quot;managerNameContains&quot;:&quot;&quot;,&quot;includeContacts&quot;:&quot;N&quot;}
+
+04:01:54.645 response time in milliseconds: 79
+1 &lt; 500
+1 &lt; Date: Wed, 08 Feb 2023 09:01:54 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 186
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; object-src &#39;self&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; &#39;unsafe-inline&#39; data: blob:; form-action &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;self&#39;; plugin-types application/pdf application/x-shockwave-flash; reflected-xss block
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.16">04:01:54.647 src/test/features/managers_search.feature:16
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 79, url: https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search, response: 
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+src/test/features/managers_search.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response[0].managerName == requestBody.data[1].managerNameContains</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.4:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Resource</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.4:25]</span>
+                <span class="scenario-name">Retrieve the Managers data.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>89</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.4:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.4:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://goldmanqavil.v3locitydev.com/api/v1/queries&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header content-type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:25]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * header token = &quot;8f114755-249b-419d-b062-e6abac17cbed&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="4.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenQA = callonce read(&#39;..//features/Token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;..//resources/data/request_manager.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;managers/search&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.13">04:01:54.663 [print] {
+  &quot;data&quot;: [
+    {
+      &quot;managerId&quot;: [
+        13640
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+          ]
+        }
+      ]
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody.data[3]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">79</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.15">04:01:54.666 request:
+1 &gt; POST https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 178
+1 &gt; Host: goldmanqavil.v3locitydev.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eqInstId&quot;:[],&quot;datasheetResponse&quot;:[],&quot;managerLongNameContains&quot;:&quot;&quot;,&quot;isYourOrg&quot;:&quot;Y&quot;,&quot;datasheetSearch&quot;:[],&quot;managerId&quot;:[],&quot;managerNameContains&quot;:&quot;SSG Manager1&quot;,&quot;includeContacts&quot;:&quot;N&quot;}
+
+04:01:54.743 response time in milliseconds: 76
+1 &lt; 500
+1 &lt; Date: Wed, 08 Feb 2023 09:01:54 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 186
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; object-src &#39;self&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; &#39;unsafe-inline&#39; data: blob:; form-action &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;self&#39;; plugin-types application/pdf application/x-shockwave-flash; reflected-xss block
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.16">04:01:54.744 src/test/features/managers_search.feature:16
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 76, url: https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search, response: 
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+src/test/features/managers_search.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response[0].managerName == requestBody.data[1].managerNameContains</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.5:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Resource</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.5:26]</span>
+                <span class="scenario-name">Retrieve the Managers data.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>117</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.5:26]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.5:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://goldmanqavil.v3locitydev.com/api/v1/queries&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header content-type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:26]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    * header token = &quot;8f114755-249b-419d-b062-e6abac17cbed&quot;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="5.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenQA = callonce read(&#39;..//features/Token.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody = read(&#39;..//resources/data/request_manager.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &quot;managers/search&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print requestBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.13">04:01:54.765 [print] {
+  &quot;data&quot;: [
+    {
+      &quot;managerId&quot;: [
+        13640
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_BROKER_NAME&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;BRKNAMESSG&quot;,
+            &quot;Brk Two&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: &quot;DS_GICS_CODE&quot;,
+          &quot;datasheetFieldValue&quot;: [
+            &quot;4030&quot;
+          ]
+        }
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_BROKER_CODE&quot;,
+            &quot;DS_BROKER_NAME&quot;
+          ]
+        },
+        {
+          &quot;datasheetName&quot;: &quot;DS_GICS&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+            &quot;DS_GICS_CODE&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+      ]
+    },
+    {
+      &quot;managerId&quot;: [
+      ],
+      &quot;managerNameContains&quot;: &quot;SSG Manager1&quot;,
+      &quot;managerLongNameContains&quot;: &quot;&quot;,
+      &quot;eqInstId&quot;: [
+      ],
+      &quot;isYourOrg&quot;: &quot;Y&quot;,
+      &quot;includeContacts&quot;: &quot;N&quot;,
+      &quot;datasheetSearch&quot;: [
+      ],
+      &quot;datasheetResponse&quot;: [
+        {
+          &quot;datasheetName&quot;: &quot;DS_BROKER_INFO&quot;,
+          &quot;datasheetInstanceName&quot;: [
+          ],
+          &quot;datasheetFieldName&quot;: [
+          ]
+        }
+      ]
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestBody.data[4]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">102</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.15">04:01:54.769 request:
+1 &gt; POST https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search
+1 &gt; content-type: application/json; charset=UTF-8
+1 &gt; Content-Length: 263
+1 &gt; Host: goldmanqavil.v3locitydev.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;eqInstId&quot;:[],&quot;datasheetResponse&quot;:[{&quot;datasheetName&quot;:&quot;DS_BROKER_INFO&quot;,&quot;datasheetFieldName&quot;:[],&quot;datasheetInstanceName&quot;:[]}],&quot;managerLongNameContains&quot;:&quot;&quot;,&quot;isYourOrg&quot;:&quot;Y&quot;,&quot;datasheetSearch&quot;:[],&quot;managerId&quot;:[],&quot;managerNameContains&quot;:&quot;SSG Manager1&quot;,&quot;includeContacts&quot;:&quot;N&quot;}
+
+04:01:54.868 response time in milliseconds: 99
+1 &lt; 500
+1 &lt; Date: Wed, 08 Feb 2023 09:01:54 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 186
+1 &lt; Connection: keep-alive
+1 &lt; Server: Apache
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;; script-src &#39;self&#39; &#39;unsafe-inline&#39; &#39;unsafe-eval&#39;; options inline-script eval-script; xhr-src &#39;self&#39;; object-src &#39;self&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39;; img-src &#39;self&#39; &#39;unsafe-inline&#39; data: blob:; form-action &#39;self&#39;; font-src &#39;self&#39;; connect-src &#39;self&#39;; plugin-types application/pdf application/x-shockwave-flash; reflected-xss block
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.16">
+      <div class="step-ref failed">16</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="5.16">04:01:54.869 src/test/features/managers_search.feature:16
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 99, url: https://goldmanqavil.v3locitydev.com/api/v1/queries/managers/search, response: 
+{&quot;messages&quot;:[{&quot;severity&quot;:&quot;ERROR&quot;,&quot;userMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;developerMessage&quot;:&quot;The token provided is invalid.&quot;,&quot;errorCode&quot;:&quot;INVALID_TOKEN&quot;}],&quot;validationSource&quot;:&quot;00&quot;}
+src/test/features/managers_search.feature:16
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.18">
+      <div class="step-ref skipped">18</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match response[0].managerName == requestBody.data[1].managerNameContains</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "grantType": "PASSWORD",
+  "password": "123456",
+  "scope": "USER",
+  "username": "mary"
+}

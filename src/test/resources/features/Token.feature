@@ -2,8 +2,8 @@ Feature: Authorization Token creation
 
 
   Background:
-    * url "https://goldmanqa.v3locitydev.com/api/v1"
-    * def requestBody = read('..//resources/data/token_request.json')
+    * url "https://goldmanqavil.v3locitydev.com/api/v1"
+    * def requestBody = read('..//data/token_request.json')
 
   Scenario: Application authorization token
 

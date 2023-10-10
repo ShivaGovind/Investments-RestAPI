@@ -1,0 +1,54 @@
+[
+  {
+    "entityType": "Company",
+    "entityId": "105589",
+    "primaryAddress": {
+      "address1": "333 11th ST",
+      "address2": "",
+      "address3": "",
+      "city": "",
+      "state": "MISSOURI",
+      "zip": "641050009",
+      "country": "United States"
+    }
+  },
+  {
+    "entityType": "Manager",
+    "entityId": "106672",
+    "primaryAddress": {
+      "address1": "333 11th ST",
+      "address2": "",
+      "address3": "",
+      "city": "",
+      "state": "MISSOURI",
+      "zip": "641050009",
+      "country": "United States"
+    }
+  },
+  {
+    "entityType": "Investor",
+    "entityId": "105496",
+    "primaryAddress": {
+      "address1": "333 11th ST",
+      "address2": "",
+      "address3": "",
+      "city": "",
+      "state": "MISSOURI",
+      "zip": "641050009",
+      "country": "United States"
+    }
+  },
+  {
+    "entityType": "Person",
+    "entityId": "84860436",
+    "primaryAddress": {
+      "address1": "333 11th ST",
+      "address2": "",
+      "address3": "",
+      "city": "",
+      "state": "MISSOURI",
+      "zip": "641050009",
+      "country": "United States"
+    }
+  }
+]

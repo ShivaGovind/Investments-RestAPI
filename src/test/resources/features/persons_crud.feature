@@ -11,7 +11,7 @@ Feature: Persons Crud operations
 
   Scenario: Create the Person data.
     Given path "persons"
-    And def requestBodySearch = read('..//resources/data/persons/person_create.json')
+    And def requestBodySearch = read('..//data/persons/person_create.json')
     And request requestBodySearch
     When method Post
     Then status 200

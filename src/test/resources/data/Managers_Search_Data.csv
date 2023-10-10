@@ -1,0 +1,423 @@
+﻿TestCaseID,Scenario,host,version,resource,requestBody,status,errorMessage,Expected Result0,expectEmptyResponse
+Manager_Search,Manager_Search_Verify  the  Search one manager by id with DS search and DS response,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  ""managerId"": [13639],
+	  ""managerNameContains"": """",
+	  ""managerLongNameContains"": """",
+	  ""eqInstId"": [],
+	  ""isYourOrg"": ""Y"",
+	  ""includeContacts"": ""N"",
+	  ""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_BROKER_INFO"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_BROKER_NAME"",
+		""datasheetFieldValue"": [""Brk One"", ""Brk Two""]
+		},
+		{ 
+		""datasheetName"": ""DS_GICS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_GICS_CODE"",
+	    ""datasheetFieldValue"": [""101010""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+	    },
+		{
+	      ""datasheetName"": ""DS_GICS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_GICS_CODE""]
+	    }
+	  ]
+	}",200,,,exists
+Manager_Search,Manager_Search_Verify  the all the managers details without DS search and Withoud DS response,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  
+    ""managerId"": [],
+	""managerNameContains"": """",
+	""managerLongNameContains"": """",
+	""eqInstId"": [],
+	""isYourOrg"": ""Y"",
+	""includeContacts"": ""N"",
+	""datasheetSearch"": [],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": []
+	    }
+	  ]
+	}",200,,,exists
+Manager_Search,Manager_Search_Verify  the  Search one manager by name with DS search and DS response,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  ""managerId"": [],
+	  ""managerNameContains"": ""SG Manager"",
+	  ""managerLongNameContains"": """",
+	  ""eqInstId"": [],
+	  ""isYourOrg"": ""Y"",
+	  ""includeContacts"": ""N"",
+	  ""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_BROKER_INFO"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_BROKER_NAME"",
+		""datasheetFieldValue"": [""Brk One"", ""Brk Two""]
+		},
+		{ 
+		""datasheetName"": ""DS_GICS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_GICS_CODE"",
+	    ""datasheetFieldValue"": [""101010""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+	    },
+		{
+	      ""datasheetName"": ""DS_GICS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_GICS_CODE""]
+	    }
+	  ]
+	}",200,,,exists
+Manager_Search,Manager_Search_Verify  the  Serach ALL managers but with DS search and DS Resopnse,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  ""managerId"": [],
+	  ""managerNameContains"": """",
+	  ""managerLongNameContains"": """",
+	  ""eqInstId"": [],
+	  ""isYourOrg"": ""Y"",
+	  ""includeContacts"": ""N"",
+	  ""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_BROKER_INFO"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_BROKER_NAME"",
+		""datasheetFieldValue"": [""Brk One"", ""Brk Two""]
+		},
+		{ 
+		""datasheetName"": ""DS_GICS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_GICS_CODE"",
+	    ""datasheetFieldValue"": [""101010""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+	    },
+		{
+	      ""datasheetName"": ""DS_GICS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_GICS_CODE""]
+	    }
+	  ]
+	}",200,,,exists
+Manager_Search,Manager_Search_Verify  the  Search manager by name no ds search no ds response,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  
+    ""managerId"": [],
+	""managerNameContains"": ""SG Manager"",
+	""managerLongNameContains"": """",
+	""eqInstId"": [],
+	""isYourOrg"": ""Y"",
+	""includeContacts"": ""N"",
+	""datasheetSearch"": [],
+	  ""datasheetResponse"": []
+	}",200,,,exists
+Manager_Search,Manager_Search_Verify  the  Search manager by name no DS search WITH ds response,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  
+    ""managerId"": [],
+	""managerNameContains"": ""SG Manager"",
+	""managerLongNameContains"": """",
+	""eqInstId"": [],
+	""isYourOrg"": ""Y"",
+	""includeContacts"": ""N"",
+	""datasheetSearch"": [],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": []
+	    }
+	  ]
+	}",200,,,exists
+Manager_Search,Manager_Search_Verify  the  No Data Found for the given criteria,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{   
+    ""managerId"": [],
+ ""managerNameContains"": ""SG Unknown"",
+ ""managerLongNameContains"": """",
+ ""eqInstId"": [],
+ ""isYourOrg"": ""Y"",
+ ""includeContacts"": ""N"",
+ ""datasheetSearch"": [],
+   ""datasheetResponse"": []
+ }",204,,,exists
+Manager_Search,Manager_Search_Verify  the  validtion on mandatory field includeContacts,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  ""managerId"": [],
+	  ""managerNameContains"": ""SG Manager"",
+	  ""managerLongNameContains"": """",
+	  ""eqInstId"": [],
+	  ""isYourOrg"": ""Y"",
+	  ""includeContacts"": null,
+	  ""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_BROKER_INFO"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_BROKER_NAME"",
+		""datasheetFieldValue"": [""Brk One"", ""Brk Two""]
+		},
+		{ 
+		""datasheetName"": ""DS_GICS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_GICS_CODE"",
+	    ""datasheetFieldValue"": [""101010""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+	    },
+		{
+	      ""datasheetName"": ""DS_GICS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_GICS_CODE""]
+	    }
+	  ]
+	}",400,,,exists
+Manager_Search,Manager_Search_Verify  the  validtion on mandatory field dataSheetSearch.dataSheetName,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  ""managerId"": [],
+	  ""managerNameContains"": ""SG Manager"",
+	  ""managerLongNameContains"": """",
+	  ""eqInstId"": [],
+	  ""isYourOrg"": ""Y"",
+	  ""includeContacts"": ""N"",
+	  ""datasheetSearch"": [
+	    {
+		""datasheetName"": null,
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_BROKER_NAME"",
+		""datasheetFieldValue"": [""Brk One"", ""Brk Two""]
+		},
+		{ 
+		""datasheetName"": ""DS_GICS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_GICS_CODE"",
+	    ""datasheetFieldValue"": [""101010""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+	    },
+		{
+	      ""datasheetName"": ""DS_GICS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_GICS_CODE""]
+	    }
+	  ]
+	}",400,,,exists
+Manager_Search,Manager_Search_Verify  the  validtion on mandatory field dataSheetSearch.dataSheetFieldName,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  ""managerId"": [],
+	  ""managerNameContains"": ""SG Manager"",
+	  ""managerLongNameContains"": """",
+	  ""eqInstId"": [],
+	  ""isYourOrg"": ""Y"",
+	  ""includeContacts"": ""N"",
+	  ""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_BROKER_INFO"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": null,
+		""datasheetFieldValue"": [""Brk One"", ""Brk Two""]
+		},
+		{ 
+		""datasheetName"": ""DS_GICS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_GICS_CODE"",
+	    ""datasheetFieldValue"": [""101010""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+	    },
+		{
+	      ""datasheetName"": ""DS_GICS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_GICS_CODE""]
+	    }
+	  ]
+	}",400,,,exists
+Manager_Search,Manager_Search_Verify  the  validtion on mandatory field dataSheetSearch.dataSheetFieldValue,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  ""managerId"": [],
+	  ""managerNameContains"": ""SG Manager"",
+	  ""managerLongNameContains"": """",
+	  ""eqInstId"": [],
+	  ""isYourOrg"": ""Y"",
+	  ""includeContacts"": ""N"",
+	  ""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_BROKER_INFO"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_BROKER_NAME"",
+		""datasheetFieldValue"": []
+		},
+		{ 
+		""datasheetName"": ""DS_GICS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_GICS_CODE"",
+	    ""datasheetFieldValue"": [""101010""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+	    },
+		{
+	      ""datasheetName"": ""DS_GICS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_GICS_CODE""]
+	    }
+	  ]
+	}",400,,,exists
+Manager_Search,Manager_Search_Verify  the  validtion on mandatory field dataSheetResponse.dataSheetName,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  ""managerId"": [],
+	  ""managerNameContains"": ""SG Manager"",
+	  ""managerLongNameContains"": """",
+	  ""eqInstId"": [],
+	  ""isYourOrg"": ""Y"",
+	  ""includeContacts"": ""N"",
+	  ""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_BROKER_INFO"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_BROKER_NAME"",
+		""datasheetFieldValue"": [""Brk One"", ""Brk Two""]
+		},
+		{ 
+		""datasheetName"": ""DS_GICS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_GICS_CODE"",
+	    ""datasheetFieldValue"": [""101010""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": null,
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+	    },
+		{
+	      ""datasheetName"": ""DS_GICS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_GICS_CODE""]
+	    }
+	  ]
+	}",400,,,exists
+Manager_Search,"Manager_Search_Verify  the search manager by Invalid data (name, Longname, AltID, Your org, Type, ID).",https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  
+    ""managerId"": [1408],
+	""managerNameContains"": ""SG45Manager"",
+	""managerLongNameContains"": ""rd"",
+	""eqInstId"": [],
+	""isYourOrg"": ""N"",
+	""includeContacts"": ""N"",
+	""datasheetSearch"": [],
+	  ""datasheetResponse"": []
+	}",204,,,exists
+Manager_Search,"Manager_Search_Verify  the search manager by valid data (name, Longname, AltID, Your org, Type, ID).",https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  
+    ""managerId"": [14089],
+	""managerNameContains"": ""API Manager Testing"",
+	""managerLongNameContains"": ""Manager 1"",
+	""eqInstId"": [],
+	""isYourOrg"": ""N"",
+	""includeContacts"": ""N"",
+	""datasheetSearch"": [],
+	  ""datasheetResponse"": []
+	}",200,,,exists
+Manager_Search,Manager_Search_Verify  the Invalid Json Request validation,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  
+    ""managerId"": [14089]
+	""managerNameContains"": ""API Manager Testing"",
+	""managerLongNameContains"": ""Manager 1"",
+	""eqInstId"": [],
+	""isYourOrg"": ""N"",
+	""includeContacts"": ""N"",
+	""datasheetSearch"": [],
+	  ""datasheetResponse"": []
+	}",400,INVALID_JSON,,exists
+Manager_Search,Manager_Search_Verify  the Invalid Json Request validation,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search,"{	  
+    ""managerId"": [],
+	""managerNameContains"": """",
+	""managerLongNameContains"": """",
+	""eqInstId"": [],
+	""isYourOrg"": ""Y"",
+	
+	""datasheetSearch"": [],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": []
+	    }
+	  ]
+	}",400,MISSING_REQUIRED_FIELD,,exists
+Manager_Search,Manager_Search_Verify  the Invalid URI request,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/search123,"{	  ""managerId"": [13639],
+	  ""managerNameContains"": """",
+	  ""managerLongNameContains"": """",
+	  ""eqInstId"": [],
+	  ""isYourOrg"": ""Y"",
+	  ""includeContacts"": ""N"",
+	  ""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_BROKER_INFO"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_BROKER_NAME"",
+		""datasheetFieldValue"": [""Brk One"", ""Brk Two""]
+		},
+		{ 
+		""datasheetName"": ""DS_GICS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_GICS_CODE"",
+	    ""datasheetFieldValue"": [""101010""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_BROKER_INFO"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+	    },
+		{
+	      ""datasheetName"": ""DS_GICS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_GICS_CODE""]
+	    }
+	  ]
+	}",404,Not Found,,exists
+Manager_SearchId,Manager_SearchId_vaidate mandatory field managerName,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/searchId,"{
+""managerName"" :[]
+}",400,MISSING_REQUIRED_FIELD,,exists
+Manager_SearchId,Manager_SearchId_Verify Invalid URI request,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/searchId345,"{
+""managerName"" :[""Goldman""]
+}",404,Not Found,,exists
+Manager_SearchId,Manager_SearchId_passing similar matching   manager name ,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/searchId,"{
+""managerName"" :[""Goldman""]
+}",200,,,exists
+Manager_SearchId,Manager_SearchId_passing  exact matching   manager name ,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/searchId,"{
+""managerName"" :[""Goldman test QA""]
+}",200,,,exists
+Manager_SearchId,Manager_SearchId_passing  multiple similar matching manager names,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/searchId,"{
+""managerName"" :[""Goldman"",""Goldman""]
+}",200,,,exists
+Manager_SearchId,Manager_SearchId_passing  multiple exact  matching manager names,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/searchId,"{
+""managerName"" :[""vpmnr_test1"",""sp@mngr-FIV""]
+}",200,,,exists
+Manager_SearchId,"Manager_SearchId_passing one manager names is correct, one manager name as wrong it returns correct manager name records",https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/searchId,"{
+""managerName"" :[""unknown"",""sp@mngr-FIV""]
+}",200,,,exists
+Manager_SearchId,Manager_SearchId_No data found for the given criteria.,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/searchId,"{
+""managerName"" :[""unknown""]
+}",204,,,exists
+Manager_SearchId,Manager_SearchId_Invalid Json request validation,https://goldmanqavil.v3locitydev.com,api/v1/queries,managers/searchId,"{
+""managerName"" :[""unknown""],
+}",400,INVALID_JSON,,exists

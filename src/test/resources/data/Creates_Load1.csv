@@ -1,0 +1,546 @@
+﻿TestCaseID,Scenario,resource,requestBody,status,errorMessage,Expected Result,expectEmptyResponse,host,version
+Attributes_Create,Verify the valid scenario when Attribute name is Fund type,attributes,"[
+{
+  ""attributeName"": ""Fund Type"",
+  ""attributeValue"": ""Capital@JG"",
+  ""seqNo"": 14,
+  ""attributeInternalValue"": ""34""
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+Attributes_Create,Verify to mandatory field validation,attributes,"[
+{
+  ""attributeName"": null,
+  ""attributeValue"": ""ABC@JG2"",
+  ""seqNo"": 12,
+  ""attributeInternalValue"": ""32""
+}
+]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+Companies_Create,Verify to create a company successfully through API ,companies,"[
+{
+  ""companyName"": ""JG@company222"",
+  ""companyLongName"": ""JG45"",
+  ""allowDuplicate"": ""Y"",
+  ""currency"": ""EUR"",
+  ""gicsCode"": {
+    ""gicsTier1Code"": ""01"",
+    ""gicsTier1Name"": ""Other"",
+    ""gicsTier2Code"": ""00"",
+    ""gicsTier2Name"": ""Other"",
+    ""gicsTier3Code"": ""00"",
+    ""gicsTier3Name"": ""Other"",
+    ""gicsTier4Code"": ""00"",
+    ""gicsTier4Name"": ""Other""
+  },
+  ""financialInfo"": {
+    ""isPublic"": ""Y"",
+    ""ticker"": ""ABC"",
+    ""exchange"": ""TVC""
+  }
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+Companies_Create,Verify to mandatory field validation,companies,"[
+{
+  ""companyName"": null,
+  ""companyLongName"": ""2023"",
+  ""allowDuplicate"": ""Y"",
+  ""currency"": ""EUR"",
+  ""primaryAddress"": {
+    ""address1"": ""1055 BroadWay"",
+    ""address2"": ""1055 BroadWay"",
+    ""address3"": ""1055 BroadWay"",
+    ""city"": ""Kansas City"",
+    ""state"": ""ALASKA"",
+    ""zip"": ""641050000"",
+    ""country"": ""USA""
+  },
+  ""gicsCode"": {
+    ""gicsTier1Code"": ""01"",
+    ""gicsTier1Name"": ""Other"",
+    ""gicsTier2Code"": ""00"",
+    ""gicsTier2Name"": ""Other"",
+    ""gicsTier3Code"": ""00"",
+    ""gicsTier3Name"": ""Other"",
+    ""gicsTier4Code"": ""00"",
+    ""gicsTier4Name"": ""Other""
+  },
+  ""financialInfo"": {
+    ""isPublic"": ""Y"",
+    ""ticker"": ""ABC"",
+    ""exchange"": ""TVC""
+  }
+}
+]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+DirectInvestAllocation_Create,Verify by giving valid scenario  Investmen Id through API.,directInvestAllocations,"[
+{
+  ""investmentId"": 528034,
+  ""date"": ""2023-09-24"",
+  ""allocationCode"": ""Basis"",
+  ""transStatus"": ""Posted"",
+  ""poolName"": ""% of Commit"",
+  ""description"": ""GOLD-1516 transaction-1"",
+  ""lotId"": 284092,
+  ""callable"": ""Y"",
+  ""distributable"": ""Y"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.2,
+  ""dicAmount"": {
+    ""amount"": 14500,
+    ""vat"": 0
+  },
+  ""yfcAmount"": {
+    ""amount"": null,
+    ""vat"": null
+  },
+  ""comments"": [
+    {
+      ""type"": ""General"",
+      ""status"": ""Open"",
+      ""comments"": ""string"",
+      ""seqNo"": 0
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+DirectInvestAllocation_Create,Verify to mandatory field validation,directInvestAllocations,"[
+{
+  ""investmentId"": null,
+  ""date"": ""2020-01-01"",
+  ""allocationCode"": ""Audit Fee"",
+  ""transStatus"": ""Posted"",
+  ""poolName"": ""%Commit"",
+  ""description"": ""GOLD-1516 transaction-1"",
+  ""lotId"": 3185,
+  ""callable"": ""Y"",
+  ""distributable"": ""Y"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.2,
+  ""dicAmount"": {
+    ""amount"": 14500,
+    ""vat"": 0
+  },
+  ""yfcAmount"": {
+    ""amount"": null,
+    ""vat"": null
+  },
+  ""comments"": [
+    {
+      ""type"": ""General"",
+      ""status"": ""Open"",
+      ""comments"": ""string"",
+      ""seqNo"": 0
+    }
+  ]
+}
+]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+DirectInvestTranscations_Create,Verify by giving valid scenario DirectInvestTransactions  through API.,directInvestTransactions,"[
+    {
+        ""investmentId"": 528034,
+        ""lotId"": 284092,
+        ""securityId"": null,
+        ""date"": ""2023-09-24"",
+        ""transType"": ""Buy"",
+        ""transSubType"": ""Test"",
+        ""transStatus"": ""Posted"",
+        ""units"": 10,
+        ""useFxRate"": ""Y"",
+        ""fxRate"": 1.0,
+        ""yfcTransAmounts"": {
+            ""unitPrice"": null,
+            ""totalAmount"": null,
+            ""capExpense"": null,
+            ""expense"": null,
+            ""commission"": null,
+            ""fee"": null,
+            ""parValue"": null,
+            ""totalPrincipal"": null
+        },
+        ""dicTransAmounts"": {
+            ""unitPrice"": 10,
+            ""totalAmount"": 100,
+            ""capExpense"": 13,
+            ""expense"": 14,
+            ""commission"": 15,
+            ""fee"": 16,
+            ""parValue"": 10,
+            ""totalPrincipal"": 100
+        },
+        ""comments"": [
+            {
+                ""type"": ""Status"",
+                ""status"": ""Open"",
+                ""comments"": ""Created Buy"",
+                ""seqNo"": 1
+            }
+        ],
+        ""autoValue"": ""Y""
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+DirectInvestTranscations_Create,Verify to mandatory field validation,directInvestTransactions,"[
+    {
+        ""investmentId"":null,
+        ""lotId"": 4238,
+        ""securityId"": null,
+        ""date"": ""2023-05-25"",
+        ""transType"": ""Buy"",
+        ""transSubType"": ""Test"",
+        ""transStatus"": ""Posted"",
+        ""units"": 10,
+        ""useFxRate"": ""Y"",
+        ""fxRate"": 1.0,
+        ""yfcTransAmounts"": {
+            ""unitPrice"": null,
+            ""totalAmount"": null,
+            ""capExpense"": null,
+            ""expense"": null,
+            ""commission"": null,
+            ""fee"": null,
+            ""parValue"": null,
+            ""totalPrincipal"": null
+        },
+        ""dicTransAmounts"": {
+            ""unitPrice"": 10,
+            ""totalAmount"": 100,
+            ""capExpense"": 13,
+            ""expense"": 14,
+            ""commission"": 15,
+            ""fee"": 16,
+            ""parValue"": 10,
+            ""totalPrincipal"": 100
+        },
+        ""comments"": [
+            {
+                ""type"": ""Status"",
+                ""status"": ""Open"",
+                ""comments"": ""Created Buy"",
+                ""seqNo"": 1
+            }
+        ],
+        ""autoValue"": ""Y""
+    }
+]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+DirectInvestValuations_Create,Verify by giving valid scenario DirectInvestValuations  through API.,directInvestValuations,"[
+{
+  ""lotId"": ""284092"",
+  ""date"": ""2023-09-24"",
+  ""valuationMethod"": ""Audited"",
+  ""valuationSource"": ""SEI"",
+  ""transStatus"": ""Posted"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": ""1.27285474"",
+  ""yfcValuationAmounts"": {
+    ""newUnitValue"": null,
+    ""newFmvUnitValue"": null
+  },
+  ""ficValuationAmounts"": {
+    ""newUnitValue"": 55,
+    ""newFmvUnitValue"": 10
+  }
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+DirectInvestValuations_Create,Verify to mandatory field validation,directInvestValuations,"[
+{
+  ""lotId"": null,
+  ""date"": ""2033-09-08"",
+  ""valuationMethod"": ""Valuation Source"",
+  ""valuationSource"": ""SEI"",
+  ""transStatus"": ""Posted"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": ""1.27285474"",
+  ""yfcValuationAmounts"": {
+    ""newUnitValue"": null,
+    ""newFmvUnitValue"": null
+  },
+  ""ficValuationAmounts"": {
+    ""newUnitValue"": 55,
+    ""newFmvUnitValue"": 10
+  }
+}
+]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+DirectInvestments_Create,Verify by giving valid scenario DirectInvestments  through API.,directInvestments,"[
+        {
+            ""fundId"": ""346178"",
+            ""investmentCompanyId"": 250184,
+            ""portfolioId"": null,
+            ""isSecondaryInvestment"": ""N"",
+            ""realizationStatus"": ""Fully Realized"",
+            ""realizationDate"": ""2023-02-01""
+        }
+    ]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+DirectInvestments_Create,Verify to mandatory field validation,directInvestments,"[
+        {
+            ""fundId"": null,
+            ""investmentCompanyId"": 22540,
+            ""portfolioId"": null,
+            ""isSecondaryInvestment"": ""N"",
+            ""realizationStatus"": ""Fully Realized"",
+            ""realizationDate"": ""2023-02-01""
+        }
+    ]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundAllocations_Create,Verify by giving valid scenario FundAllocations through API.,fundAllocations,"[
+{
+  ""fundId"":""346178"",
+  ""date"": ""2023-08-02"",
+  ""allocationCode"": ""Basis"",
+  ""transStatus"": ""Posted"",
+  ""poolName"": ""% of Commit"",
+  ""description"": ""AA"",
+  ""transCurrency"": ""USD"",
+  ""callable"": ""Y"",
+  ""distributable"": ""Y"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.2,
+  ""tcAmount"": {
+    ""amount"": 200,
+    ""vat"": 0
+  },
+  ""ycAmount"": {
+    ""amount"": null,
+    ""vat"": null
+  }
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundAllocations_Create,Verify to mandatory field validation,fundAllocations,"[
+{
+  ""fundId"": null,
+  ""date"": ""2023-08-02"",
+  ""allocationCode"": ""Accounting Fee"",
+  ""transStatus"": ""Posted"",
+  ""poolName"": ""%Commit"",
+  ""description"": ""AA"",
+  ""transCurrency"": ""USD"",
+  ""callable"": ""Y"",
+  ""distributable"": ""Y"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.2,
+  ""tcAmount"": {
+    ""amount"": 200,
+    ""vat"": 0
+  },
+  ""ycAmount"": {
+    ""amount"": null,
+    ""vat"": null
+  }
+}
+]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundGroups_Create,Verify by giving valid scenario FundGroups through API.,fundGroups,"[
+    {
+        ""fundGroupName"": ""JG@12345"",
+        ""fundGroupCurrency"": ""USD""
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundGroups_Create,Verify to mandatory field validation,fundGroups,"[
+    {
+        ""fundGroupName"": null,
+        ""fundGroupCurrency"": ""USD""
+    }
+]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundInvestAllocations_Create,Verify by giving valid scenario FundInvestAllocations through API.,fundInvestAllocations,"[
+{
+  ""investmentId"": 528128,
+  ""date"": ""2023-06-13"",
+  ""allocationCode"": ""Basis"",
+  ""transStatus"": ""Posted"",
+  ""poolName"": ""% of Commit"",
+  ""description"": ""spfi"",
+  ""callable"": ""Y"",
+  ""distributable"": ""Y"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.5,
+  ""ficAmount"": {
+    ""amount"": 5300,
+    ""vat"": 0
+  },
+  ""yfcAmount"": {
+    ""amount"": null,
+    ""vat"": null
+  }
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundInvestAllocations_Create,Verify to mandatory field validation,fundInvestAllocations,"[
+{
+  ""investmentId"": null,
+  ""date"": ""2023-06-12"",
+  ""allocationCode"": ""Accounting Fee"",
+  ""transStatus"": ""Posted"",
+  ""poolName"": ""% of Commit"",
+  ""description"": ""spfi"",
+  ""callable"": ""Y"",
+  ""distributable"": ""Y"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.5,
+  ""ficAmount"": {
+    ""amount"": 5300,
+    ""vat"": 0
+  },
+  ""yfcAmount"": {
+    ""amount"": null,
+    ""vat"": null
+  }
+}
+]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundInvestCashDistributions_Create,Verify by giving valid scenario FundInvestcashdistributions through API.,fundInvestCashDistributions,"[{
+		""investmentId"": 528128,
+		""date"": ""2020-01-11"",
+		""transSubType"": ""FI-Cash"",
+		""transStatus"": ""posted"",
+		""distributable"": ""Y"",
+		""deemed"": ""Y"",
+		""netTransaction"": ""Y"",
+		""realizationStatus"": ""Partially Realized"",
+		""terminated"": null,
+		""recalledDistribution"": null,
+		""underlyingCompanies"": [
+			{
+				""companyId"": 250096
+			}
+		],
+		""useFxRate"": ""Y"",
+		""fxRate"":1.2,
+		""yfcDistributionAmounts"": {
+			""grossDistribution"": null,
+			""stateWhTax"": null,
+			""foreignWhTax"": null,
+			""otherWhTax"": null,
+			""recallable"": null
+		},
+		""ficDistributionAmounts"": {
+			""grossDistribution"": 50000,
+			""stateWhTax"": 1000,
+			""foreignWhTax"": 1000,
+			""otherWhTax"": 1000,
+			""recallable"": 1000
+		},
+		""distributionComponents"": [{
+				""componentName"": ""Basis"",
+				""yfcComponentAmount"": null,
+				""ficComponentAmount"": 500
+			}
+		]
+
+	}]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundInvestCashDistributions_Create,Verify to mandatory field validation,fundInvestCashDistributions,"[{
+		""investmentId"": null,
+		""date"": ""2020-01-10"",
+		""transSubType"": ""FI-Cash"",
+		""transStatus"": ""posted"",
+		""distributable"": ""Y"",
+		""deemed"": ""Y"",
+		""netTransaction"": ""Y"",
+		""realizationStatus"": ""Partially Realized"",
+		""terminated"": null,
+		""recalledDistribution"": null,
+		""underlyingCompanies"": [
+			{
+				""companyId"": 13379
+			}
+		],
+		""useFxRate"": ""Y"",
+		""fxRate"":1.2,
+		""yfcDistributionAmounts"": {
+			""grossDistribution"": null,
+			""stateWhTax"": null,
+			""foreignWhTax"": null,
+			""otherWhTax"": null,
+			""recallable"": null
+		},
+		""ficDistributionAmounts"": {
+			""grossDistribution"": 50000,
+			""stateWhTax"": 1000,
+			""foreignWhTax"": 1000,
+			""otherWhTax"": 1000,
+			""recallable"": 1000
+		},
+		""distributionComponents"": [{
+				""componentName"": ""Basis"",
+				""yfcComponentAmount"": null,
+				""ficComponentAmount"": 500
+			}
+		]
+
+	}]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundInvestContribution_Create,Verify by giving valid scenario FundInvestcontributions through API.,fundInvestContributions,"[
+{
+  ""investmentId"": 528128,
+  ""date"": ""2023-06-25"",
+  ""duedate"": ""2023-06-24"",
+  ""issueDate"": ""2023-06-24"",
+  ""orderDate"": ""2023-06-24"",
+  ""receiptDate"": ""2023-06-24"",
+  ""cflowDate"": ""2023-06-24"",
+  ""transSubType"": ""FI-Contrib"",
+  ""transStatus"": ""Posted"",
+  ""callable"": ""Y"",
+  ""deemed"": ""N"",
+  ""netTransaction"": ""N"",
+  ""lpInterestPurchase"": ""N"",
+  ""lpInterestPurchaseOption"":null,
+  ""underlyingCompanies"": [
+    {
+      ""companyId"": 250096
+    }
+  ],
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.5,
+  ""yfcContributionAmounts"": {
+    ""contributedCapital"": null,
+    ""contributedCapitalOutOfCommit"": null,
+    ""feesInCommit"": null,
+    ""feesOutCommit"": null,
+    ""expenseInCommit"": null,
+    ""expenseOutOfCommit"": null,
+    ""interestSubClose"": null
+  },
+  ""ficContributionAmounts"": {
+    ""contributedCapital"": 300,
+    ""contributedCapitalOutOfCommit"": 700,
+    ""feesInCommit"": 300,
+    ""feesOutCommit"": 30,
+    ""expenseInCommit"": 200,
+    ""expenseOutOfCommit"": 20,
+    ""interestSubClose"": 90
+  }
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries
+FundInvestContribution_Create,Verify to mandatory field validation,fundInvestContributions,"[
+{
+  ""investmentId"": null,
+  ""date"": ""2023-06-24"",
+  ""duedate"": ""2023-06-24"",
+  ""issueDate"": ""2023-06-24"",
+  ""orderDate"": ""2023-06-24"",
+  ""receiptDate"": ""2023-06-24"",
+  ""cflowDate"": ""2023-06-24"",
+  ""transSubType"": ""FI-Contrib"",
+  ""transStatus"": ""Posted"",
+  ""callable"": ""Y"",
+  ""deemed"": ""N"",
+  ""netTransaction"": ""N"",
+  ""lpInterestPurchase"": ""N"",
+  ""lpInterestPurchaseOption"":null,
+  ""underlyingCompanies"": [
+    {
+      ""companyId"": 13375
+    }
+  ],
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.5,
+  ""yfcContributionAmounts"": {
+    ""contributedCapital"": null,
+    ""contributedCapitalOutOfCommit"": null,
+    ""feesInCommit"": null,
+    ""feesOutCommit"": null,
+    ""expenseInCommit"": null,
+    ""expenseOutOfCommit"": null,
+    ""interestSubClose"": null
+  },
+  ""ficContributionAmounts"": {
+    ""contributedCapital"": 300,
+    ""contributedCapitalOutOfCommit"": 700,
+    ""feesInCommit"": 300,
+    ""feesOutCommit"": 30,
+    ""expenseInCommit"": 200,
+    ""expenseOutOfCommit"": 20,
+    ""interestSubClose"": 90
+  }
+}
+]",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries

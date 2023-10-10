@@ -20,8 +20,8 @@ import static org.junit.Assert.assertTrue;
 public class TestRunner {
     @Test
     public void testParallel()  {
-        Results results = Runner.path("classpath:src/test").outputCucumberJson(true).parallel(5);
-//        generateReport(results.getReportDir());
+        Results results = Runner.path("classpath:features").outputCucumberJson(true).tags("RegressionAPI").parallel(5);
+        generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(),results.getFailCount() == 0);
     }
 
@@ -29,7 +29,7 @@ public class TestRunner {
         Collection<File> jsonFiles = FileUtils.listFiles(new File(karateOutputPath), new String[]{"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
-        Configuration config = new Configuration(new File("target"), "Goldman Rest API search resources");
+        Configuration config = new Configuration(new File("target"), "Goldman Rest API Regression");
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }

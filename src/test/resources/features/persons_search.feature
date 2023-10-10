@@ -12,7 +12,7 @@ Feature: Persons Crud operations testing
 
   Scenario: Create & search the Person data.
       Given path "persons/search"
-      And def requestBodySearch = read('..//resources/data/persons/person_search.json')
+      And def requestBodySearch = read('..//data/persons/person_search.json')
       And set requestBodySearch.personId[0] = personIds
       And request requestBodySearch
       When method Post
@@ -23,7 +23,7 @@ Feature: Persons Crud operations testing
 
   Scenario: Update the Person data.
     Given path "persons"
-    And def requestBodySearch = read('..//resources/data/persons/person_create.json')
+    And def requestBodySearch = read('..//data/persons/person_create.json')
     And set requestBodySearch[0].personId = personIds
     And set requestBodySearch[0].middleName = "UpdMidName"
     And request requestBodySearch

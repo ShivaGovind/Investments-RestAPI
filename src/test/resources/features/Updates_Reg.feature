@@ -1,5 +1,5 @@
 @RegressionAPI1
-Feature: Retrieve the information by given API resource.
+Feature: Update the information by given API resource.
 
   Background:
     * def tokenQA = callonce read('..//features/Token.feature')
@@ -7,12 +7,12 @@ Feature: Retrieve the information by given API resource.
     * url "https://goldmanqavil.v3locitydev.com/api/v1/queries"
     * header content-type = "application/json"
 
-  Scenario Outline: <Scenario>
+  Scenario Outline: <Scenario> - <TestCaseID>
     Given path '<resource>'
     And request requestBody
-    When method Post
+    When method Put
     Then status <status>
     And print response
 
     Examples:
-      | read('..//data/AllSearch_searchId_Regression.csv') |
+      | read('..//data/*.csv') |

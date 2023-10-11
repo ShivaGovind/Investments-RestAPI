@@ -7,15 +7,16 @@ Feature: Create the information by given API resource.
     * url "https://goldmanqavil.v3locitydev.com/api/v1/queries"
     * header content-type = "application/json"
 
-  Scenario Outline: <Scenario> - <TestCaseID>
+  Scenario Outline: <Scenario>
     Given path '<resource>'
     And request requestBody
-    When method Post
+    And print requestBody
+    When method <method>
     Then status <status>
     And print response
 
     Examples:
-      | read('..//data/AllSearch_searchId_Regression.csv') |
+      | read('..//data/Search_SearchId_Regression_File1.csv') |
 
   Scenario Outline: <Scenario> - <TestCaseID>
     Given path '<resource>'

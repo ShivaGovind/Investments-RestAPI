@@ -5,7 +5,7 @@ Feature: Persons Crud operations
   * def tokenQA = callonce read('..//features/Token.feature')
   * header token = tokenQA.response.token
   * print tokenQA
-  * url "https://goldmanqavil.v3locitydev.com/api/v1/queries"
+  * url baseUrl
   * header content-type = "application/json"
 
 

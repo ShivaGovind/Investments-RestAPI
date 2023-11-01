@@ -1,0 +1,1469 @@
+﻿TestCaseID,Scenario,resource,requestBody,status,errorMessage,Expected Result,expectEmptyResponse,host,version,url,method
+Addresses_Create/Update,Addresses_Create/Update_Verify the search with all fields,addresses,"[
+{
+  ""entityType"": ""Company"",
+  ""entityId"": ""250096"",
+  ""primaryAddress"": {
+    ""address1"": ""333 11th ST"",
+    ""address2"": ""abc"",
+    ""address3"": ""12"",
+    ""city"": ""texas"",
+    ""state"": ""Texas"",
+    ""zip"": ""641050009"",
+    ""country"": ""United States""
+  }
+},
+{
+  ""entityType"": ""Manager"",
+  ""entityId"": ""50274"",
+  ""primaryAddress"": {
+    ""address1"": ""333 11th ST"",
+    ""address2"": ""abc"",
+    ""address3"": ""12"",
+    ""city"": ""Texas"",
+    ""state"": ""Texas"",
+    ""zip"": ""641050009"",
+    ""country"": ""United States""
+  }
+},
+{
+  ""entityType"": ""Investor"",
+  ""entityId"": ""250087"",
+  ""primaryAddress"": {
+    ""address1"": ""333 11th ST"",
+    ""address2"": ""abc"",
+    ""address3"": ""123"",
+    ""city"": ""Texas"",
+    ""state"": ""TEXAS"",
+    ""zip"": ""641050009"",
+    ""country"": ""United States""
+  }
+},
+{
+  ""entityType"": ""Person"",
+  ""entityId"": ""84860891"",
+  ""primaryAddress"": {
+    ""address1"": ""333 11th ST"",
+    ""address2"": ""abc"",
+    ""address3"": ""23"",
+    ""city"": ""texas"",
+    ""state"": ""TEXAS"",
+    ""zip"": ""641050009"",
+    ""country"": ""United States""
+  }
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Attributes_Create,Allocationconfig_Create_Verify the search with all fields,attributes,"[
+{
+  ""attributeName"": ""Fund Type"",
+  ""attributeValue"": ""Capital@JGS1"",
+  ""seqNo"": 14,
+  ""attributeInternalValue"": ""34""
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Companies_Create,Companies_Create_Verify the search with all fields,companies,"[
+{
+  ""companyName"": ""JG@company23"",
+  ""companyLongName"": ""JG45"",
+  ""allowDuplicate"": ""Y"",
+  ""currency"": ""EUR"",
+  ""gicsCode"": {
+    ""gicsTier1Code"": ""01"",
+    ""gicsTier1Name"": ""Other"",
+    ""gicsTier2Code"": ""00"",
+    ""gicsTier2Name"": ""Other"",
+    ""gicsTier3Code"": ""00"",
+    ""gicsTier3Name"": ""Other"",
+    ""gicsTier4Code"": ""00"",
+    ""gicsTier4Name"": ""Other""
+  },
+  ""financialInfo"": {
+    ""isPublic"": ""Y"",
+    ""ticker"": ""ABC"",
+    ""exchange"": ""TVC""
+  }
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_FundInvestmentTerms_Commitment_Create/Update,DataSheet_Commitment_Create/Update_Verify the search with all fields,datasheets,"[
+{
+  ""datasheetOwner"": ""Fund Investment Terms"",
+  ""objectKey"": ""346193"",
+  ""datasheetName"": ""DS___COMMITMENT"",
+  ""instance"": [
+    {
+      ""datasheetInstanceName"": null,
+      ""attributes"": [
+        {
+          ""rowNumber"": null,
+          ""datasheetFieldName"": ""DS___COMMITMENT"",
+          ""datasheetFieldValue"": 8890
+        }
+      ]
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Funds_Attributes_Create/Update,DataSheet_Attributes_Create/Update_Verify the search with all fields,datasheets,"[
+{
+  ""datasheetOwner"": ""Funds"",
+  ""objectKey"": ""346261"",
+  ""datasheetName"": ""DS_ATTRIBUTES"",
+  ""instance"": [
+    {
+      ""datasheetInstanceName"": null,
+      ""attributes"": [
+        {
+          ""rowNumber"": null,
+          ""datasheetFieldName"": ""DS_EXPIRATION_DATE"",
+          ""datasheetFieldValue"": ""2023-07-01""
+        }
+      ]
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Company_BrokerInfo_Create/Update,DataSheet_BrokerInfo_Create/Update_Verify the search with all fields,datasheets,"[
+{
+  ""datasheetOwner"": ""Company"",
+  ""objectKey"": ""250083"",
+  ""datasheetName"": ""DS_BROKER_INFO"",
+  ""instance"": [
+    {
+      ""datasheetInstanceName"": null,
+      ""attributes"": [
+        {
+          ""rowNumber"": null,
+          ""datasheetFieldName"": ""DS_BROKER_CODE"",
+          ""datasheetFieldValue"": ""9787688888888""
+        }
+      ]
+    }
+  ]
+}]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Funds_ClientReporting_Create/Update,DataSheet_ClientReporting_Create/Update_Verify the search with all fields,datasheets,"[{
+        ""datasheetOwner"": ""Funds"",
+        ""objectKey"": 346268,
+        ""datasheetName"": ""DS_CLIENT_REPORTING"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_AS_OF_DATE"",
+                        ""datasheetFieldValue"": ""2010-01-01""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_FEES_AND_EXPENSE_RESER"",
+                        ""datasheetFieldValue"": ""22.02""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_OVERCOMMITMENT_PROVISI"",
+                        ""datasheetFieldValue"": ""5.00112233""
+                    }
+                ]
+            }
+        ]
+    }]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Direct Investment_DS_Details_Create/Update,DataSheet_DS_Details_Create/Update_Verify the search with all fields,datasheets,"[
+    
+    {
+        ""datasheetOwner"": ""Direct Investment"",
+        ""objectKey"": ""528115"",
+        ""datasheetName"": ""DS_DETAILS"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_AVERAGE_COST_PER_SHARE"",
+                        ""datasheetFieldValue"": ""12""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_FI Contribution_DS_Details02_Create/Update,DataSheet_DS_Details02_Create/Update_Verify the search with all fields,datasheets,"[
+{
+  ""datasheetOwner"": ""FI Contribution"",
+  ""objectKey"": ""1996565"",
+  ""datasheetName"": ""DS_DETAILS_02"",
+  ""instance"": [
+    {
+      ""datasheetInstanceName"": null,
+      ""attributes"": [
+        {
+          ""rowNumber"": null,
+          ""datasheetFieldName"": ""DS_CALL_EFFECTIVE_DATE"",
+          ""datasheetFieldValue"": ""2023-09-06""
+        }
+      ]
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Investor Entity_DS_Details07_Create/Update,DataSheet_DS_Details07_Create/Update_Verify the search with all fields,datasheets,"[ {
+        ""datasheetOwner"": ""Investor Entity"",
+        ""objectKey"": 250091,
+        ""datasheetName"": ""DS_DETAILS_07"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_WEBSITE"",
+                        ""datasheetFieldValue"": ""Vitech.com""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_OWNERSHIP"",
+                        ""datasheetFieldValue"": ""Manager""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_IL_INVESTOR_"",
+                        ""datasheetFieldValue"": ""Y""
+                    }
+                ]
+            }
+        ]
+    }]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund Valuation_DS_Details08_Create/Update,DataSheet_DS_Details08_Create/Update_Verify the search with all fields,datasheets,"[
+{
+  ""datasheetOwner"": ""Fund Valuation"",
+  ""objectKey"": ""166030"",
+  ""datasheetName"": ""DS_DETAILS_08"",
+  ""instance"": [
+    {
+      ""datasheetInstanceName"": null,
+      ""attributes"": [
+        {
+          ""rowNumber"": null,
+          ""datasheetFieldName"": ""DS_GP_SHARE_2"",
+          ""datasheetFieldValue"": ""500""
+        }
+      ]
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_DI open Buy_DI_External_Lot_Create/Update,DataSheet_DI_External_Lot_Create_Verify the search with all fields,datasheets,"[
+{
+  ""datasheetOwner"": ""DI Buy"",
+  ""objectKey"": ""1996571"",
+  ""datasheetName"": ""DS_DI_LOT"",
+  ""instance"": [
+    {
+      ""datasheetInstanceName"": null,
+      ""attributes"": [
+        {
+          ""rowNumber"": null,
+          ""datasheetFieldName"": ""DS_EXTERNAL_LOT_ID"",
+          ""datasheetFieldValue"": 235
+        }
+      ]
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Funds_DI_Expenses_Create/Update,DataSheet_DI_Expenses_Create_Verify the search with all fields,datasheets,"[{
+        ""datasheetOwner"": ""Funds"",
+        ""objectKey"": 346257,
+        ""datasheetName"": ""DS_EXPENSES"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_DATE_6"",
+                        ""datasheetFieldValue"": ""2013-01-03""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_IRR__"",
+                        ""datasheetFieldValue"": ""1235""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_ANNUAL_MGMT_FEES_IN_PI"",
+                        ""datasheetFieldValue"": 33.23
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund Investment_FI_Details_Create/Update,DataSheet_FI_Details_Create_Verify the search with all fields,datasheets,"[
+{
+  ""datasheetOwner"": ""Fund Investment"",
+  ""objectKey"": ""528122"",
+  ""datasheetName"": ""DS_FI_DETAILS"",
+  ""instance"": [
+    {
+      ""datasheetInstanceName"": null,
+      ""attributes"": [
+        {
+          ""rowNumber"": null,
+          ""datasheetFieldName"": ""DS_AGGREGATE_PI_NAME"",
+          ""datasheetFieldValue"": ""Priyanka""
+        }
+      ]
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Manager Instrument_DS_General Info_Create/Update,DataSheet_DS_General Info_Create/Update_Verify the search with all fields ,datasheets,"[
+{
+  ""datasheetOwner"": ""Funds"",
+  ""objectKey"": ""346265"",
+  ""datasheetName"": ""DS_GENERAL_INFO"",
+  ""instance"": [
+    {
+      ""datasheetInstanceName"": null,
+      ""attributes"": [
+        {
+          ""rowNumber"": null,
+          ""datasheetFieldName"": ""DS_EXPECTED_DATE_2"",
+          ""datasheetFieldValue"": ""2023-01-01""
+        }
+      ]
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Investor Entity_GICS_Create/Update,DataSheet_DS_GICS_Create/Update_Verify the search with all fields,datasheets,"[{
+        ""datasheetOwner"": ""Investor Entity"",
+        ""objectKey"": 250136,
+        ""datasheetName"": ""DS_GICS"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_GICS_CODE"",
+                        ""datasheetFieldValue"": ""55""
+                    }
+                ]
+            }
+        ]
+    }]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_DI sell_DS_INKIND_Create/Update,DataSheet_DS_INKIND_Create/Update_Verify the search with all fields,datasheets,"[
+    {
+        ""datasheetOwner"": ""DI Sell"",
+        ""objectKey"": ""1997594"",
+        ""datasheetName"": ""DS_IN_KIND"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_IN_KIND"",
+                        ""datasheetFieldValue"": ""Y""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Manager Instrument_DS_Investment category_Create/Update,DataSheet_DS_Investment category_Create/Update_Verify the search with all fields,datasheets,"[
+    {
+        ""datasheetOwner"": ""Funds"",
+        ""objectKey"": ""346265"",
+        ""datasheetName"": ""DS_INVESTMENT_CATEGORY"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_CATEGORY_NAME"",
+                        ""datasheetFieldValue"": ""zxc@1""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Investor Instrument_DS_LAST_PAYMENT_DATE_TRACKER_Create/Update,DataSheet_DS_LAST_PAYMENT_DATE_TRACKER_Create/Update_Verify the search with all fields ,datasheets,"[
+    {
+        ""datasheetOwner"": ""Investor Portfolio"",
+        ""objectKey"": ""346620"",
+        ""datasheetName"": ""DS_LAST_PAYMENT_DATE_TRACKER"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": ""234555"",
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_LAST_PAYMENT_DATE"",
+                        ""datasheetFieldValue"": ""2023-01-01""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Funds_DS_Loans_Create/Update,DataSheet_DS_Loans_Create/Update_Verify the search with all fields,datasheets,"[
+{
+        ""datasheetOwner"": ""Funds"",
+        ""objectKey"": 346265,
+        ""datasheetName"": ""DS_LOANS"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_LOAN_DATE_2"",
+                        ""datasheetFieldValue"": ""2023-01-13""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_OUTSTANDING_PRINCIPAL_2"",
+                        ""datasheetFieldValue"": 89012
+                    },
+{
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_PAID_AMOUNT_2"",
+                        ""datasheetFieldValue"": 1000
+                    }
+                ]
+            }
+        ]
+    }]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund Investment_DS_Portfolioevents_Create/Update,DataSheet_DS_Portfolioevents_Create/Update_Verify the search with all fields,datasheets,"[
+    {
+        ""datasheetOwner"": ""Fund Investment"",
+        ""objectKey"": ""528122"",
+        ""datasheetName"": ""DS_PORTFOLIO_EVENTS"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"":null,
+                        ""datasheetFieldName"": ""DS_EVENT_TYPE"",
+                        ""datasheetFieldValue"": ""Fully Transferred""
+                    },
+                    {
+                        ""rowNumber"":null,
+                        ""datasheetFieldName"": ""DS_PORTFOLIO_EVENT_DATE"",
+                        ""datasheetFieldValue"": ""2020-01-01""
+                    }
+                ]
+            },
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"":null,
+                        ""datasheetFieldName"": ""DS_EVENT_TYPE"",
+                        ""datasheetFieldValue"": ""Fully Transferred""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund Investment_DS_Prorata_Create/Update,DataSheet_DS_Prorata_Create/Update_Verify the search with all fields,datasheets,"[
+    {
+        ""datasheetOwner"": ""Fund Investment"",
+        ""objectKey"": ""528122"",
+        ""datasheetName"": ""DS_PRORATA"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"":null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_AS_OF_DATE_2"",
+                        ""datasheetFieldValue"": ""2134sdfsadfdf""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_UNDERLYING_COMPANY_NAM"",
+                        ""datasheetFieldValue"": ""60""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_PRORATA_PERCENTAGE"",
+                        ""datasheetFieldValue"": ""80.1234567""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Funds_DS_Strategy_Create/Update,DataSheet_DS_Strategy_Create/Update_Verify the search with all fields,datasheets,"[
+    {
+        ""datasheetOwner"": ""Funds"",
+        ""objectKey"": 346265,
+        ""datasheetName"": ""DS_STRATEGY"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_PI_REPORTING_SUB_STRAT"",
+                        ""datasheetFieldValue"": ""Trading""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_SUB_STRATEGY_ALLOCATIO"",
+                        ""datasheetFieldValue"": ""431.09876543""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Direct Investment_DirectInvestmentOverrides_Create/Update,DataSheet_DirectInvestmentOverrides_Create_Verify the search with all fields,datasheets,"[
+    {
+        ""datasheetOwner"": ""Direct Investment"",
+        ""objectKey"": ""528115"",
+        ""datasheetName"": ""DS_OVERRIDES"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": 1,
+                        ""datasheetFieldName"": ""DS_QUARTER_DATE"",
+                        ""datasheetFieldValue"": ""2010-11-11""
+                    },
+                    {
+                        ""rowNumber"": 1,
+                        ""datasheetFieldName"": ""DS_SPONSOR_INVESTMENT_AMO_2"",
+                        ""datasheetFieldValue"": ""50""
+                    },
+                    {
+                        ""rowNumber"": 1,
+                        ""datasheetFieldName"": ""DS_DI_INVESTMENT_VALUE"",
+                        ""datasheetFieldValue"": ""60""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Funds_Ds_Term Condition_Create/Update,DataSheet_Ds_Term Condition_Create_Verify the search with all fields,datasheets,"[
+    {
+        ""datasheetOwner"": ""Funds"",
+        ""objectKey"": 346265,
+        ""datasheetName"": ""DS_TERM___CONDITION"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_EXTERNAL_FUND_ID_2"",
+                        ""datasheetFieldValue"": ""Write a test""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_INVESTMENT_SUMMARY_2"",
+                        ""datasheetFieldValue"": ""Heading towards""
+                    },
+                    {
+                        ""rowNumber"":null,
+                        ""datasheetFieldName"": ""DS_FEE_OUT_OF_COMMITMENT_"",
+                        ""datasheetFieldValue"": ""Y""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Funds_VOLCKER_MAPPINGS_Create/Update,DataSheet_DS_VOLCKER_MAPPINGS_Create_Verify the search with all fields,datasheets,"[
+   {
+        ""datasheetOwner"": ""Funds"",
+        ""objectKey"": 346265,
+        ""datasheetName"": ""DS_VOLCKER_MAPPINGS"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_COMMITMENT_DATE"",
+                        ""datasheetFieldValue"": ""2015-01-13""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_VOLCKER_NOTES"",
+                        ""datasheetFieldValue"": ""Notes""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_GP_LEGAL_ENTITY"",
+                        ""datasheetFieldValue"": ""Enemy""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_wire instructions_DS_WIRE_INSTRUCTION_BLOCKER_Create/Update,DataSheet_DS_WIRE_INSTRUCTION_BLOCKER_Create/Update_Verify the search with all fields,datasheets,"[
+{
+  ""datasheetOwner"": ""Wire Instruction"",
+  ""objectKey"": ""120336"",
+  ""datasheetName"": ""DS_WIRE_INSTRUCTION_BLOCKER"",
+  ""instance"": [
+    {
+      ""datasheetInstanceName"": null,
+      ""attributes"": [
+        {
+          ""rowNumber"": null,
+          ""datasheetFieldName"": ""DS_BROKERAGE_DETAILS_2"",
+          ""datasheetFieldValue"": ""WI Brokerage Heading2""
+        }
+      ]
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund Investor Terms_DS_Details04_Create/Update,DataSheet_DS_Details04_Create/Update_Verify the search with all fields,datasheets,"[
+    {
+        ""datasheetOwner"": ""Fund Investor Terms"",
+        ""objectKey"": ""528125"",
+        ""datasheetName"": ""DS_DETAILS_04"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_WITHHOLD_CONTRIB_"",
+                        ""datasheetFieldValue"": ""N""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_RE__"",
+                        ""datasheetFieldValue"": ""12345""
+                    },
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_ACCOUNT_NUMBER"",
+                        ""datasheetFieldValue"": ""234""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Person_DS_Details05_Create/Update,DataSheet_DS_Details05_Create/Update_Verify the search with all fields,datasheets,"[
+ {
+   ""datasheetOwner"": ""Person"",
+   ""objectKey"": 84860508,
+   ""datasheetName"": ""DS_DETAILS_05"",
+   ""instance"": [
+      {
+         ""datasheetInstanceName"": null,
+         ""attributes"": [
+            {
+               ""rowNumber"": null,
+               ""datasheetFieldName"": ""DS_EXTERNAL_PERSON_ID"",
+               ""datasheetFieldValue"": ""SSGKRT988""
+            },
+            {
+               ""rowNumber"": null,
+               ""datasheetFieldName"": ""DS_CASHIER_LOCATION"",
+               ""datasheetFieldValue"": ""tyrtr""
+            },
+            {
+               ""rowNumber"": null,
+               ""datasheetFieldName"": ""DS_CASHIER_FAX"",
+               ""datasheetFieldValue"": ""9866FAXKRT""
+            },
+            {
+               ""rowNumber"": null,
+               ""datasheetFieldName"": ""DS_MAILING"",
+               ""datasheetFieldValue"": ""insSSG@VITECHINC.COM""
+            }
+         ]
+      }
+   ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_FI Distribution_DS_Details03_Create/Update,DataSheet_DS_Details03_Create/Update_Verify the search with all fields,datasheets,"[
+    {
+        ""datasheetOwner"": ""FI Distribution"",
+        ""objectKey"": ""1996586"",
+        ""datasheetName"": ""DS_DETAILS_03"",
+        ""instance"": [
+            {
+                ""datasheetInstanceName"": null,
+                ""attributes"": [
+                    {
+                        ""rowNumber"": null,
+                        ""datasheetFieldName"": ""DS_SALE_PRICE"",
+                        ""datasheetFieldValue"": ""20""
+                    }
+                ]
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DirectInvestAllocation_Create,DirectInvestAllocation_Create_Verify the search with all fields,directInvestAllocations,"[
+{
+  ""investmentId"": 528034,
+  ""date"": ""2023-09-25"",
+  ""allocationCode"": ""Basis"",
+  ""transStatus"": ""Posted"",
+  ""poolName"": ""% of Commit"",
+  ""description"": ""GOLD-1516 transaction-1"",
+  ""lotId"": 284092,
+  ""callable"": ""Y"",
+  ""distributable"": ""Y"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.2,
+  ""dicAmount"": {
+    ""amount"": 14500,
+    ""vat"": 0
+  },
+  ""yfcAmount"": {
+    ""amount"": null,
+    ""vat"": null
+  },
+  ""comments"": [
+    {
+      ""type"": ""General"",
+      ""status"": ""Open"",
+      ""comments"": ""string"",
+      ""seqNo"": 0
+    }
+  ]
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DirectInvestTranscations_Create,DirectInvestTranscations_Create_Verify the search with all fields,directInvestTransactions,"[
+    {
+        ""investmentId"": 529326,
+        ""lotId"": 284846,
+        ""securityId"": null,
+        ""date"": ""2021-01-01"",
+        ""transType"": ""Buy"",
+        ""transSubType"": ""In-Kind"",
+        ""transStatus"": ""Posted"",
+        ""units"": 10,
+        ""useFxRate"": ""Y"",
+        ""fxRate"": 1.0,
+        ""yfcTransAmounts"": {
+            ""unitPrice"": null,
+            ""totalAmount"": null,
+            ""capExpense"": null,
+            ""expense"": null,
+            ""commission"": null,
+            ""fee"": null,
+            ""parValue"": null,
+            ""totalPrincipal"": null
+        },
+        ""dicTransAmounts"": {
+            ""unitPrice"": 10,
+            ""totalAmount"": 100,
+            ""capExpense"": 13,
+            ""expense"": 14,
+            ""commission"": 15,
+            ""fee"": 16,
+            ""parValue"": 10,
+            ""totalPrincipal"": 100
+        },
+        ""comments"": [
+            {
+                ""type"": ""General"",
+                ""status"": ""Open"",
+                ""comments"": ""Created Buy"",
+                ""seqNo"": 1
+            }
+        ],
+        ""autoValue"": ""Y""
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundAllocations_Create,FundAllocations_Create_Verify the search with all fields,fundAllocations,"[
+{
+  ""fundId"":""346178"",
+  ""date"": ""2023-08-02"",
+  ""allocationCode"": ""Basis"",
+  ""transStatus"": ""Posted"",
+  ""poolName"": ""% of Commit"",
+  ""description"": ""AA"",
+  ""transCurrency"": ""USD"",
+  ""callable"": ""Y"",
+  ""distributable"": ""Y"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.2,
+  ""tcAmount"": {
+    ""amount"": 200,
+    ""vat"": 0
+  },
+  ""ycAmount"": {
+    ""amount"": null,
+    ""vat"": null
+  }
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestAllocations_Create,FundInvestAllocations_Create_Verify the search with all fields,fundInvestAllocations,"[
+{
+  ""investmentId"": 528128,
+  ""date"": ""2023-06-13"",
+  ""allocationCode"": ""Basis"",
+  ""transStatus"": ""Posted"",
+  ""poolName"": ""% of Commit"",
+  ""description"": ""spfi"",
+  ""callable"": ""Y"",
+  ""distributable"": ""Y"",
+  ""useFxRate"": ""Y"",
+  ""fxRate"": 1.5,
+  ""ficAmount"": {
+    ""amount"": 5300,
+    ""vat"": 0
+  },
+  ""yfcAmount"": {
+    ""amount"": null,
+    ""vat"": null
+  }
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestCashDistributions_Create,FundInvestCashDistributions_Create_Verify the search with all fields,fundInvestCashDistributions,"[
+    {
+        ""investmentId"": 528128,
+        ""date"": ""2020-01-11"",
+        ""transSubType"": null,
+        ""transStatus"": ""posted"",
+        ""distributable"": ""Y"",
+        ""deemed"": ""Y"",
+        ""netTransaction"": ""Y"",
+        ""realizationStatus"": ""Partially Realized"",
+        ""terminated"": null,
+        ""recalledDistribution"": null,
+        ""underlyingCompanies"": [
+            {
+                ""companyId"": 250096
+            }
+        ],
+        ""useFxRate"": ""Y"",
+        ""fxRate"": 1.2,
+        ""yfcDistributionAmounts"": {
+            ""grossDistribution"": null,
+            ""stateWhTax"": null,
+            ""foreignWhTax"": null,
+            ""otherWhTax"": null,
+            ""recallable"": null
+        },
+        ""ficDistributionAmounts"": {
+            ""grossDistribution"": 50000,
+            ""stateWhTax"": 1000,
+            ""foreignWhTax"": 1000,
+            ""otherWhTax"": 1000,
+            ""recallable"": 1000
+        },
+        ""distributionComponents"": [
+            {
+                ""componentName"": ""Regular Income"",
+                ""yfcComponentAmount"": null,
+                ""ficComponentAmount"": 500
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestContribution_Create,FundInvestContribution_Create_Verify the search with all fields,fundInvestContributions,"[
+    {
+        ""investmentId"": 528128,
+        ""date"": ""2023-06-25"",
+        ""duedate"": ""2023-06-24"",
+        ""issueDate"": ""2023-06-24"",
+        ""orderDate"": ""2023-06-24"",
+        ""receiptDate"": ""2023-06-24"",
+        ""cflowDate"": ""2023-06-24"",
+        ""transSubType"": null,
+        ""transStatus"": ""Posted"",
+        ""callable"": ""Y"",
+        ""deemed"": ""N"",
+        ""netTransaction"": ""N"",
+        ""lpInterestPurchase"": ""N"",
+        ""lpInterestPurchaseOption"": null,
+        ""underlyingCompanies"": [
+            {
+                ""companyId"": 250096
+            }
+        ],
+        ""useFxRate"": ""Y"",
+        ""fxRate"": 1.5,
+        ""yfcContributionAmounts"": {
+            ""contributedCapital"": null,
+            ""contributedCapitalOutOfCommit"": null,
+            ""feesInCommit"": null,
+            ""feesOutCommit"": null,
+            ""expenseInCommit"": null,
+            ""expenseOutOfCommit"": null,
+            ""interestSubClose"": null
+        },
+        ""ficContributionAmounts"": {
+            ""contributedCapital"": 300,
+            ""contributedCapitalOutOfCommit"": 700,
+            ""feesInCommit"": 300,
+            ""feesOutCommit"": 30,
+            ""expenseInCommit"": 200,
+            ""expenseOutOfCommit"": 20,
+            ""interestSubClose"": 90
+        }
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestInkindDistributions_Create,FundInvestInkindDistributions_Create_Verify the search with all fields,fundInvestInkindDistributions,"[
+    {
+        ""investmentId"": 528122,
+        ""date"": ""2023-01-01"",
+        ""transSubType"": null,
+        ""transStatus"": ""Posted"",
+        ""distributable"": ""Y"",
+        ""deemed"": ""Y"",
+        ""netTransaction"": ""Y"",
+        ""realizationStatus"": ""ROC/Income"",
+        ""terminated"": ""Y"",
+        ""recalledDistribution"": ""Y"",
+        ""units"": 100,
+        ""useFxRate"": ""Y"",
+        ""fxRate"": 1.25,
+        ""underlyingCompany"": {
+            ""companyId"": 250083,
+            ""securityName"": ""AA sec"",
+            ""holdAsDirect"": ""Y"",
+            ""useCostBasisForDiBuy"": ""N""
+        },
+        ""yfcDistributionAmounts"": {
+            ""unitCostBasis"": null,
+            ""totalCostBasis"": null,
+            ""unitDistValue"": null,
+            ""totalDistValue"": null,
+            ""recallable"": null
+        },
+        ""ficDistributionAmounts"": {
+            ""unitCostBasis"": ""10"",
+            ""totalCostBasis"": null,
+            ""unitDistValue"": 20,
+            ""totalDistValue"": null,
+            ""recallable"": 30
+        },
+        ""distributionComponents"": [
+            {
+                ""componentName"": ""Regular Income"",
+                ""yfcComponentAmount"": null,
+                ""ficComponentAmount"": 120
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestmentCommitments_Create,FundInvestmentCommitments_Create_Verify the search with all fields,fundInvestmentCommitments,"[
+    {
+      ""investmentId"": 528122,
+      ""commitmentSchedule"": [
+        {
+          ""date"": ""2023-02-01"",
+          ""useFxRate"": ""Y"",
+          ""fxRate"": 1.234,
+          ""transStatus"": ""Posted"",
+          ""yfcAmount"": null,
+          ""ficAmount"": 600
+        }		
+      ]
+    }	
+  ]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundValuations_Create,FundValuations_Create_Verify the search with all fields,fundValuations,"[
+{
+  ""fundId"": 346261,
+  ""date"": ""2036-07-23"",
+  ""transStatus"": ""Posted"",
+  ""valuationType"": ""Final"",
+  ""valuationSource"": ""SEI"",
+  ""yfcValuationAmounts"": {
+    ""totalPartnersCapital"": 200,
+    ""cash"": 300,
+    ""investmentsAtFmv"": 455,
+    ""adjPartnersCapital"": 23,
+    ""investmentsAtCost"": 45,
+    ""contributedCapital"": 50,
+    ""lpShare"": 10,
+    ""gpShare"": 15,
+    ""carriedIntProvision"": 43
+  },
+  ""isCarry"": ""Y"",
+  ""adjustmentDesc"": ""TestNG""
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Funds_Create,Funds_Create_Verify the search with all fields,funds,"[
+    {
+        ""fundName"": ""JGtesting01"",
+        ""fundLongName"": ""VA"",
+        ""allowDuplicate"": ""Y"",
+        ""currency"": ""USD"",
+        ""currencyTable"": ""MAIN"",
+        ""managerId"": 250089,
+        ""fundGroupId"": [
+            3510
+        ],
+        ""fundType"": ""Energy"",
+        ""fundSize"": 0,
+        ""vintageYear"": 0,
+        ""region"": ""Australia"",
+        ""industry"": ""Mining"",
+        ""subIndustry"": ""internet""
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fxRates_Create/Update,fxRates_Create/Update_Verify the search with all fields,fxRates,"[
+    {
+        ""rateTable"": ""MAIN"",
+        ""rates"": [
+            {
+                ""date"": ""2017-01-01"",
+                ""fromCurrency"": ""USD"",
+                ""toCurrency"": ""EUR"",
+                ""rate"": 5.5
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+InvestorCommitments_Create,InvestorCommitments_Create_Verify the search with all fields,investorCommitments,"[
+    {
+        ""investorId"": 528118,
+        ""commitmentSchedule"": [
+            {
+                ""date"": ""2016-01-01"",
+                ""useFxRate"": ""Y"",
+                ""fxRate"": ""22.7889"",
+                ""transStatus"": ""Posted"",
+                ""type"": ""Adjustment"",
+                ""description"": ""Test Investor commitment1"",
+                ""yfcAmount"": null,
+                ""icAmount"": ""300""
+            }
+        ]
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorEntities_Create,investorEntities_Create_Verify the search with all fields,investorEntities,"[
+    {
+        ""investorEntityName"": ""JG Investor @2523"",
+        ""investorEntityLongName"": ""Abc1"",
+        ""allowDuplicate"": ""Y"",
+        ""defaultPortfolioCurrency"": ""EUR"",
+        ""defaultPortfolioCurrencyTable"": ""MAIN"",
+        ""repCode"": ""1234""
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+loans_Create,loans_Create_Verify the search with all fields,loans,"[
+{
+  ""fundId"": 346269,
+  ""loanDate"": ""2010-01-01"",
+  ""outstandingPrincipal"": 1.5,
+  ""datePaid"": ""2010-02-01"",
+  ""paidAmount"": 4000
+}
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+managers_Create,managers_Create_Verify the search with all fields,managers,"[
+        {
+            ""managerName"": ""JG_CreateManager_1"",
+            ""managerLongName"": ""HS_CreateManager_43"",
+            ""allowDuplicate"": ""Y"",
+            ""isYourOrg"": ""Y""
+        }
+    ]
+",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Persons_Create,Persons_Create_Verify the search with all fields,persons,"[
+        {
+            ""firstName"": ""JG PER98"",
+            ""lastName"": ""JG PER95"",
+            ""middleName"": null,
+            ""repCode"": ""PE3003"",
+            ""title"": null,
+            ""salutation"": null,
+            ""email"": ""pr11@gmail.com""
+        }
+    ]
+",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+securities_Create,securities_Create_Verify the search with all fields,securities,"[
+{
+  ""companyId"": 250203,
+  ""securityName"": ""sp@equity-011"",
+  ""securityType"": ""Equity"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""isUnitized"": ""Y"",
+  ""systemAttributes"": [
+    {
+      ""attributeName"": ""Units"",
+      ""attributeValue"": ""100""
+    }
+  ],
+  ""customAttributes"": [
+    {
+      ""attributeName"": ""Exchange"",
+      ""attributeValue"": ""Valuation""
+    }
+  ]
+}
+]
+",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions_funds_Create,wireInstructions_funds_Create_Verify the search with all fields,wireInstructions/funds,"[
+    {
+        ""fundId"": 347490,
+        ""wireInstruction"": {
+            ""wireInstructionId"": 0,
+            ""type"": ""Investor Internal Contrib"",
+            ""transStatus"": ""Posted"",
+            ""savedBy"": ""string"",
+            ""savedDate"": ""string"",
+            ""submittedBy"": ""string"",
+            ""submittedDate"": ""string"",
+            ""unSubmittedBy"": ""string"",
+            ""unSubmittedDate"": ""string"",
+            ""postedBy"": ""string"",
+            ""postedDate"": ""string"",
+            ""cancelledBy"": ""string"",
+            ""cancelledDate"": ""string"",
+            ""wireInstructionName"": ""JG  IIC Posted"",
+            ""startDate"": ""2010-01-01"",
+            ""verifyDate"": ""2010-02-01"",
+            ""stopDate"": null,
+            ""currency"": ""EUR"",
+            ""isDefault"": ""N"",
+            ""custodianPortfNumber"": null,
+            ""cusipId"": null,
+            ""recipientBankName"": null,
+            ""bankPhoneNumber"": null,
+            ""recipientBankAccountName"": null,
+            ""recipientBankAccountNumber"": null,
+            ""beneficiaryBankAddress1"": null,
+            ""beneficiaryBankAddress2"": null,
+            ""beneficiaryBankCity"": null,
+            ""beneficiaryBankState"": null,
+            ""beneficiaryBankZip"": null,
+            ""beneficiaryBankCountry"": null,
+            ""recipientBankIbanCode"": null,
+            ""recipientBankAbaNo"": null,
+            ""recipientBankSwiftCode"": null,
+            ""ffcAccountName"": null,
+            ""ffcAccountNumber"": null,
+            ""intermediaryBankName"": null,
+            ""intermediaryBankAddress1"": null,
+            ""intermediaryBankAddress2"": null,
+            ""intermediaryBankCity"": null,
+            ""intermediaryBankState"": null,
+            ""intermediaryBankZip"": null,
+            ""intermediaryBankCountry"": null,
+            ""intermediaryBankSwiftCode"": null,
+            ""intermediaryBankAbaNo"": null,
+            ""intermediaryBankAccountName"": null,
+            ""intermediaryBankAccountNumber"": null,
+            ""intermediaryBankChipsUnqId"": null,
+            ""re"": null,
+            ""paymentDetails"": null,
+            ""instructions1"": null,
+            ""instructions2"": null,
+            ""instructions3"": null,
+            ""brokerageAccountNumber"": 45566,
+            ""brokerageAccountType"": ""GSCO"",
+            ""blocker1Name"": null,
+            ""blocker1Account"": null,
+            ""blocker1Id"": null,
+            ""blocker2Name"": null,
+            ""blocker2Account"": null,
+            ""blocker2Id"": null,
+            ""blocker3Name"": null,
+            ""blocker3Account"": null,
+            ""blocker3Id"": null,
+            ""blocker4Name"": null,
+            ""blocker4Account"": null,
+            ""blocker4Id"": null,
+            ""blocker5Name"": null,
+            ""blocker5Account"": null,
+            ""blocker5Id"": null,
+            ""blocker6Name"": null,
+            ""blocker6Account"": null,
+            ""blocker6Id"": null,
+            ""blocker7Name"": null,
+            ""blocker7Account"": null,
+            ""blocker7Id"": null,
+            ""blocker8Name"": null,
+            ""blocker8Account"": null,
+            ""blocker8Id"": null,
+            ""blocker9Name"": null,
+            ""blocker9Account"": null,
+            ""blocker9Id"": null
+        }
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions_managers_Create,wireInstructions_managers_Create_Verify the search with all fields,wireInstructions/managers,"[
+    {
+        ""managerId"": 250173,
+        ""wireInstruction"": {
+            ""wireInstructionId"": 0,
+            ""type"": ""Investor Internal Contrib"",
+            ""transStatus"": ""Posted"",
+            ""savedBy"": ""string"",
+            ""savedDate"": ""string"",
+            ""submittedBy"": ""string"",
+            ""submittedDate"": ""string"",
+            ""unSubmittedBy"": ""string"",
+            ""unSubmittedDate"": ""string"",
+            ""postedBy"": ""string"",
+            ""postedDate"": ""string"",
+            ""cancelledBy"": ""string"",
+            ""cancelledDate"": ""string"",
+            ""wireInstructionName"": ""VP IIC Saved"",
+            ""startDate"": ""2010-01-01"",
+            ""verifyDate"": ""2010-02-01"",
+            ""stopDate"": null,
+            ""currency"": ""EUR"",
+            ""isDefault"": ""N"",
+            ""custodianPortfNumber"": null,
+            ""cusipId"": null,
+            ""recipientBankName"": null,
+            ""bankPhoneNumber"": null,
+            ""recipientBankAccountName"": null,
+            ""recipientBankAccountNumber"": null,
+            ""beneficiaryBankAddress1"": null,
+            ""beneficiaryBankAddress2"": null,
+            ""beneficiaryBankCity"": null,
+            ""beneficiaryBankState"": null,
+            ""beneficiaryBankZip"": null,
+            ""beneficiaryBankCountry"": null,
+            ""recipientBankIbanCode"": null,
+            ""recipientBankAbaNo"": null,
+            ""recipientBankSwiftCode"": null,
+            ""ffcAccountName"": null,
+            ""ffcAccountNumber"": null,
+            ""intermediaryBankName"": null,
+            ""intermediaryBankAddress1"": null,
+            ""intermediaryBankAddress2"": null,
+            ""intermediaryBankCity"": null,
+            ""intermediaryBankState"": null,
+            ""intermediaryBankZip"": null,
+            ""intermediaryBankCountry"": null,
+            ""intermediaryBankSwiftCode"": null,
+            ""intermediaryBankAbaNo"": null,
+            ""intermediaryBankAccountName"": null,
+            ""intermediaryBankAccountNumber"": null,
+            ""intermediaryBankChipsUnqId"": null,
+            ""re"": null,
+            ""paymentDetails"": null,
+            ""instructions1"": null,
+            ""instructions2"": null,
+            ""instructions3"": null,
+            ""brokerageAccountNumber"": 45566,
+            ""brokerageAccountType"": ""GSCO"",
+            ""blocker1Name"": null,
+            ""blocker1Account"": null,
+            ""blocker1Id"": null,
+            ""blocker2Name"": null,
+            ""blocker2Account"": null,
+            ""blocker2Id"": null,
+            ""blocker3Name"": null,
+            ""blocker3Account"": null,
+            ""blocker3Id"": null,
+            ""blocker4Name"": null,
+            ""blocker4Account"": null,
+            ""blocker4Id"": null,
+            ""blocker5Name"": null,
+            ""blocker5Account"": null,
+            ""blocker5Id"": null,
+            ""blocker6Name"": null,
+            ""blocker6Account"": null,
+            ""blocker6Id"": null,
+            ""blocker7Name"": null,
+            ""blocker7Account"": null,
+            ""blocker7Id"": null,
+            ""blocker8Name"": null,
+            ""blocker8Account"": null,
+            ""blocker8Id"": null,
+            ""blocker9Name"": null,
+            ""blocker9Account"": null,
+            ""blocker9Id"": null
+        }
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions_investorPortfolios_Create,wireInstructions_investorPortfolios_Create_Verify the search with all fields,wireInstructions/investorPortfolios,"[
+  {
+    ""investorPortfolioId"": 346845,
+    ""wireInstruction"": {
+      ""wireInstructionId"": 0,
+      ""type"": ""Investor Internal Contrib"",
+      ""transStatus"": ""Posted"",
+      ""savedBy"": ""string"",
+      ""savedDate"": ""string"",
+      ""submittedBy"": ""string"",
+      ""submittedDate"": ""string"",
+      ""unSubmittedBy"": ""string"",
+      ""unSubmittedDate"": ""string"",
+      ""postedBy"": ""string"",
+      ""postedDate"": ""string"",
+      ""cancelledBy"": ""string"",
+      ""cancelledDate"": ""string"",
+      ""wireInstructionName"": ""JG IIC Posted"",
+      ""startDate"": ""2010-01-01"",
+      ""verifyDate"": ""2010-02-01"",
+      ""stopDate"": null,
+      ""currency"": ""EUR"",
+      ""isDefault"": ""N"",
+      ""custodianPortfNumber"": null,
+      ""cusipId"": null,
+      ""recipientBankName"": null,
+      ""bankPhoneNumber"": null,
+      ""recipientBankAccountName"": null,
+      ""recipientBankAccountNumber"": null,
+      ""beneficiaryBankAddress1"": null,
+      ""beneficiaryBankAddress2"": null,
+      ""beneficiaryBankCity"": null,
+      ""beneficiaryBankState"": null,
+      ""beneficiaryBankZip"": null,
+      ""beneficiaryBankCountry"": null,
+      ""recipientBankIbanCode"": null,
+      ""recipientBankAbaNo"": null,
+      ""recipientBankSwiftCode"": null,
+      ""ffcAccountName"": null,
+      ""ffcAccountNumber"": null,
+      ""intermediaryBankName"": null,
+      ""intermediaryBankAddress1"": null,
+      ""intermediaryBankAddress2"": null,
+      ""intermediaryBankCity"": null,
+      ""intermediaryBankState"": null,
+      ""intermediaryBankZip"": null,
+      ""intermediaryBankCountry"": null,
+      ""intermediaryBankSwiftCode"": null,
+      ""intermediaryBankAbaNo"": null,
+      ""intermediaryBankAccountName"": null,
+      ""intermediaryBankAccountNumber"": null,
+      ""intermediaryBankChipsUnqId"": null,
+      ""re"": null,
+      ""paymentDetails"": null,
+      ""instructions1"": null,
+      ""instructions2"": null,
+      ""instructions3"": null,
+      ""brokerageAccountNumber"": 45566,
+      ""brokerageAccountType"": ""GSCO"",
+      ""blocker1Name"": null,
+      ""blocker1Account"": null,
+      ""blocker1Id"": null,
+      ""blocker2Name"": null,
+      ""blocker2Account"": null,
+      ""blocker2Id"": null,
+      ""blocker3Name"": null,
+      ""blocker3Account"": null,
+      ""blocker3Id"": null,
+      ""blocker4Name"": null,
+      ""blocker4Account"": null,
+      ""blocker4Id"": null,
+      ""blocker5Name"": null,
+      ""blocker5Account"": null,
+      ""blocker5Id"": null,
+      ""blocker6Name"": null,
+      ""blocker6Account"": null,
+      ""blocker6Id"": null,
+      ""blocker7Name"": null,
+      ""blocker7Account"": null,
+      ""blocker7Id"": null,
+      ""blocker8Name"": null,
+      ""blocker8Account"": null,
+      ""blocker8Id"": null,
+      ""blocker9Name"": null,
+      ""blocker9Account"": null,
+      ""blocker9Id"": null
+    }
+  }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions_companies_Create,wireInstructions_companies_Create_Verify the search with all fields,wireInstructions/companies,"[
+    {
+        ""companyId"": 105589,
+        ""wireInstruction"": {
+            ""wireInstructionId"": 0,
+            ""type"": ""Investor Internal Contrib"",
+            ""transStatus"": ""Posted"",
+            ""savedBy"": ""string"",
+            ""savedDate"": ""string"",
+            ""submittedBy"": ""string"",
+            ""submittedDate"": ""string"",
+            ""unSubmittedBy"": ""string"",
+            ""unSubmittedDate"": ""string"",
+            ""postedBy"": ""string"",
+            ""postedDate"": ""string"",
+            ""cancelledBy"": ""string"",
+            ""cancelledDate"": ""string"",
+            ""wireInstructionName"": ""JG IIC Posted"",
+            ""startDate"": ""2010-01-01"",
+            ""verifyDate"": ""2010-02-01"",
+            ""stopDate"": null,
+            ""currency"": ""EUR"",
+            ""isDefault"": ""N"",
+            ""custodianPortfNumber"": null,
+            ""cusipId"": null,
+            ""recipientBankName"": null,
+            ""bankPhoneNumber"": null,
+            ""recipientBankAccountName"": null,
+            ""recipientBankAccountNumber"": null,
+            ""beneficiaryBankAddress1"": null,
+            ""beneficiaryBankAddress2"": null,
+            ""beneficiaryBankCity"": null,
+            ""beneficiaryBankState"": null,
+            ""beneficiaryBankZip"": null,
+            ""beneficiaryBankCountry"": null,
+            ""recipientBankIbanCode"": null,
+            ""recipientBankAbaNo"": null,
+            ""recipientBankSwiftCode"": null,
+            ""ffcAccountName"": null,
+            ""ffcAccountNumber"": null,
+            ""intermediaryBankName"": null,
+            ""intermediaryBankAddress1"": null,
+            ""intermediaryBankAddress2"": null,
+            ""intermediaryBankCity"": null,
+            ""intermediaryBankState"": null,
+            ""intermediaryBankZip"": null,
+            ""intermediaryBankCountry"": null,
+            ""intermediaryBankSwiftCode"": null,
+            ""intermediaryBankAbaNo"": null,
+            ""intermediaryBankAccountName"": null,
+            ""intermediaryBankAccountNumber"": null,
+            ""intermediaryBankChipsUnqId"": null,
+            ""re"": null,
+            ""paymentDetails"": null,
+            ""instructions1"": null,
+            ""instructions2"": null,
+            ""instructions3"": null,
+            ""brokerageAccountNumber"": 45566,
+            ""brokerageAccountType"": ""GSCO"",
+            ""blocker1Name"": null,
+            ""blocker1Account"": null,
+            ""blocker1Id"": null,
+            ""blocker2Name"": null,
+            ""blocker2Account"": null,
+            ""blocker2Id"": null,
+            ""blocker3Name"": null,
+            ""blocker3Account"": null,
+            ""blocker3Id"": null,
+            ""blocker4Name"": null,
+            ""blocker4Account"": null,
+            ""blocker4Id"": null,
+            ""blocker5Name"": null,
+            ""blocker5Account"": null,
+            ""blocker5Id"":null,
+            ""blocker6Name"": null,
+            ""blocker6Account"": null,
+            ""blocker6Id"": null,
+            ""blocker7Name"": null,
+            ""blocker7Account"": null,
+            ""blocker7Id"": null,
+            ""blocker8Name"": null,
+            ""blocker8Account"": null,
+            ""blocker8Id"": null,
+            ""blocker9Name"": null,
+            ""blocker9Account"": null,
+            ""blocker9Id"": null
+        }
+    }
+]",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post

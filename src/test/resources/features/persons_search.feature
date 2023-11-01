@@ -4,7 +4,7 @@ Feature: Persons Crud operations testing
   Background:
     * def tokenQA = callonce read('..//features/Token.feature')
     * header token = tokenQA.response.token
-    * url "https://goldmanqavil.v3locitydev.com/api/v1/queries"
+    * url baseUrl
     * header content-type = "application/json"
     * def result = callonce read('..//features/persons_crud.feature')
     * def personIds = result.response.success[0].personId

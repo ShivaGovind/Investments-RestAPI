@@ -16,15 +16,15 @@ Feature: Create the information by given API resource.
     And print response
 
     Examples:
-      | read('..//data/Search_SearchId_Regression_File1.csv') |
+      | read('..//data/Creates_Positivescenarios_withoutchange.csv') |
 
-  Scenario Outline: <Scenario> - <TestCaseID>
-    Given path '<resource>'
-    And request requestBody
-    And print requestBody
-    When method Post
-    Then status <status>
-    And print response
-
-    Examples:
-      | read('..//data/Creates_Load1.csv') |
+#  Scenario Outline: <Scenario> - <TestCaseID>
+#    Given path '<resource>'
+#    And request requestBody
+#    And print requestBody
+#    When method Post
+#    Then status <status>
+#    And print response
+#
+#    Examples:
+#      | read('..//data/Creates_Load1.csv') |

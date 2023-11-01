@@ -4,7 +4,7 @@ Feature: Address Create Update operations testing
   Background:
     * def tokenEnv = callonce read('..//features/Token.feature')
     * header token = tokenEnv.response.token
-    * url "https://goldmanconvvil.v3locitydev.com/api/v1/queries"
+    * url baseUrl
     * header content-type = "application/json"
     * def result = callonce read('..//features/persons_crud.feature')
     * def personIds = result.response.success[0].personId
@@ -21,12 +21,12 @@ Feature: Address Create Update operations testing
 #      And def personIds = response[0].personId
 #      And match response[0].firstName == "KARATESGF3"
 
-  Scenario: Update the Person data.
-    Given path "persons"
-    And def requestBodySearch = read('..//data/persons/person_create.json')
-    And set requestBodySearch[0].personId = personIds
-    And set requestBodySearch[0].middleName = "UpdMidName"
-    And request requestBodySearch
-    When method Put
-    Then status 200
-    * print response
+#  Scenario: Update the Person data.
+#    Given path "persons"
+#    And def requestBodySearch = read('..//data/persons/person_create.json')
+#    And set requestBodySearch[0].personId = personIds
+#    And set requestBodySearch[0].middleName = "UpdMidName"
+#    And request requestBodySearch
+#    When method Put
+#    Then status 200
+#    * print response

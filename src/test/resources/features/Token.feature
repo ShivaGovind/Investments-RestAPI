@@ -2,7 +2,7 @@ Feature: Authorization Token creation
 
 
   Background:
-    * url "https://goldmanqavil.v3locitydev.com/api/v1"
+    * url tokenUrl
     * def requestBody = read('..//data/token_request.json')
 
   Scenario: Application authorization token

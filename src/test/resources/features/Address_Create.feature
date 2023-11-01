@@ -5,7 +5,7 @@ Feature: Address Crud operations
   * def tokenEnv = callonce read('..//features/Token.feature')
   * header token = tokenEnv.response.token
   * print tokenEnv
-  * url "https://goldmanconvvil.v3locitydev.com/api/v1/queries"
+  * url baseUrl
   * header content-type = "application/json"
 
 

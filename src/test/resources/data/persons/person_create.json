@@ -1,14 +1,11 @@
-    [
+[
       {
-      "firstName": "SHIVA1231",
-      "lastName": "GOVIND1231",
-      "middleName": "ST1",
-      "repCode": "SG83077",
-      "title": "",
-      "salutation": "",
-      "email": "SGS4@gmail.com"
+            "firstName": "FNameSSG12",
+            "lastName": "LnameSSG12",
+            "middleName": "ST2",
+            "repCode": "SG83070",
+            "title": "",
+            "salutation": "",
+            "email": "SGS4@gmail.com"
       }
-
-
-    ]
-
+]

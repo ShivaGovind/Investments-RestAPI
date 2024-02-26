@@ -20,7 +20,7 @@ import static org.junit.Assert.assertTrue;
 public class TestRunner {
     @Test
     public void testParallel()  {
-        Results results = Runner.path("classpath:features").outputCucumberJson(true).tags("AddressesTest").parallel(5);
+        Results results = Runner.path("classpath:features").outputCucumberJson(true).tags("E2ETest").parallel(5);
         generateReport(results.getReportDir());
         assertTrue(results.getErrorMessages(),results.getFailCount() == 0);
     }

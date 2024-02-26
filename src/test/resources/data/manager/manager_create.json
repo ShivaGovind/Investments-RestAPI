@@ -1,0 +1,27 @@
+[
+      [
+            {
+                  "managerName": "Satheesh G",
+                  "managerLongName": "SSGOVINDUGARISSG",
+                  "allowDuplicate": "Y",
+                  "isYourOrg": "N"
+            }
+      ],
+      [
+            {
+                  "managerId": [0],
+                  "includeContacts": "Y",
+                  "limit": 1,
+                  "offset": 0
+            }
+      ],
+      [
+            {
+                  "managerId": 0,
+                  "managerName": "",
+                  "managerLongName": "",
+                  "allowDuplicate": "Y",
+                  "isYourOrg": "N"
+            }
+      ]
+]

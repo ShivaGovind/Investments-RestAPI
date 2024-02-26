@@ -1,0 +1,291 @@
+﻿TestCaseID,Scenario,host,version,resource,requestBody,status,errorMessage,Expected Result0,expectEmptyResponse,url,method,,,,,
+Company Link,Company_Link_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,companies/personLink,"[
+    {
+        ""companyId"": 250056,
+        ""contact"": [
+            {
+                ""personId"": 84860543,
+                ""primary"": ""Y"",
+                ""role"": null
+            }
+        ]
+    }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Company Link,Company_Link_Verify the Error Message for Invalid request Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,companies/personLink,"[
+    {
+        ""companId"": 250056,
+        ""contact"": [
+            {
+                ""personId"": 84860401,
+                ""primary"": ""Y"",
+                ""role"": null
+            },           {
+                ""personId"": 84860402,
+                ""primary"": ""N"",
+                ""role"": null
+            
+        ]
+    }
+]",400,INVALID_REQUEST,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Company Unlink,Company_unLink_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,companies/personUnlink,"[
+    {
+        ""companyId"":250056,
+        ""contact"": [
+            {
+                ""personId"": 84860543,
+                ""role"": null
+            }
+        ]
+    }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Company Unlink,Company_unLink_Verify the Error Message for validation failed Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,companies/personUnlink,"[
+    {
+        ""companyId"": a250056,
+        ""contact"": [
+            {
+                ""personId"": 1874,
+                ""role"": null
+            },
+            {
+                ""personId"": null,
+                ""role"": null
+            },
+            {
+                ""personId"": 84860401,
+                ""role"": ""null""
+            }
+        ]
+    },
+    {
+        ""companyId"": null,
+        ""contact"": [
+            {
+                ""personId"": 84860401,
+                ""role"": null
+            }
+        ]
+    }
+    
+]",400,VALIDATION_FAILED,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Manager Link,Manager_Link_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,managers/personLink,"[
+    {
+        ""managerId"": 250047,
+        ""contact"": [
+            {
+                ""personId"": 84860543,
+                ""primary"": ""Y"",
+                ""role"": null
+            },
+            {
+                ""personId"": 84860544,
+                ""primary"": ""N"",
+                ""role"": null
+            }
+        ]
+    }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Manager Link,Manager_Link_Verify the Error Message for Missing required  Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,managers/personLink,"[
+    {
+        ""managerId"": 250047,
+        ""contact"": [
+            {
+                ""personId"": null,
+                ""primary"": ""N"",
+                ""role"": null
+            
+    }
+    ]}]",400,MISSING_REQUIRED_FIELD,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Manager Unlink,Manager_unLink_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,managers/personUnlink,"[
+    {
+        ""managerId"": 250047,
+        ""contact"": [
+            {
+                ""personId"": 84860543,
+                ""role"": null
+            },
+            {
+                ""personId"": 84860544,
+                ""role"": null
+            }
+        ]
+    }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Manager Unlink,Manager_unLink_Verify the Error Message for validation failed Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,managers/personUnlink,"[
+    {
+        ""managerId"": 250047,
+        ""contact"": [
+            {
+                ""personId"": 1874,
+                ""role"": null
+            }
+        ]
+    }
+]",400,VALIDATION_FAILED,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Investor Link,Investor_Link_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,investors/personLink,"[
+    {
+        ""investorId"": ""528272"",
+        ""recipient"": [
+            {
+                ""personId"": 84860543,
+                ""docType"": ""Capital Letter"",
+                ""primary"": ""Y"",
+                ""sendMethod"": ""UPS""
+            },
+            {
+                ""personId"": 84860544,
+                ""docType"": ""Capital Letter"",
+                ""primary"": ""N"",
+                ""sendMethod"": ""UPS""
+            }
+        ]
+    }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Investor Link,investor_Link_Verify the Error Message for validation failed Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,investors/personLink,"[
+    {
+        ""investorId"": ""250064"",
+        ""recipient"": [
+            {
+                ""personId"": 1874,
+                ""docType"": ""Capital Letter"",
+                ""primary"": ""Y"",
+                ""sendMethod"": ""UPS""
+            }
+]}]",400,VALIDATION_FAILED,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Investor Unlink,investor_unLink_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,investors/personUnlink,"[
+    {
+        ""investorId"": 528272,
+        ""recipientId"": [
+            84860543,
+            84860544
+        ]
+    }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Investor Unlink,Investor_unLink_Verify the Error Message for Missing required  Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,investors/personUnlink,"[
+    {
+        ""investorId"": 7377,
+        ""recipientId"": []
+    }
+]",400,MISSING_REQUIRED_FIELD,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+InvestorEntities Link,InvestorEntities_Link_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,investorEntities/personLink,"[
+    {
+        ""investorEntityId"": 250064,
+        ""contact"": [
+            {
+                ""personId"": 84860543,
+                ""primary"": ""Y"",
+                ""role"": null
+            },
+            {
+                ""personId"": 84860544,
+                ""primary"": ""N"",
+                ""role"": null
+            }
+        ]
+    }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+InvestorEntities Link,investorEntities_Link_Verify the Error Message for  Missing required  Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,investorEntities/personLink,"[
+    {
+        ""investorEntityId"": 250064,
+        ""contact"": [
+            {
+                ""personId"": null,
+                ""primary"": ""N"",
+                ""role"": null
+            }
+]}]",400,MISSING_REQUIRED_FIELD,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+InvestorEntities Unlink,investorEntities_unLink_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,investorEntities/personUnlink,"[
+    {
+        ""investorEntityId"": 250064,
+        ""contact"": [
+            {
+                ""personId"": 84860543,
+                ""role"": null
+            },
+            {
+                ""personId"": 84860544,
+                ""role"": null
+            }
+        ]
+    }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+InvestorEntities Unlink,InvestorEntities_unLink_Verify the Error Message for validation failed Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,investorEntities/personUnlink,"[
+    {
+        ""investorEntityId"": 250064,
+        ""contact"": [
+            {
+                ""personId"": 1874,
+                ""role"": null
+            }
+        ]
+    }
+]",400,VALIDATION_FAILED,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+Person Delete,person_delete_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,persons/delete,"[
+    {
+        ""personId"": 84860585
+    }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,DC,,,,
+Person Delete,person_delete_unLink_Verify the Error Message for validation failed Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,persons/delete,"[
+    {
+        ""personId"": null
+    }
+]",400,MISSING_REQUIRED_FIELD,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Post,,,,,
+User_link,Users_Link_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,users/linkRole,"[
+  {
+    ""userName"": ""CONVUSER"",
+    ""userRole"": [
+      ""Investor User"",
+      ""Externally verified role for Investor""
+     
+    ]
+  }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Put,,,,,
+User_link,Users_Link_Verify the Error Message for Invalid request Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,users/linkRole,"
+  {
+    ""userNme"": ""AAAPPUSER901"",
+    ""userRole"": [
+      ""Investor User"",
+      ""Externally verified role for Investor""
+     
+    ]
+  }
+]",400,INVALID_REQUEST,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Put,,,,,
+User_unlink,Users_unLink_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,users/unlinkRole,"[
+  {
+    ""userName"": ""CONVUSER"",
+    ""userRole"": [
+      ""Investor User"",
+      ""Externally verified role for Investor""
+     
+    ]
+  }
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Put,,,,,
+User_unlink,Users_unLink_Verify the Error Message forInvalid request Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,users/unlinkRole,"[
+  {
+    ""uerName"": ""AAAPPUSER901"",
+    ""userRole"": [
+      ""Investor User"",
+      ""Externally verified role for Investor""
+     
+    
+  }
+]",400,INVALID_REQUEST,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Put,,,,,
+User_Activate,User_Activate_Verify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,users/activate,"[
+{
+  ""userName"": ""CONVVERIFY""
+}
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Put,,,,,
+User_Activate,User_Activate_Verify the Error Message for Invalid request Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,users/activate,"[
+{
+  ""useName"": ""CONVVERIFY""
+}
+",400,INVALID_REQUEST,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Put,,,,,
+User_Deactivate,User_DeactivateVerify the REST API Resource,https://goldmanconvvil.v3locitydev.com,api/v1/queries,users/deactivate,"[
+{
+  ""userName"": ""CONVVERIFY""
+}
+]",200,,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Put,,,,,
+User_Deactivate,User_Deactivate_Verify the Error Message for Invalid request Fields,https://goldmanconvvil.v3locitydev.com,api/v1/queries,users/deactivate,"[
+{
+  ""useName"": ""CONVVERIFY""
+}
+",400,INVALID_REQUEST,exists,,https://goldmanconvvil.v3locitydev.com/api/v1/queries,Put,,,,,

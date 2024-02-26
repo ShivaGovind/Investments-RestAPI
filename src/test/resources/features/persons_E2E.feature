@@ -1,4 +1,4 @@
-@TestSSG
+@E2ETest
 Feature: Persons Crud operations testing
 
   Background:
@@ -10,7 +10,7 @@ Feature: Persons Crud operations testing
     * def personIds = result.response.success[0].personId
 
 
-  Scenario: Create & search the Person data.
+  Scenario: Search the Person data.
       Given path "persons/search"
       And def requestBodySearch = read('..//data/persons/person_search.json')
       And set requestBodySearch.personId[0] = personIds
@@ -25,8 +25,30 @@ Feature: Persons Crud operations testing
     Given path "persons"
     And def requestBodySearch = read('..//data/persons/person_create.json')
     And set requestBodySearch[0].personId = personIds
-    And set requestBodySearch[0].middleName = "UpdMidName"
+    And set requestBodySearch[0].firstName = "FNameUpdated11"
+    And set requestBodySearch[0].lastName = "LNameUpdated11"
     And request requestBodySearch
     When method Put
     Then status 200
     * print response
+
+  Scenario: Search the Person data.
+    Given path "persons/search"
+    And def requestBodySearch = read('..//data/persons/person_search.json')
+    And set requestBodySearch.personId[0] = personIds
+    And request requestBodySearch
+    When method Post
+    Then status 200
+    And print response
+@ignore
+  Scenario: Delete the Person data.
+    Given path "persons/delete"
+    And def requestBodySearch = read('..//data/persons/person_delete.json')
+    And set requestBodySearch.[0].personId = personIds
+    And request requestBodySearch
+    When method Post
+    Then status 200
+    And print response
+    And match personIds == response.success[0].personId
+
+

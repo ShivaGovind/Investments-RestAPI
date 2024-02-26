@@ -1,0 +1,2384 @@
+TestCaseID,Scenario,resource,requestBody,status,errorMessage,Expected Result0,expectEmptyResponse,host,version,url,method
+Allocationconfig_Search,Allocationconfig_Search_Verify the search with all fields,allocationConfig/search?reportingDB=Y,"{
+""allocationNameContains"":null,
+""allocationCodeContains"":null,
+""allocationType"": [],
+    ""limit"": 29,
+    ""offset"":37
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Allocationconfig_Search,Allocationconfig_Search_Verify the Error Message for Missing Required Fields,allocationConfig/search?reportingDB=Y,"{
+""allocationNameCntains"":null,
+""allocationCodeContains"":null,
+""allocationType"": [],
+    ""limit"": 29,
+    ""offset"":37}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Attributes_Search,Attributes_Search_Verify the search with all fields,attributes/search?reportingDB=Y,"{
+    ""attributeName"": [""Fund Type""],
+    ""limit"": 3,
+    ""offset"":3
+  }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Attributes_Search,Attributes_Search_Verify the Error Message for Missing Required Fields,attributes/search?reportingDB=Y,"{
+    ""attributeame"": [""Fund Type""]
+  }",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+CapAccountFundDetail_Search,CapAccountFundDetails_Verify the search with all fields,capAccountFund/detail/search?reportingDB=Y,"{
+    ""fundId"" : ""346261"",
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2023-01-01"",
+    ""inOutCap"": ""IN"",
+    ""allocationsByType"": ""Y""
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+CapAccountFundDetail_Search,CapAccountFundDetails_Verify the Error Message for Missing Required Fields,capAccountFund/detail/search?reportingDB=Y,"{
+    ""fundId"" : null,
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2023-01-01"",
+    ""inOutCap"": ""IN"",
+    ""allocationsByType"": ""Y""
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+CapAccountFundSummary_Search,CapAccountFundSummary_Verify the search with all fields,capAccountFund/summary/search?reportingDB=Y,"{
+   ""fundId"" : 346261,
+   ""fromDate"" :""2000-01-01"",
+   ""toDate"" : ""2090-07-11"",
+   ""inOutCap"" :""BOTH"",
+   ""allocationsByType"" :""N""
+  }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+CapAccountFundSummary_Search,CapAccountFundSummary_Verify the Error Message for Missing Required Fields,capAccountFund/summary/search?reportingDB=Y,"{
+   ""fundId"" : null,
+   ""fromDate"" :""2000-01-01"",
+   ""toDate"" : ""2090-07-11"",
+   ""inOutCap"" :""BOTH"",
+   ""allocationsByType"" :""N""
+  }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+CapAccountInvestorDetail_Search,CapAccountInvestorDetail_Verify the search with all fields,capAccountInvestor/detail/search?reportingDB=Y,"{
+    ""investorId"": 528118,
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2023-01-01"",
+    ""inOutCap"": ""IN"",
+    ""allocationsByType"": ""Y""
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+CapAccountInvestorDetail_Search,CapAccountInvestorDetail_Verify the Error Message for Missing Required Fields,capAccountInvestor/detail/search?reportingDB=Y,"{
+    ""investorId"": null,
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2023-01-01"",
+    ""inOutCap"": ""IN"",
+    ""allocationsByType"": ""Y""
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+CapAccountInvestorSummary_Search,CapAccountInvestorSummary_Verify the search with all fields,capAccountInvestor/summary/search?reportingDB=Y,"{
+   ""investorId"" : 528112,
+   ""fromDate"" :""2000-01-01"",
+   ""toDate"" : ""2022-11-07"",
+   ""inOutCap"" :""OUT"",
+   ""allocationsByType"" :""N"",
+   ""showTransferBalance"":""Y""
+  }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+CapAccountInvestorSummary_Search,CapAccountInvestorSummary_Verify the Error Message for Missing Required Fields,capAccountInvestor/summary/search?reportingDB=Y,"{
+   ""investorId"" : null,
+   ""fromDate"" :""2000-01-01"",
+   ""toDate"" : ""2022-11-07"",
+   ""inOutCap"" :""OUT"",
+   ""allocationsByType"" :""N"",
+   ""showTransferBalance"":""Y""
+  }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Companies_SearchId,Companies_SearchId_Verify the search with all fields,companies/searchId?reportingDB=Y,"{
+""companyName"" :[""Institution - 1229"",""Institution - 1230"",""Institution - 1231"",""Institution - 1232"",""Institution - 1233"",""Institution - 1234"",""Institution - 1235""],
+""limit"":12,
+""offset"":2
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Companies_SearchId,Companies_SearchId_Verify the Error Message for Missing Required Fields,companies/searchId?reportingDB=Y,"{
+""companyName"" :[],
+""limit"":12,
+""offset"":11
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Companies_Search,Companies_Search_Verify the search with Name Contains,companies/search?reportingDB=Y,"{ 
+  ""companyId"": [],
+  ""companyNameContains"": ""A"",
+  ""companyLongNameContains"": null,
+  ""eqInstId"": [],
+  ""isPublic"": null,
+  ""ticker"": [],
+  ""exchange"": [],
+  ""includeContacts"": ""Y"",
+  ""datasheetSearch"": [],
+  ""datasheetResponse"": []
+,      ""limit"":10,
+      ""offset"":0
+	}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Companies_Search,Companies_Search_Verify the Error message for Missing required fields,companies/search?reportingDB=Y,"{ 
+  ""companyId"": [],
+  ""companyNameContains"": null,
+  ""companyLongNameContains"": null,
+  ""eqInstId"": [],
+  ""isPublic"": null,
+  ""ticker"": [],
+  ""exchange"": [],
+  ""includeContacts"": null,
+  ""datasheetSearch"": [
+    {
+	""datasheetName"": ""DS_BROKER_INFO"",
+	""datasheetInstanceName"": [],
+	""datasheetFieldName"": ""DS_BROKER_NAME"",
+	""datasheetFieldValue"": [""Broker One"", ""Broker Two""]
+	},
+	{ 
+	""datasheetName"": ""DS_DETAILS_07"",
+    ""datasheetInstanceName"": [],
+    ""datasheetFieldName"": ""DS_STATE_DOMICILE"",
+    ""datasheetFieldValue"": [""NY""]
+	}
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_BROKER_INFO"",
+      ""datasheetInstanceName"": [],
+      ""datasheetFieldName"": [""DS_BROKER_CODE"", ""DS_BROKER_NAME""]
+    },
+	{
+      ""datasheetName"": ""DS_DETAILS_07"",
+      ""datasheetInstanceName"": [],
+      ""datasheetFieldName"": [""DS_STATE_DOMICILE"", ""DS_COUNTRY_DOMICILE""]
+    }
+  ]
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Currencies/ratespair_search,Companies_ratespair_Search_Verify the search with empty request,currencies/ratePairs/search?reportingDB=Y,,200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Get
+Currencies/ratespair_search,Companies_ratespair_Search_Verify the Invalid request field,currencies/ratePairs/search?reportingDB=Y,{,400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Get
+Currencies_search,Currencies_Search_Verify the search with all fields,currencies/search?reportingDB=Y,"{
+    ""currency"": ""AUD""
+    
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Currencies_search,Currencies_Search_Verify the Error message for Invalid Request,currencies/search?reportingDB=Y,"{
+    ""curency"": ""AUD""
+    
+}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Manager_Search,DataSheet_Manager_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""Manager"",
+    ""objectKey"": [
+       ""250092"",""250089""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_BROKER_INFO"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Manager_Search,DataSheet_Manager_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": null,
+    ""objectKey"": [
+       ""250092"",""250089""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_BROKER_INFO"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Company_Search,DataSheet_Company_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""Company"",
+    ""objectKey"": [
+        ""250135"",""250203""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_BROKER_INFO"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Company_Search,DataSheet_Company_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": null,
+    ""objectKey"": [
+        ""250135"",""250203""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_BROKER_INFO"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"":1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Person_Search,DataSheet_Person_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""Person"",
+    ""objectKey"": [
+        ""84860508"",""84860436""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_DETAILS_05"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Person_Search,DataSheet_Person_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"":null,
+    ""objectKey"": [
+        ""84860508"",""84860436""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_DETAILS_05"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Investor_Entity_Search,DataSheet_Investor_Entity_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": ""Investor Entity"",
+  ""objectKey"": [
+    ""250091"",""250196""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_DETAILS_07"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Investor_Entity_Search,DataSheet_Investor_Entity_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"":null,
+  ""objectKey"": [
+    ""250091"",""250196""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_DETAILS_07"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_DI_Open_Buy_Search,DataSheet_DI_Open_Buy_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": ""DI Buy"",
+  ""objectKey"": [
+    ""1996571"",""1996702""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_DI_LOT"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_DI_Open_Buy_Search,DataSheet_DI_Open_Buy_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": null,
+  ""objectKey"": [
+    ""1996571"",""1996702""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_DI_LOT"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_DI_Sell_Search,DataSheet_DI_Sell_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": ""DI Sell"",
+  ""objectKey"": [
+    ""1996572"",""1996703""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_IN_KIND"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_DI_Sell_Search,DataSheet_DI_Sell_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"":null,
+  ""objectKey"": [
+    ""1996572"",""1996703""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_IN_KIND"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_FI_Contribuiton_Search,DataSheet_FI_Contribuiton_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""FI Contribution"",
+    ""objectKey"": [
+        ""247658"",""1996704""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_DETAILS_02"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_FI_Contribuiton_Search,DataSheet_FI_Contribuiton_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": null,
+    ""objectKey"": [
+        ""1996565"",""1996704""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_DETAILS_02"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_FI_Distribution_Search,DataSheet_FI_Distribution_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""FI Distribution"",
+    ""objectKey"": [
+        ""1996586"",""1996705""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_DETAILS_03"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_FI_Distribution_Search,DataSheet_FI_Distribution_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"":null,
+    ""objectKey"": [
+        ""1996586"",""1996705""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_DETAILS_03"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"":1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Direct_Investment_DI_Details_Search,DataSheet_Direct_Investment_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""Direct Investment"",
+    ""objectKey"": [
+        ""528115"",""528120""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_DETAILS"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Direct_Investment_DI_Details_Search,DataSheet_Direct_Investment_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"":null,
+    ""objectKey"": [
+        ""528115"",""528120""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_DETAILS"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Direct_Investment_DI_overrides_Search,DataSheet_Direct_Investment_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""Direct Investment"",
+    ""objectKey"": [
+        ""528120""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_OVERRIDES"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Direct_Investment_DI_overrides_Search,DataSheet_Direct_Investment_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": null,
+    ""objectKey"": [
+        ""528120""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_OVERRIDES"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investment_DS_FI_Details_Search,DataSheet_Fund_Investment_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""Fund Investment"",
+    ""objectKey"": [
+        ""528122"",""528130""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_FI_DETAILS"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investment_DS_FI_Details_Search,DataSheet_Fund_Investment_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"":null,
+    ""objectKey"": [
+        ""528122"",""528130""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_FI_DETAILS"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investment_DS_PORTFOLIO_EVENTS_Search,DataSheet_Fund_Investment_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": ""Fund Investment"",
+  ""objectKey"": [
+    ""528117"",""528106""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_PORTFOLIO_EVENTS"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investment_DS_PORTFOLIO_EVENTS_Search,DataSheet_Fund_Investment_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": null,
+  ""objectKey"": [
+    ""528117"",""528106""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_PORTFOLIO_EVENTS"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investment_DS_PRORATA_Search,DataSheet_Fund_Investment_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": ""Fund Investment"",
+  ""objectKey"": [
+    ""528117"",""528106""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_PRORATA"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investment_DS_PRORATA_Search,DataSheet_Fund_Investment_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": null,
+  ""objectKey"": [
+    ""528117"",""528106""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_PRORATA"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"":1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Valuation_Search,DataSheet_Fund_valuation_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": ""Fund Valuation"",
+  ""objectKey"": [
+    ""166029"",""166030""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_DETAILS_08"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Valuation_Search,DataSheet_Fund_valuation_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": null,
+  ""objectKey"": [
+    ""166029"",""166030""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_DETAILS_08"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Manager_Instrument_Search,DataSheet_Manager_Instrument_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": ""Funds"",
+  ""objectKey"": [
+    ""346261"",""346253""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_ATTRIBUTES"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Manager_Instrument_Search,DataSheet_Manager_Instrument_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": null,
+  ""objectKey"": [
+    ""346261"",""346253""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_ATTRIBUTES"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": [ ]
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investor_Terms_Search,DataSheet_Fund_Investor_Terms_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": ""Fund Investor Terms"",
+  ""objectKey"": [
+    ""528125""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_DETAILS_04"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": []
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investor_Terms_Search,DataSheet_Fund_Investor_Terms_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+  ""datasheetOwner"": null,
+  ""objectKey"": [
+    ""528125""
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_DETAILS_04"",
+      ""datasheetInstanceName"": [ ],
+      ""datasheetFieldName"": []
+    }
+  ],
+  ""limit"": 10,
+  ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investment_Terms_Search,DataSheet_Fund_Investment_Terms_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""Fund Investment Terms"",
+    ""objectKey"": [
+        ""346193"",""346267""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS___COMMITMENT"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Fund_Investment_Terms_Search,DataSheet_Fund_Investment_Terms_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": null,
+    ""objectKey"": [
+        ""346193"",""346267""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS___COMMITMENT"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Investor Portfolio_Terms_Search,DataSheet_Investor_Portfolio_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""Investor Portfolio"",
+    ""objectKey"": [
+        ""346620""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_LAST_PAYMENT_DATE_TRACKER"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Investor Portfolio_Terms_Search,DataSheet_Investor_Portfolio_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"":null,
+    ""objectKey"": [
+        ""250454""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_LAST_PAYMENT_DATE_TRACKER"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Wire_Instruction_Search,DataSheet_Wire_Instruction_Search Verify the search with all fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": ""Wire Instruction"",
+    ""objectKey"": [
+        ""550"",""120336""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_WIRE_INSTRUCTION_BLOCKER"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DataSheet_Wire_Instruction_Search,DataSheet_Wire_Instruction_Search Verify the Error Message for Missing Required Fields,datasheets/search?reportingDB=Y,"{
+    ""datasheetOwner"": null,
+    ""objectKey"": [
+        ""550"",""120336""
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_WIRE_INSTRUCTION_BLOCKER"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": []
+        }
+    ],
+    ""limit"": 10,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DirectInvestAllocations_Search,DirectInvestAllocations_Search_Verify the  the search with all fields,directInvestAllocations/search?reportingDB=Y,"{
+  ""investmentId"": [],
+  ""eqInvestmentId"": [],
+  ""fundId"": [
+    346257
+  ],
+  ""investmentCompanyId"": [],
+  ""portfolioId"": [],
+  ""isPublic"": null,
+  ""ticker"": [],
+  ""exchange"": [],
+  ""fromDate"": ""2000-01-01"",
+  ""toDate"": ""2025-01-01"",
+  ""transStatus"": [],
+  ""allocationName"": [],
+  ""allocationCode"": [],
+  ""fromPostedDate"": ""2000-01-01"",
+  ""toPostedDate"": ""2028-12-31"",
+  ""includeInvestorAllocations"": ""Y"",
+  ""includeZeroInvestorAllocations"": ""Y"",
+  ""limit"": 100,
+  ""offset"": 0
+}",200,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+DirectInvestAllocations_Search,DirectInvestAllocations_Search_Verify the Error Message for Missing Required Fields,directInvestAllocations/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [],
+    ""investmentCompanyId"": [
+       
+    ],
+    ""portfolioId"": [],
+    ""isPublic"": ""Y"",
+    ""ticker"": [
+        ""SSGTICKER""
+    ],
+    ""exchange"": [
+        ""SSGEXCHANGE""
+    ],
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2025-01-01"",
+    ""transStatus"": [],
+    ""allocationName"": [],
+    ""allocationCode"": [],
+    ""fromPostedDate"": ""2000-01-01"",
+""toPostedDate"": ""2028-12-31"",
+""includeInvestorAllocations"": ""Y"",
+""includeZeroInvestorAllocations"": ""Y"",
+    ""limit"": 100,
+    ""offset"": 0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestTransactions_Search,DirectInvestTransactions_Search_Verify the search with all fields,directInvestTransactions/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [
+       
+    ],
+    ""investmentCompanyId"": [],
+    ""portfolioId"": [],
+    ""lotId"": [5267],
+    ""securityId"": [],
+    ""isPublic"": null,
+    ""ticker"": [],
+    ""exchange"": [],
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2024-11-05"",
+    ""transactionType"": """",
+    ""transSubType"": [],
+    ""transStatus"": [],
+    ""limit"": 10000,
+    ""offset"": 0,
+    ""isInKind"": ""N"",
+    ""fromPostedDate"": ""2000-01-01"",
+    ""toPostedDate"": ""2024-11-05""
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestTransactions_Search,DirectInvestTransactions_Search_Verify the Error Message for Missing Required Fields,directInvestTransactions/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [],
+    ""investmentCompanyId"": [],
+    ""portfolioId"": [],
+    ""lotId"": [
+       
+    ],
+    ""securityId"": [],
+    ""isPublic"": null,
+    ""ticker"": [],
+    ""exchange"": [],
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2024-11-05"",
+    ""transactionType"": """",
+    ""transSubType"": [],
+    ""transStatus"": [],
+    ""limit"": 10000,
+    ""offset"": 0,
+    ""isInKind"": null
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestValuations_search,DirectInvestValuations_search_Verify the search with all fields,directInvestValuations/search?reportingDB=Y,"{
+	  ""investmentId"": [],
+	  ""eqInvestmentId"": [],
+	  ""fundId"": [346257],
+	  ""investmentCompanyId"": [],
+	  ""portfolioId"": [],
+	  ""lotId"": [],
+	  ""securityId"": [],
+	  ""isPublic"": null,
+	  ""ticker"": [],
+	  ""exchange"": [],
+	   ""fromDate"": ""2000-01-01"",
+	  ""toDate"": ""2063-04-01"",
+	  ""transStatus"": [],
+	  ""valuationMethod"": [],
+	  ""valuationSource"": [],
+      
+    ""limit"":60,
+    ""offset"":0
+	  }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestValuations_search,DirectInvestValuations_search_Verify the Error Message for Missing Required Fields,directInvestValuations/search?reportingDB=Y,"{
+	  ""investmentId"": [],
+	  ""eqInvestmentId"": [],
+	  ""fundId"": [],
+	  ""investmentCompanyId"": [],
+	  ""portfolioId"": [],
+	  ""lotId"": [],
+	  ""securityId"": [],
+	  ""isPublic"": null,
+	  ""ticker"": [],
+	  ""exchange"": [],
+	   ""fromDate"": ""2023-01-01"",
+	  ""toDate"": ""2063-04-01"",
+	  ""transStatus"": [""Cancelled"",""Posted""],
+	  ""valuationMethod"": [],
+	  ""valuationSource"": [],
+      
+    ""limit"":60,
+    ""offset"":3
+	  }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestValuations_searchId,DirectInvestValuations_searchId_Search Verify the search with all fields,directInvestValuations/searchId?reportingDB=Y,"{
+	  ""transId"": [""5897""],
+	  ""eqTransId"": []
+	  }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestValuations_searchId,DirectInvestValuations_searchId_Verify the Error Message for Missing Required Fields,directInvestValuations/searchId?reportingDB=Y,"{
+	  ""transId"": [],
+	  ""eqTransId"": []
+	  }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestments_searchId,DirectInvestments_searchId_Verify the search with all fields,directInvestments/searchId?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""fundId"": [
+      346257,346261,346270
+    ],
+    ""investmentCompanyId"": [],
+    ""portfolioId"": [],
+    ""isYourFund"": null,
+    ""limit"":20,
+  ""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestments_searchId,DirectInvestments_searchId_Verify the Error Message for Missing Required Fields,directInvestments/searchId?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""fundId"": [
+     
+    ],
+    ""investmentCompanyId"": [],
+    ""portfolioId"": [],
+    ""isYourFund"": null,
+    ""limit"":2,
+  ""offset"":1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestments_Search,directInvestments_Search_Verify the search with all fields,directInvestments/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""fundId"": [346193],
+    ""investmentCompanyId"": [],
+	""isPublic"":null,
+	""ticker"":[],
+	""exchange"":[],
+    ""portfolioId"": [],
+    ""eqInvestmentId"": [],
+	""isSecondaryInvestment"": ""Y"",
+	""isYourFund"":""N"",
+ ""includeOwnership"" :""Y"",     ""ownershipAsOfDate"" :""2010-01-01"",
+	""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_DETAILS"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_DI_INDUSTRY_TIER"",
+		""datasheetFieldValue"": [""Industry1""]
+		},
+		{ 
+		""datasheetName"": ""DS_DETAILS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_DI_REGION_TIER"",
+	    ""datasheetFieldValue"": [""Country""]
+		},
+		{ 
+		""datasheetName"": ""DS_DETAILS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_IS_DIRECT_IGNORED_INVE"",
+	    ""datasheetFieldValue"": [""Y""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_DETAILS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_DI_REGION_TIER"", ""DS_DI_INDUSTRY_TIER"",""DS_IS_DIRECT_IGNORED_INVE""]
+	    }
+	  ]
+,
+    ""limit"": 10,
+    ""offset"": 0}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestments_Search,directInvestments_Search_Verify the Error Message for validation failed ,directInvestments/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""fundId"": [],
+    ""investmentCompanyId"": [],
+	""isPublic"":null,
+	""ticker"":[],
+	""exchange"":[],
+    ""portfolioId"": [],
+    ""eqInvestmentId"": [],
+	""isSecondaryInvestment"": ""Yt"",
+	""isYourFund"":""N"",
+ ""includeOwnership"" :""Y"",     ""ownershipAsOfDate"" :""2010-01-01"",
+	""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_DETAILS"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_DI_INDUSTRY_TIER"",
+		""datasheetFieldValue"": [""Industry1""]
+		},
+		{ 
+		""datasheetName"": ""DS_DETAILS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_DI_REGION_TIER"",
+	    ""datasheetFieldValue"": [""Country""]
+		},
+		{ 
+		""datasheetName"": ""DS_DETAILS"",
+	    ""datasheetInstanceName"": [],
+	    ""datasheetFieldName"": ""DS_IS_DIRECT_IGNORED_INVE"",
+	    ""datasheetFieldValue"": [""Y""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_DETAILS"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_DI_REGION_TIER"", ""DS_DI_INDUSTRY_TIER"",""DS_IS_DIRECT_IGNORED_INVE""]
+	    }
+	  ]
+}",400,VALIDATION_FAILED,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestments_lots_Search,directInvestments_lots_search_Verify the search with all fields,directInvestments/lots/search?reportingDB=Y,"{
+    ""lotId"": [],
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [346257],
+    ""investmentCompanyId"": [],
+    ""isPublic"":null,
+    ""ticker"": [],
+    ""exchange"": [],
+    ""portfolioId"": [],
+    ""securityId"": [],
+    ""securityName"": [],
+    ""securityType"": [],
+    ""isYourFund"": ""N"",
+    ""isInKind"": null,
+    ""asOfDate"": ""2025-10-01"",
+    ""excludeZeroLotPositions"": null,
+    ""limit"": 200,
+    ""offset"": 0}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+directInvestments_lots_Search,directInvestments_lots_Search_Verify the Error Message for Missing Required Fields,directInvestments/lots/search?reportingDB=Y,"{
+    ""lotId"": [],
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [],
+    ""investmentCompanyId"": [],
+    ""isPublic"": ""Y"",
+    ""ticker"": [""SSGTICKER""],
+    ""exchange"": [],
+    ""portfolioId"": [],
+    ""securityId"": [],
+    ""securityName"": [],
+    ""securityType"": [],
+    ""isYourFund"": ""N"",
+    ""isInKind"": null,
+    ""asOfDate"": ""2025-10-01"",
+    ""excludeZeroLotPositions"": null,
+    ""limit"": 200,
+    ""offset"": 23}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Fund_Allocations_Search,Fund_Allocations_Search_Verify the search with all fields,fundAllocations/search?reportingDB=Y,"{
+    ""fundId"": [
+        346194
+    ],
+    ""fromDate"": ""1990-01-01"",
+    ""toDate"": ""2050-01-01"",
+    ""incExpId"": [],
+    ""transStatus"": [],
+    ""allocationName"": [],
+    ""allocationCode"": [],
+    ""isTransferActivity"": ""N"",
+    ""fromPostedDate"": ""1990-01-01"",
+    ""toPostedDate"": ""2050-01-01"",
+    ""includeInvestorAllocations"": ""Y"",
+    ""includeZeroInvestorAllocations"": ""Y"",
+    ""limit"": 20,
+    ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Fund_Allocations_Search,Fund_Allocations_Search_Verify the Error Message for Missing Required Fields,fundAllocations/search?reportingDB=Y,"{
+    ""fundId"": [
+     
+    ],
+    ""fromDate"": ""1990-01-01"",
+    ""toDate"": ""2050-01-01"",
+    ""incExpId"": [],
+    ""transStatus"": [
+        
+    ],
+    ""allocationName"": [],
+    ""allocationCode"": [],
+    ""isTransferActivity"": ""Y"",
+""fromPostedDate"":""1990-01-01"" ,
+""toPostedDate"":""2050-01-01"" ,
+ ""includeInvestorAllocations"": ""N"",
+
+ ""includeZeroInvestorAllocations"": ""Y"",
+    ""limit"": 20,
+  ""offset"":0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundcontributions_search,fundcontribution_search Verify the search with all fields,fundContributions/search?reportingDB=Y,"{
+    ""fundId"": [346261],
+    ""transStatus"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2024-01-01"",
+    ""isTransferActivity"": ""N"",
+    ""fromPostedDate"": ""1900-01-01"",
+    ""toPostedDate"": ""2024-01-01"",
+    ""limit"": 2,
+    ""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundcontributions_search,fundcontribution_search_Verify the Error Message for Missing Required Fields,fundContributions/search?reportingDB=Y,"{
+    ""fundId"": [],
+    ""transStatus"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2024-01-01"",
+    ""isTransferActivity"": ""Y"",
+    ""fromPostedDate"": ""1900-01-01"",
+    ""toPostedDate"": ""2024-01-01"",
+    ""limit"": 2,
+    ""offset"":1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundDistributions_search,fundDistribution_search_Verify the search with all fields,fundDistributions/search?reportingDB=Y,"{
+    ""fundId"": [346261],
+    ""transStatus"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2099-01-01"",
+    ""isTransferActivity"": ""Y"",
+     ""fromPostedDate"": ""1900-01-01"",
+    ""toPostedDate"": ""2099-01-01"",
+    ""limit"": 20,
+    ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundDistributions_search,fundDistribution_search_Verify the Error Message for Missing Required Fields,fundDistributions/search?reportingDB=Y,"{
+    ""fundId"": [],
+    ""transStatus"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2024-01-01"",
+    ""isTransferActivity"": ""Y"",
+     ""fromPostedDate"": ""1900-01-01"",
+    ""toPostedDate"": ""2024-01-01"",
+    ""limit"": 20,
+    ""offset"": 0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundGroup_Search,Fundgroup_search_Verify the search with all fields,fundGroups/search?reportingDB=Y,"{
+    ""fundGroupId"": [],
+    ""fundGroupNameContains"": """",
+    ""limit"":44,
+    ""offset"":2
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundGroup_Search,Fundgroup_search_Verify the Error Message for invalid Request,fundGroups/search?reportingDB=Y,"{
+    ""fundGroupId"": [],
+    ""fundGroupNameCotains"": """",
+    ""limit"":44,
+    ""offset"":0
+}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestAllocations_Search,FundInvestAllocations_Search_Verify the search with all fields,fundInvestAllocations/search?reportingDB=Y,"{
+""investmentId"" : [],
+""eqInvestmentId"":[],
+""fundId"":[346261],
+""investmentFundId"":[],
+""portfolioId"":[],
+""fromDate"": ""2000-01-01"",
+""toDate"": ""2068-12-31"",
+""transStatus"":[],
+""allocationName"":[],
+""allocationCode"":[],
+""fromPostedDate"": ""2000-01-01"",
+""toPostedDate"": ""2068-12-31"",
+""includeInvestorAllocations"": null,
+""includeZeroInvestorAllocations"": ""Y"",
+    ""limit"": 4,
+    ""offset"": 0
+
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestAllocations_Search,FundInvestAllocations_Search_Verify the Error Message for Missing Required Fields,fundInvestAllocations/search?reportingDB=Y,"{
+""investmentId"" : [],
+""eqInvestmentId"":[],
+""fundId"":[],
+""investmentFundId"":[],
+""portfolioId"":[],
+""fromDate"": ""2000-01-01"",
+""toDate"": ""2028-12-31"",
+""transStatus"":[],
+""allocationName"":[],
+""allocationCode"":[],
+""fromPostedDate"": ""2000-01-01"",
+""toPostedDate"": ""2028-12-31"",
+""includeInvestorAllocations"": null,
+""includeZeroInvestorAllocations"": ""Y"",
+    ""limit"": 4,
+    ""offset"": 0
+
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestCashDistributions_search,fundInvestCashDistributions_search_Verify the search with all fields,fundInvestCashDistributions/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [
+       346261
+    ],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2090-01-01"",
+    ""transStatus"": [],
+    ""underlyingCompanies"": [],
+    ""transSubType"": [],
+    ""fromPostedDate"": ""2000-01-01"",
+    ""toPostedDate"": ""2090-01-01"",
+    ""limit"": 7,
+    ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestCashDistributions_search,fundInvestCashDistributions_search_Verify the Error Message for Missing Required Fields,fundInvestCashDistributions/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [
+        
+    ],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2090-01-01"",
+    ""transStatus"": [],
+    ""underlyingCompanies"": [],
+    ""transSubType"": [],
+    ""fromPostedDate"": ""2000-01-01"",
+    ""toPostedDate"": ""2090-01-01"",
+    ""limit"": 7,
+    ""offset"":2
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestContributions_search,fundInvestContributions_search_Verify the search with all fields,fundInvestContributions/search?reportingDB=Y,"{
+    ""investmentId"": [
+        
+    ],
+    ""eqInvestmentId"": [],
+    ""fundId"": [346261],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"": ""2000-09-20"",
+    ""toDate"": ""2029-09-27"",
+    ""transStatus"": [],
+       
+    ""underlyingCompaniesId"": [],
+    ""isSecondaryInvestment"": null,
+    ""transSubType"": [],
+    ""lpInterestPurchaseOption"": [
+       
+    ],
+   
+    ""limit"": 5,
+  ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestContributions_search,fundInvestContributions_search_Verify the Error Message for Missing Required Fields,fundInvestContributions/search?reportingDB=Y,"{
+    ""investmentId"": [
+        
+    ],
+    ""eqInvestmentId"": [],
+    ""fundId"": [],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"": ""2000-09-20"",
+    ""toDate"": ""2029-09-27"",
+    ""transStatus"": [],
+       
+    ""underlyingCompaniesId"": [],
+    ""isSecondaryInvestment"": null,
+    ""transSubType"": [],
+    ""lpInterestPurchaseOption"": [
+       
+    ],
+    ""fromPostedDate"": ""2000-01-01"",
+""toPostedDate"": ""2028-12-31"",
+    ""limit"": 5,
+  ""offset"":2
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestNetContributions_search,fundInvestNetContributions_search_Verify the search with all fields,fundInvestNetContributions/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [346261],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"":""1990-10-01"",
+    ""toDate"": ""2050-10-27"",
+    ""underlyingCompanies"": [],
+    ""transSubType"": [],
+    ""limit"": 2,
+  ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestNetContributions_search,fundInvestNetContributions_search_Verify the Error Message for Missing Required Fields,fundInvestNetContributions/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"":""1990-10-01"",
+    ""toDate"": ""2050-10-27"",
+    ""underlyingCompanies"": [],
+    ""transSubType"": [],
+    ""limit"": 2,
+  ""offset"":0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestInkindDistributions_search,fundInvestInkindDistributions_search Verify the search with all fields,fundInvestInkindDistributions/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [346261],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"":""2000-01-01"",
+    ""toDate"": ""2025-01-01"",
+    ""transStatus"": [""Saved"", ""Submitted"", ""Unsubmitted"", ""Posted"", ""Cancelled""],
+    ""underlyingCompanies"": [],
+    ""transSubType"": [],
+    ""fromPostedDate"":""2000-01-01"",
+    ""toPostedDate"": ""2025-01-01"",
+      
+    ""limit"":60,
+    ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestInkindDistributions_search,fundInvestInkindDistributions_search_Verify the Error Message for Missing Required Fields,fundInvestInkindDistributions/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""eqInvestmentId"": [],
+    ""fundId"": [],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"":""2000-01-01"",
+    ""toDate"": ""2025-01-01"",
+    ""transStatus"": [""Saved"", ""Submitted"", ""Unsubmitted"", ""Posted"", ""Cancelled""],
+    ""underlyingCompanies"": [],
+    ""transSubType"": [],
+    ""fromPostedDate"":""2000-01-01"",
+    ""toPostedDate"": ""2025-01-01"",
+      
+    ""limit"":60,
+    ""offset"":3
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestValuations_search,fundInvestValuations_search_Verify the search with all fields,fundInvestValuations/search?reportingDB=Y,"{
+    ""investmentId"": [
+        
+    ],
+    ""eqInvestmentId"": [],
+    ""fundId"": [
+      346257
+    ],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"": ""1990-01-02"",
+    ""toDate"": ""2045-01-02"",
+    ""transStatus"": [],
+    ""valuationMethod"": [],
+    ""valuationSource"": [],
+    ""limit"":60,
+    ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestValuations_search,fundInvestValuations_search_Verify the Error Message for Missing Required Fields,fundInvestValuations/search?reportingDB=Y,"{
+    ""investmentId"": [
+        
+    ],
+    ""eqInvestmentId"": [],
+    ""fundId"": [
+      
+    ],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"": ""1990-01-02"",
+    ""toDate"": ""2045-01-02"",
+    ""transStatus"": [],
+    ""valuationMethod"": [],
+    ""valuationSource"": [],
+    ""limit"":60,
+    ""offset"":3
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestvaluation_searchid,fundInvestValuations_searchid_Verify the search with all fields,fundInvestValuations/searchId?reportingDB=Y,"{
+""transId"" :[3345]
+,""eqTransId"" :[]
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestvaluation_searchid,fundInvestValuations_searchid_Verify the Error Message for Missing Required Fields,fundInvestValuations/searchId?reportingDB=Y,"{
+    ""investmentId"": [
+        
+    ],
+    ""eqInvestmentId"": [],
+    ""fundId"": [
+      
+    ],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""fromDate"": ""1990-01-02"",
+    ""toDate"": ""2045-01-02"",
+    ""transStatus"": [],
+    ""valuationMethod"": [],
+    ""valuationSource"": [],
+    ""limit"":60,
+    ""offset"":3
+}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestmentCommitments_Search,fundInvestmentCommitments_Search_Verify the search with all fields,fundInvestmentCommitments/search?reportingDB=Y,"{
+""investmentId"" :[],
+""eqInvestmentId"" : [],
+""fundId"" : [346261],
+""investmentFundId"" : [],
+""portfolioId"" : [],
+""isSecondaryInvestment"" :null,
+""isYourFund"":null, 
+""excludeZeroTotalCommit"":null, 
+""transStatus"" :[],
+""fromDate"" :""1900-01-01"",
+""toDate"" :""2044-01-01"",
+""isTransferActivity"":""N"",
+""limit"": 3,
+  ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundInvestmentCommitments_Search,FundInvestmentCommitments_Search_Verify the Error Message for Missing Required Fields,fundInvestmentCommitments/search?reportingDB=Y,"{
+""transId"" :[]
+,""eqTransId"" :[]
+}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestments_search,FundInvestments_search_Verify the search with all fields,fundInvestments/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""fundId"": [346261],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""eqInvestmentId"": [],
+    ""isSecondaryInvestment"": null,
+    ""isYourFund"": null,
+    ""datasheetSearch"": [
+        
+    ],
+    ""datasheetResponse"": [
+                {
+                    ""datasheetName"": ""DS_FI_DETAILS"",
+                    ""datasheetInstanceName"": [
+                       
+                    ],
+                    ""datasheetFieldName"": [
+                        ""DS_CLASSIFY_AS_DI""
+                    ]
+                }
+            ],
+    ""limit"": 13,
+  ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestments_search,FundInvestments_search_Verify the Error Message for Missing Required Fields,fundInvestments/search?reportingDB=Y,"{
+    ""investmentId"": [],
+    ""fundId"": [],
+    ""investmentFundId"": [],
+    ""portfolioId"": [],
+    ""eqInvestmentId"": [],
+    ""isSecondaryInvestment"": null,
+    ""isYourFund"": null,
+    ""datasheetSearch"": [
+        
+    ],
+    ""datasheetResponse"": [
+                {
+                    ""datasheetName"": ""DS_FI_DETAILS"",
+                    ""datasheetInstanceName"": [
+                       
+                    ],
+                    ""datasheetFieldName"": [
+                        ""DS_CLASSIFY_AS_DI""
+                    ]
+                }
+            ],
+    ""limit"": 13,
+  ""offset"":0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestments_searchId,FundInvestments_SearchId_Verify the search with all fields ,fundInvestments/searchId?reportingDB=Y,"{
+""fundId"" :[346257,346261,346270],
+""investmentFundId"" :[],
+""portfolioId"" : [],
+""isYourFund"": null,
+    ""limit"": 20,
+  ""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundInvestments_searchId,FundInvestments_SearchId_Verify the Error Message for Missing Required Fields,fundInvestments/searchId?reportingDB=Y,"{
+""fundId"" :[],
+""investmentFundId"" :[],
+""portfolioId"" : [],
+""isYourFund"": null,
+    ""limit"": 2,
+  ""offset"":0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundSummary/investor/commitments/search,fundSummary/investor/commitments/search Verify the search with all fields,fundSummary/investor/commitments/search?reportingDB=Y,"{
+  ""fundId"": [ 346257,346261,346270],
+  ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2094-01-01"",
+  ""excludeZeroCommitmentTransactions"":""N"",
+  ""limit"": 10,
+  ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundSummary/investor/commitments/search,FundSummary/investor/commitments_search_Verify the Error Message for Missing Required Fields,fundSummary/investor/commitments/search?reportingDB=Y,"{
+  ""fundId"": [ ],
+  ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2024-01-01"",
+  ""excludeZeroCommitmentTransactions"":""N"",
+  ""limit"": 10,
+  ""offset"": 2
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundSummary/investment/search,fundSummary/investment/search Verify the search with all fields,fundSummary/investment/search?reportingDB=Y,"{
+  ""fundId"": [
+ ""346580"",""346261"",""346270""
+  ],
+  ""limit"": 3,
+  ""offset"": 0}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundSummary/investment/search,fundSummary/investment/search_Verify the Error Message for Missing Required Fields,fundSummary/investment/search?reportingDB=Y,"{
+  ""fundId"": [
+
+  ],
+  ""limit"": 3,
+  ""offset"": 0}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundValuations_search,fundValuations_search_Verify the search with all fields,fundValuations/search?reportingDB=Y,"{""fundId"":[ 346268]
+,""fromDate"":""1990-01-01""
+,""toDate"":""2060-01-01""
+,""transStatus"":[],
+""valuationType"": [],
+                ""valuationSource"": [],
+ ""limit"":30,
+    ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fundValuations_search,FundValuations_search_Verify the Error Message for Missing Required Fields,fundValuations/search?reportingDB=Y,"{""fundId"":[ ]
+,""fromDate"":""1990-01-01""
+,""toDate"":""2060-01-01""
+,""transStatus"":[],
+""valuationType"": [],
+                ""valuationSource"": [],
+ ""limit"":30,
+    ""offset"":0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundValuations_searchId,fundValuations/searchId_Verify the search with all fields,fundValuations/searchId?reportingDB=Y,"{""transId"":[3564]
+ ,""eqTransId"":[]
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+FundValuations_searchId,FundValuations/searchId_Verify the Error Message for Missing Required Fields,fundValuations/searchId?reportingDB=Y,"{""transId"":[]
+ ,""eqTransId"":[]
+ }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Funds_Search,Funds_Search_Verify the search with all fields,funds/search?reportingDB=Y,"{
+   ""fundId"": [],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ],
+""limit"": 6,
+""offset"":0
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Funds_Search,Funds_Search_Verify the Error Message for Validation failed,funds/search?reportingDB=Y,"{
+   ""fundId"": [],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""Ns"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ]
+ }",400,VALIDATION_FAILED,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Funds_SearchId,Funds_SearchId_Verify the search with all fields.,funds/searchId?reportingDB=Y,"
+{
+  ""fundName"": [],
+  ""isYourFund"": ""Y"",
+  ""limit"": 3,
+  ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Funds_SearchId,Funds_SearchId_Verify the Error Message forInvalid Request,funds/searchId?reportingDB=Y,"
+{
+  ""fundNme"": [],
+  ""isYourFund"": ""Y"",
+  ""limit"": 3,
+  ""offset"": 0
+}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fxRates_search,fxRates_search_Verify the search with all fields,fxRates/search?reportingDB=Y,"{
+    ""rateTable"": [
+        ""MAIN"",
+        ""rate612""
+    ],
+    ""fromDate"": ""2002-11-01"",
+    ""toDate"": ""2022-11-18"",
+    ""currencyPairs"": [
+        {
+            ""currencyFrom"": ""AUD"",
+            ""currencyTo"": ""CAD""
+        },
+        {
+            ""currencyFrom"": ""CAD"",
+            ""currencyTo"": ""AUD""
+        },
+        {
+            ""currencyFrom"": ""EUR"",
+            ""currencyTo"": ""USD""
+        }
+    ],
+    ""limit"":12,
+    ""offset"":0
+
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+fxRates_search,FxRates_search_Verify the Error Message for Missing Required Fields,fxRates/search?reportingDB=Y,"{
+    ""rateTable"": [
+        
+        
+    ],
+    ""fromDate"": ""2002-11-01"",
+    ""toDate"": ""2022-11-18"",
+    ""currencyPairs"": [
+        {
+            ""currencyFrom"": ""AUD"",
+            ""currencyTo"": ""CAD""
+        },
+        {
+            ""currencyFrom"": ""CAD"",
+            ""currencyTo"": ""AUD""
+        },
+        {
+            ""currencyFrom"": ""EUR"",
+            ""currencyTo"": ""USD""
+        }
+    ],
+    ""limit"":12,
+    ""offset"":0
+
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Gics_search,Gics_search Verify the search with all fields,gics/search?reportingDB=Y,"{
+    ""gicsTier1Code"": [
+       
+    ],
+    ""gicsTier1Name"": [],
+     ""gicsTier2Code"": [
+       
+    ],
+    ""gicsTier2Name"": [],
+     ""gicsTier3Code"": [
+       
+    ],
+    ""gicsTier3Name"": [],
+     ""gicsTier4Code"": [
+       
+    ],
+    ""gicsTier4Name"": [],
+    ""limit"":3,
+    ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Gics_search,Gics_search_Verify the Error Message forInvalid Request,gics/search?reportingDB=Y,"{
+   
+     ""gicsTir2Code"": [
+       
+    ],
+    ""gicsTier2Name"": [],
+     ""gicsTier3Code"": [
+       
+    ],
+    ""gicsTier3Name"": [],
+     ""gicsTier4Code"": [
+       
+    ],
+    ""gicsTier4Name"": [],
+    ""limit"":3,
+    ""offset"":1
+}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorCommitments_Search,investorCommitments_Search_Verify the search with all fields,investorCommitments/search?reportingDB=Y,"{
+""investorId"" :[],
+""eqInvestorId"" : [],
+""fundId"" : [346267],
+""investorFundId"" : [],
+""investorPortfolioId"" : [ ],
+""isFundInvestor"" :null,
+""isYourFund"":null, 
+""excludeZeroTotalCommit"":null,
+ ""isTransferActivity"": ""N"",
+ ""includeCommitmentSchedule"": ""Y"",
+""transStatus"" :[],
+""fromDate"" :""1990-01-01"" ,
+""toDate"" :""2083-01-01"",
+    ""limit"":30,
+    ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorCommitments_Search,investorCommitments_Search_Verify the Error Message for Missing Required Fields,investorCommitments/search?reportingDB=Y,"{
+""investorId"" :[],
+""eqInvestorId"" : [],
+""fundId"" : [],
+""investorFundId"" : [],
+""investorPortfolioId"" : [ ],
+""isFundInvestor"" :null,
+""isYourFund"":null, 
+""excludeZeroTotalCommit"":null,
+ ""isTransferActivity"": ""N"",
+ ""includeCommitmentSchedule"": ""Y"",
+""transStatus"" :[],
+""fromDate"" :""1990-01-01"" ,
+""toDate"" :""2083-01-01"",
+    ""limit"":30,
+    ""offset"":0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+InvestorContribRetrieve,InvestorContribRetrieve_Search_Verify the search with all fields,investorContributions/search?reportingDB=Y,"{
+    ""investorId"": [
+        
+    ],
+    ""fundId"": [346257],
+    
+    ""investorFundId"": [],
+    ""investorPortfolioId"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2075-12-01"",
+    ""transStatus"": [
+        ""Saved"",
+        ""Submitted"",
+        ""Unsubmitted"",
+        ""Posted"",
+        ""Cancelled""
+    ],
+  
+    ""isTransferActivity"": ""N"",
+    ""fromPostedDate"": ""1900-01-01"",
+    ""toPostedDate"": ""2075-12-01"",
+  ""limit"": 27,
+  ""offset"": 0,
+  ""paymentStatus"": [
+      
+  ]
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+InvestorContribRetrieve,InvestorContribRetrieve_Search_Verify the Error Message for Missing Required Fields,investorContributions/search?reportingDB=Y,"{
+    ""investorId"": [
+        
+    ],
+    ""fundId"": [],
+    ""investorFundId"": [],
+    ""investorPortfolioId"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2075-12-01"",
+    ""transStatus"": [
+        ""Saved"",
+        ""Submitted"",
+        ""Unsubmitted"",
+        ""Posted"",
+        ""Cancelled""
+    ],
+  
+    ""isTransferActivity"": ""Y"",
+    ""fromPostedDate"": ""1900-01-01"",
+    ""toPostedDate"": ""2075-12-01"",
+  ""limit"": 27,
+  ""offset"": 0,
+  ""paymentStatus"": [
+    
+  ]
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorNetContributions_Search,investorNetContributions_Search_Verify the search with all fields,investorNetContributions/search?reportingDB=Y,"{
+    ""investorId"": [
+        
+    ],
+    ""fundId"": [346257,346261],
+    ""investorFundId"": [],
+    ""investorPortfolioId"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2050-01-01"",
+    ""limit"":8,
+  ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorNetContributions_Search,investorNetContributions_Search_Verify the Error Message for Missing Required Fields,investorNetContributions/search?reportingDB=Y,"{
+    ""investorId"": [
+        
+    ],
+    ""fundId"": [],
+    ""investorFundId"": [],
+    ""investorPortfolioId"": [],
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2050-01-01"",
+    ""limit"":2,
+  ""offset"":0
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorDistributions_Search,investorDistributions_Search_Verify the search with all fields,investorDistributions/search?reportingDB=Y,"{
+    ""investorId"": [],
+    ""fundId"": [
+       ""347873""
+    ],
+    ""investorFundId"": [],
+    ""investorPortfolioId"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2025-12-01"",
+    ""transStatus"": [],
+   
+    ""paymentStatus"": [],
+    ""isTransferActivity"": ""N"",
+     ""fromPostedDate"": ""1900-01-01"",
+    ""toPostedDate"": ""2025-12-01"",
+     ""limit"": 100,
+    ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorDistributions_Search,investorDistributions_Search_Verify the Error Message for Missing Required Fields,investorDistributions/search?reportingDB=Y,"{
+    ""investorId"": [],
+    ""fundId"": [
+       
+    ],
+    ""investorFundId"": [],
+    ""investorPortfolioId"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2025-12-01"",
+    ""transStatus"": [],
+    ""limit"": 10,
+    ""offset"": 0,
+    ""paymentStatus"": [],
+    ""isTransferActivity"": ""Y"",
+     ""fromPostedDate"": ""1900-01-01"",
+    ""toPostedDate"": ""2025-12-01""
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorNetDistributions_Search,investorNetDistributions_Search_Verify the search with all fields,investorNetDistributions/search?reportingDB=Y,"{
+    ""investorId"": [
+        
+    ],
+    ""fundId"": [ 347873,346257,346261],
+    ""investorFundId"": [""346193""],
+    ""investorPortfolioId"": [],
+    ""fromDate"": ""1200-01-01"",
+    ""toDate"": ""2093-01-01"",
+  ""limit"": 200,
+  ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorNetDistributions_Search,investorNetDistributions_Search_Verify the Error Message for Missing Required Fields,investorNetDistributions/search?reportingDB=Y,"{
+    ""investorId"": [
+        
+    ],
+    ""fundId"": [ ],
+    ""investorFundId"": [],
+    ""investorPortfolioId"": [],
+    ""fromDate"": ""1900-01-01"",
+    ""toDate"": ""2093-01-01"",
+  ""limit"": 2,
+  ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorEntities_search,investorEntities_search_Verify the search with all fields,investorEntities/search?reportingDB=Y,"{
+""investorEntityId"":[250091],
+""investorEntityNameContains"":"""",
+""investorEntityLongNameContains"":"""",
+""eqInstId"":[],
+""includeContacts"":""Y"",
+""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_DETAILS_07"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_USER_ID"",
+		""datasheetFieldValue"": [""3434""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_DETAILS_07"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_USER_ID""]
+	    }
+	  ],
+      ""limit"":1,
+      ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorEntities_search,investorEntities_search_Verify the Error Message for Validation failed,investorEntities/search?reportingDB=Y,"{
+""investorEntityId"": 0,
+""investorEntityNameContains"":"""",
+""investorEntityLongNameContains"":"""",
+""eqInstId"":[],
+""includeContacts"":""Y"",
+""datasheetSearch"": [
+	    {
+		""datasheetName"": ""DS_DETAILS_07"",
+		""datasheetInstanceName"": [],
+		""datasheetFieldName"": ""DS_USER_ID"",
+		""datasheetFieldValue"": [""3333""]
+		}
+	  ],
+	  ""datasheetResponse"": [
+	    {
+	      ""datasheetName"": ""DS_DETAILS_07"",
+	      ""datasheetInstanceName"": [],
+	      ""datasheetFieldName"": [""DS_USER_ID""]
+	    }
+	  ],
+      ""limit"":1,
+      ""offset"":0
+}",400,VALIDATION_FAILED,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorEntities_searchId,investorEntities_Searchid_Verify the search with all fields,investorEntities/searchId?reportingDB=Y,"{
+""investorEntityName"":[""AA inv1"",""AA investorentity""],
+    ""limit"":9,
+    ""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorEntities_searchId,investorEntities_searchid_Verify the Error Message for Missing Required Fields,investorEntities/searchId?reportingDB=Y,"{
+""investorEntityName"":[],
+    ""limit"":9,
+    ""offset"":8
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+InvestorPortfolio_Search,Invtr_portfolio_Search_Verify the search with all fields,investorPortfolios/search?reportingDB=Y,"{
+	  ""investorPortfolioId"": [],
+	  ""investorPortfolioNameContains"": """",
+	  ""eqInstId"": [],
+	  ""investorEntityId"": [],
+	  ""investorEntityNameContains"": """",
+	  ""datasheetSearch"": [],
+	 
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_LAST_PAYMENT_DATE_TRACKER"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": [
+                ""DS_DATE_APPROVED"",
+                ""DS_APPROVED"",
+                ""DS_APPROVED_BY""
+            ]
+        }
+    ],
+""limit"": 6,
+""offset"":2
+	}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+InvestorPortfolio_Search,Invtr_portfolio_Search_Verify the Error Message for Invalid Request,investorPortfolios/search?reportingDB=Y,"{
+	  ""investorPortfolioId"": [],
+	  ""investorPortfolioNamentains"": """",
+	  ""eqInstId"": [],
+	  ""investorEntityId"": [],
+	  ""investorEntityNameContins"": """",
+	  ""datasheetSearch"": [],
+	 
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_LAST_PAYMENT_DATE_TRACKER"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": [
+                ""DS_DATE_APPROVED"",
+                ""DS_APPROVED"",
+                ""DS_APPROVED_BY""
+            ]
+        }
+    ],
+""limit"": 6,
+""offset"":0
+	}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Investor/portfolio/position_search,Investor/portfolio/position_Search_Verify the search with all fields,investorPortfolios/position/search?reportingDB=Y,"{
+    ""investorPortfolioId"": [],
+    ""investorPortfolioNameContains"":""%"",
+     ""eqInstId"": [],
+     ""investorEntityId"": [],
+     ""investorEntityNameContains"": "" "",
+    ""asOfDate"": ""2013-03-06"",
+    ""fundId"": [],
+""limit"": 12,
+""offset"":5
+    
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Investor/portfolio/position_search,Investor/portfolio/position_Search_Verify the Error Message for Invalid Request,investorPortfolios/position/search?reportingDB=Y,"{
+    ""investorPotfolioId"": [],
+    ""investorPortfolioNameContains"":"""",
+     ""eqInstId"": [],
+     ""investorEntityId"": [],
+     ""investorEntityNameContains"": "" "",
+    ""asOfDate"": ""2013-03-06"",
+    ""fundId"": [],
+""limit"": 838,
+""offset"":4
+    
+}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+InvestorPortfolio_SearchId,Invtr_portfolio_SearchId_Verify the search with all fields,investorPortfolios/searchId?reportingDB=Y,"{
+""investorEntityName"":[ ""AA INV1"",""AA INVPORT""],
+""investorPortfolioName"":[],
+""limit"": 20,
+""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+InvestorPortfolio_SearchId,Invtr_portfolio_SearchId_Verify the Error Message for Missing Required Fields,investorPortfolios/searchId?reportingDB=Y,"{
+""investorEntityName"":[ ],
+""investorPortfolioName"":[],
+""limit"": 2,
+""offset"":1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorTransfer/search/search,investorTransfer/search_Verify the search with all fields,investorTransfer/search?reportingDB=Y,"{
+    ""fundId"": [346257,346261,346270],
+    ""fromInvestorId"": [],
+    ""fromInvestorPortfolioId"": [],
+    ""fromInvestorFundId"": [],
+    ""fromEffectiveDate"": ""2010-01-01"",
+    ""toEffectiveDate"": ""2090-01-01"",
+    ""toInvestorId"": [],
+    ""transStatus"": [],
+    ""limit"": 10,
+    ""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+investorTransfer/search/search,investorTransfer_search_Verify the Error Message for Missing Required Fields,investorTransfer/search?reportingDB=Y,"{
+    ""fundId"": [],
+    ""fromInvestorId"": [],
+    ""fromInvestorPortfolioId"": [],
+    ""fromInvestorFundId"": [],
+    ""fromEffectiveDate"": ""2010-01-01"",
+    ""toEffectiveDate"": ""2020-01-01"",
+    ""toInvestorId"": [],
+    ""transStatus"": [],
+    ""limit"": 10,
+    ""offset"":2
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Investors_Search,Investors_Search_Verify the search with all fields,investors/search?reportingDB=Y,"{
+""investorId"": [],
+""eqInvestorId"":[],
+""fundId"": [346193],
+""investorFundId"":[],
+""investorPortfolioId"":[],
+""isFundInvestor"":null,
+""isYourFund"": ""N"",
+""includeRecipients"": ""Y"",
+""datasheetSearch"": [
+    {
+""datasheetName"": ""DS_DETAILS_04"",
+""datasheetInstanceName"": [],
+""datasheetFieldName"": ""DS_MANDATE_GROUP_ACCOUNT_"",
+""datasheetFieldValue"": [""SSG12""]
+},
+{
+""datasheetName"": ""DS_DETAILS_04"",
+    ""datasheetInstanceName"": [],
+    ""datasheetFieldName"": ""DS_PARTNER_NUMBER"",
+    ""datasheetFieldValue"": [""1134""]
+}
+  ],
+  ""datasheetResponse"": [
+    {
+      ""datasheetName"": ""DS_DETAILS_04"",
+      ""datasheetInstanceName"": [],
+      ""datasheetFieldName"": [""DS_MANDATE_GROUP_ACCOUNT_"", ""DS_PARTNER_NUMBER""]
+    }
+  ]
+
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Investors_Search,Investors_Search_Verify the Error Message for Invalid Request,investors/search?reportingDB=Y,"{
+""investorId"": [],
+""eqInvestorId"":[],
+""fundId"": [],
+""investorFundId"":[],
+""investorPortfolioId"":[],
+""isFundInvestor"":null,
+""isYourFund"": ""aN"",
+""includeRecipients"": ""Y"",
+""datasheetSearch"": [
+    
+  ],
+  ""datasheetResponse"": [
+    
+  ]
+}",400,VALIDATION_FAILED,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Investors_SearchId,Investors_SearchId_Verify the search with all fields,investors/searchId?reportingDB=Y,"{
+""fundId"":[346261],
+""investorFundId"":[],
+""investorPortfolioId"":[],
+""isYourFund"":""N"",
+""limit"": 20,
+""offset"":1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Investors_SearchId,Investors_SearchId_Verify the Error Message for Missing Required Fields,investors/searchId?reportingDB=Y,"{
+""fundId"":[],
+""investorFundId"":[],
+""investorPortfolioId"":[],
+""isYourFund"":null
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+loanActivities_search,loanActivities_search_Verify the search with all fields,loans/search?reportingDB=Y,"{
+    ""fundId"": [
+        346193,346194
+    ],
+    ""fromDate"": ""2000-01-01"",
+    ""toDate"": ""2023-04-05"",
+    ""activityType"": [
+        ""Payment"",
+        ""Withdrawal""
+    ],
+    ""limit"": 10,
+    ""offset"": 0}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+loanActivities_search,loanActivities_search_Verify the Error Message for Missing Required Fields,loans/search?reportingDB=Y,"{
+    ""fundId"": [
+        
+    ],
+    ""fromDate"": ""2023-01-11"",
+    ""toDate"": ""2023-04-05"",
+    ""activityType"": [
+        ""Payment"",
+        ""Withdrawal""
+    ],
+    ""limit"": 10,
+    ""offset"": 4
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Manager_Search,Manager_Search_Verify the search with all fields,managers/search?reportingDB=Y,"{
+ 
+""managerId"": [
+        250089
+    ],
+    ""managerNameContains"": """",
+    ""managerLongNameContains"": """",
+    ""eqInstId"": [],
+    ""isYourOrg"": ""N"",
+    ""includeContacts"": ""Y"",
+    ""datasheetSearch"": [
+        {
+            ""datasheetName"": ""DS_BROKER_INFO"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": ""DS_BROKER_NAME"",
+            ""datasheetFieldValue"": [
+                ""Brk One"",
+                ""Brk Two""
+            ]
+        },
+        {
+            ""datasheetName"": ""DS_GICS"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": ""DS_GICS_CODE"",
+            ""datasheetFieldValue"": [
+                ""101010""
+            ]
+        }
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_BROKER_INFO"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": [
+                ""DS_BROKER_CODE"",
+                ""DS_BROKER_NAME""
+            ]
+        },
+        {
+            ""datasheetName"": ""DS_GICS"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": [
+                ""DS_GICS_CODE""
+            ]
+        }
+    ],      ""limit"":10,
+      ""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Manager_Search,Manager_Search_Verify the Error Message for Missing Required Fields,managers/search?reportingDB=Y,"{
+ 
+""managerId"": [],
+    ""managerNameContains"": """",
+    ""managerLongNameContains"": """",
+    ""eqInstId"": [],
+    ""isYourOrg"": ""N"",
+    ""includeContacts"": null,
+    ""datasheetSearch"": [
+        {
+            ""datasheetName"": ""DS_BROKER_INFO"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": ""DS_BROKER_NAME"",
+            ""datasheetFieldValue"": [
+                ""Brk One"",
+                ""Brk Two""
+            ]
+        },
+        {
+            ""datasheetName"": ""DS_GICS"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": ""DS_GICS_CODE"",
+            ""datasheetFieldValue"": [
+                ""10101010""
+            ]
+        }
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_BROKER_INFO"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": [
+                ""DS_BROKER_CODE"",
+                ""DS_BROKER_NAME""
+            ]
+        },
+        {
+            ""datasheetName"": ""DS_GICS"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": [
+                ""DS_GICS_CODE""
+            ]
+        }
+    ]
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Manager_SearchId,Manager_SearchId_Verify the search with all fields,managers/searchId?reportingDB=Y,"{
+""managerName"" :[""Institution - 1183"",""Institution - 1184"",""Institution - 1185"",""Institution - 1186""]
+,
+    
+    ""limit"":18,
+    ""offset"":2}
+    ",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Manager_SearchId,Manager_SearchId_Verify the Error Message for Missing Required Fields,managers/searchId?reportingDB=Y,"{
+""managerName"" :[]
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Persons_Search,Persons_Search_Verify the search with all fields,persons/search?reportingDB=Y,"{
+	  ""personId"": [84860436],
+	  ""eqPersonId"": [],
+	  ""repCode"": [],
+	  ""firstNameContains"": """",
+	  ""lastNameContains"": """",
+	  ""managerId"": [],
+	  ""companyId"": [],
+	  ""investorEntityId"": []
+	}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Persons_Search,Persons_Search_Verify the Error Message for Invalid Request,persons/search?reportingDB=Y,"{
+	  ""persoId"": [],
+	  ""eqPersonId"": [],
+	  ""repCode"": [],
+	  ""firstNameContains"": """",
+	  ""lastNameContains"": """",
+	  ""managerId"": [],
+	  ""companyId"": [],
+	  ""investorEntityId"": []
+	}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Persons_SearchId,Persons_SearchId_Verify the search with all fields,persons/searchId?reportingDB=Y,"{""firstName"": ""Neeraj"",
+	  ""lastName"": null,
+      ""limit"":10,
+      ""offset"":0
+	}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Persons_SearchId,Persons_SearchId_Verify the Error Message for Missing Required Fields,persons/searchId?reportingDB=Y,"{""firstName"": null,
+	  ""lastName"": null,
+      ""limit"":10,
+      ""offset"":9
+	}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+systemPools_Search,SystemPools_Search_Verify the search with all fields,systemPools/search?reportingDB=Y,"{
+  ""fundId"": [346257],
+  ""poolNameContains"": """",
+  ""includeInvestorAllocation"": ""Y"",
+  ""asOfDate"": ""2027-05-25"",
+  ""isDefault"": ""N""
+,
+""limit"":10,
+""offset"":0}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+systemPools_Search,SystemPools_Search_Verify the Error Message for Missing Required Fields,systemPools/search?reportingDB=Y,"{
+  ""fundId"": [],
+  ""poolNameContains"": ""cap"",
+  ""includeInvestorAllocation"": ""Y"",
+  ""asOfDate"": ""2023-05-25"",
+  ""isDefault"": ""N""
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+manualPools_Search,manualPools_search_Verify the search with all fields,manualPools/search?reportingDB=Y,"{
+ ""fundId"": [346255],
+  ""poolNameContains"": ""AA"",
+  ""includeInvestorAllocation"": ""Y"",
+  ""isDefault"": ""N""
+,
+""limit"":10,
+""offset"":0}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+manualPools_Search,manualPools_search_Verify the Error Message for Missing Required Fields,manualPools/search?reportingDB=Y,"{
+ ""fundId"": [],
+  ""poolNameContains"": ""AA m1"",
+  ""includeInvestorAllocation"": ""N"",
+  ""isDefault"": ""N""
+
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Portfolios_SearchId,Portfolios_SearchId_Verify the search with all fields,portfolios/search?reportingDB=Y,"{
+  ""portfolioNameContains"":""%"",
+  ""limit"":1,
+  ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+Portfolios_SearchId,Portfolios_SearchId_Verify the Error Message for Invalid Request,portfolios/search?reportingDB=Y,"{
+  ""portfolioNameContains"":""%""
+  ""limit"":1,
+  ""offset"": 0
+}",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+securities_search,securities_Search_Verify the search with all fields,securities/search?reportingDB=Y,"{
+""companyId"":[250135],
+""eqInstId"":[],
+""companyName"":[],
+""securityId"":[],
+""securityNameContains"":"""",
+""securityType"":[""Equity""],
+""includeAttributes"":""Y"",
+""systemAttributesResponse"":[""Total Loan Commitment"",""Par Value""],
+""customAttributesResponse"":[],
+""limit"":2,
+""offset"":0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+securities_search,securities_Search_Verify the Error Message for validation failed,securities/search?reportingDB=Y,"{
+""companyId"":[13360],
+""eqInstId"":[],
+""companyName"":[],
+""securityId"":[],
+""securityNameContains"":"""",
+""securityType"":[""Equity""],
+""includeAttributes"":""Ys"",
+""systemAttributesResponse"":[""Total Loan Commitment"",""Par Value""],
+""customAttributesResponse"":[]
+}",400,VALIDATION_FAILED,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+users_search,users/search_Verify the search with all fields,users/search?reportingDB=Y,{},200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+users_search,users/search_Verify the Error Message for validation failed,users/search?reportingDB=Y,{,400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+WireInstructions/funds/search,wireInstructions/funds/search_Verify the search with all fields,wireInstructions/funds/search?reportingDB=Y,"{
+    ""fundId"": [
+       346580
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [
+       
+    ],
+    ""limit"": 2,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+WireInstructions/funds/search,wireInstructions/funds/search_Verify the Error Message for Missing Required Fields,wireInstructions/funds/search?reportingDB=Y,"{
+    ""fundId"": [
+      
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [
+        ""Saved""
+    ],
+    ""limit"": 2,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions/managers/search,wireInstructions/managers/search_Verify the search with all fields,wireInstructions/managers/search?reportingDB=Y,"{
+    ""managerId"": [ 250416
+        
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [],
+    ""currency"": [],
+    ""isActive"": ""Y"",
+    ""startDate"": null,
+    ""stopDate"": null,
+    ""limit"": 2,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions/managers/search,wireInstructions/managers/search_Verify the Error Message for Missing Required Fields,wireInstructions/managers/search?reportingDB=Y,"{
+    ""managerId"": [
+        
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [],
+    ""currency"": [],
+    ""isActive"": ""Y"",
+    ""startDate"": null,
+    ""stopDate"": null,
+    ""limit"": 2,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions/companies/search,wireInstructions/companies/search_Verify the search with all fields,wireInstructions/companies/search?reportingDB=Y,"{
+    ""companyId"": [
+        250417
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [],
+    ""currency"": [],
+    ""isActive"": ""Y"",
+    ""startDate"": ""2000-01-01"",
+    ""stopDate"": ""2010-01-01"",
+    ""limit"": 2,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions/companies/search,wireInstructions/companies/search_Verify the Error Message for Missing Required Fields,wireInstructions/companies/search?reportingDB=Y,"{
+    ""companyId"": [
+        
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [],
+    ""currency"": [],
+    ""isActive"": ""Y"",
+    ""startDate"": ""2000-01-01"",
+    ""stopDate"": ""2010-01-01"",
+    ""limit"": 2,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions/investors/search,wireInstructions/investors/search_Verify the search with all fields,wireInstructions/investors/search?reportingDB=Y,"{
+    ""investorId"": [
+        528345
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [],
+    ""currency"": [],
+    ""isActive"": ""Y"",
+    ""startDate"": ""2023-01-01"",
+    ""stopDate"": ""2024-01-01"",
+    ""limit"": 2,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions/investors/search,wireInstructions/investors/search_Verify the Error Message for Missing Required Fields,wireInstructions/investors/search?reportingDB=Y,"{
+    ""investorId"": [
+        
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [],
+    ""currency"": [],
+    ""isActive"": ""N"",
+    ""startDate"": null,
+    ""stopDate"": null,
+    ""limit"": 2,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions/investorPortfolios/search,wireInstructions/investorPortfolios/search_Verify the search with all fields,wireInstructions/investorPortfolios/search?reportingDB=Y,"{
+    ""investorPortfolioId"": [
+       346582
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [],
+    ""currency"": [],
+    ""isActive"": null,
+    ""startDate"": null,
+    ""stopDate"": null,
+    ""limit"": 2,
+    ""offset"": 1
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post
+wireInstructions/investorPortfolios/search,wireInstructions/investorPortfolios/search_Verify the Error Message for Missing Required Fields,wireInstructions/investorPortfolios/search?reportingDB=Y,"{
+    ""investorPortfolioId"": [
+      
+    ],
+    ""wireInstructionName"": [],
+    ""wireInstructionType"": [],
+    ""transStatus"": [],
+    ""currency"": [],
+    ""isActive"": null,
+    ""startDate"": null,
+    ""stopDate"": null,
+    ""limit"": 2,
+    ""offset"": 1
+}",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,https://goldmanqavil.v3locitydev.com/api/v1/queries,Post

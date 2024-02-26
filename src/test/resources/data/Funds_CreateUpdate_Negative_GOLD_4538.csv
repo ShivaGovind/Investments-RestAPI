@@ -1,0 +1,633 @@
+TestCaseID,Scenario,resource,requestBody,status,errorMessage,Expected Result0,expectEmptyResponse,host,version,method
+Funds_Create_API through postman,"Funds_Create_Verify the Missing Mandatory Field (fundName) through API
+",funds,"
+[
+        {
+            ""fundName"": null ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13772,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+
+",400,MISSING_REQUIRED_FIELD,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify the Missing Mandatory Field(managerId) through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": null,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,MISSING_REQUIRED_FIELD,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify the invalid managerId through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13778,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify by passing Invalid currency through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""USRTD"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 1377,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify by passing invalid currency table through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAasIN"",
+            ""managerId"": 1377,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify when fund currency is not same as fund group currency through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                1675
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""16898"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+
+     ",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify when Fundgroups with different currencies through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                156
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""168"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify by passing Invalid fund group through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                91
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""168"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify by passing Invalid fund type through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Ventyture"",
+            ""fundSize"": ""168"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify by passing Invalid region through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""168"",
+            ""vintageYear"": 2021,
+            ""region"": ""Norttyh America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify by passing Invalid industry through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""168"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credcit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify by passing  Invalid sub industry through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""168"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Grocvwth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify by passing invalid fund size through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""1689yugju8"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,INVALID_REQUEST,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,"Funds_Create_Verify by passing string to fund size through API
+",funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 1377,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""gfh"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,INVALID_REQUEST,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,Funds_Create_Verify by passing invalid resource to fund  through API,fund,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""16898"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",404,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,Funds_Create_Verify by passing invalid  JSON  to fund  through API,funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture""
+            ""fundSize"": ""16898"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,INVALID_REQUEST,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,Funds_Create_Verify by passing unrecognised filed  to fund  through API,funds,"
+[
+        {
+            ""fundName"": ""sp@mngr"" ,
+            ""fundLongName"": ""Sc_fund"",
+            ""curkjgukrency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""managerId"": 13392,
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""16898"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,INVALID_REQUEST,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,Funds_Create_Verify by creating  fund when AllowDuplicate = N through API,funds,"[
+    {
+        ""fundName"": ""AllowDupliFund"",
+        ""fundLongName"": ""AllowDupliFund"",
+        ""allowDuplicate"": ""N"",
+        ""currency"": ""USD"",
+        ""currencyTable"": ""MAIN"",
+        ""managerId"": 14383,
+        ""fundGroupId"": [
+            1
+        ],
+        ""fundType"": null,
+        ""fundSize"": ""300"",
+        ""vintageYear"": 2022,
+        ""region"": ""North America"",
+        ""industry"": null,
+        ""subIndustry"": ""Growth""
+    }
+]",400,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify  by passing Missing Mandatory Field(fundId) through API
+",funds," [
+        {
+            ""fundId"": null,
+            ""fundName"": null,
+            ""fundLongName"": ""testBN_112722_long"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]",400,MISSING_REQUIRED_FIELD,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify by passing Missing Mandatory Field(fundName) through API
+",funds," [
+        {
+            ""fundId"": ""3484"",
+            ""fundName"": null,
+            ""fundLongName"": ""testBN_112722_long"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+
+    ",400,MISSING_REQUIRED_FIELD,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify  by passing Invalid currency  through API
+",funds," [
+        {
+            ""fundId"": ""3484"",
+            ""fundName"":""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""USD1"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+
+
+    ",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify by passing  invalid currency table through API
+",funds," [
+        {
+            ""fundId"": ""3484"",
+            ""fundName"":""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN_SD"",
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,Funds_Update_Verify  by passing fund currency which is not same as fund group currency through API,funds," [
+        {
+            ""fundId"": ""3484"",
+            ""fundName"":""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify  by passing Fund groups with different currencies through API
+",funds," [
+        {
+            ""fundId"": ""3484"",
+            ""fundName"":""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                1,67
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify  by passing Invalid fund group through API
+",funds," [
+        {
+            ""fundId"": ""3484"",
+            ""fundName"":""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                98
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify by passing Invalid fund type through API
+",funds," [
+        {
+            ""fundId"": ""3484"",
+            ""fundName"":""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                98
+            ],
+            ""fundType"": ""Venture_0"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify  by passing Invalid region through API
+",funds,"[
+        {
+            ""fundId"": ""3484"",
+            ""fundName"":""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North Americaaa"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify by passing Invalid industry through API
+",funds,"[
+        {
+            ""fundId"": ""3484"",
+            ""fundName"": ""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven_09"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify by passing Invalid sub industry through API
+",funds," [
+        {
+            ""fundId"": ""3484"",
+            ""fundName"": ""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth_09""
+        }
+    ]",400,VALIDATION_FAILED,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify by passing Fund size error processing through API
+",funds," [
+        {
+            ""fundId"": ""3484"",
+            ""fundName"": ""SC_Create"",
+            ""fundLongName"": ""VA"",
+            ""currency"": ""EUR"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                1
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": ""3000S"",
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]
+
+",400,INVALID_REQUEST,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,"Funds_Update_Verify by Updating fund when AllowDuplicate =N  through API
+",funds,"[
+    {
+        ""fundId"": 11383,
+        ""fundName"": ""AllowDupliFundUp"",
+        ""fundLongName"": ""AllowDupliFundUp"",
+        ""allowDuplicate"": ""N"",
+        ""currency"": ""USD"",
+        ""currencyTable"": ""MAIN"",
+        ""fundGroupId"": [
+            1
+        ],
+        ""fundType"": null,
+        ""fundSize"": ""300"",
+        ""vintageYear"": 2022,
+        ""region"": ""North America"",
+        ""industry"": null,
+        ""subIndustry"": ""Growth""
+    }
+]",400,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST

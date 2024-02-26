@@ -17,6 +17,7 @@ Feature: Persons Crud operations
     Then status 200
     * print response
     And def personIds = response.success[0].personId
+
 #    And match response.success[0].firstName == "KARATESSG6"
 
 

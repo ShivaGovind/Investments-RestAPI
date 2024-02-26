@@ -1,0 +1,415 @@
+TestCaseID,Scenario,resource,requestBody,status,errorMessage,Expected Result0,expectEmptyResponse,host,version,method
+Funds_Search,Funds_Search_Verify the Search 1 fund by ID with DS search and DS Response,funds/search,"{
+   ""fundId"": [346268],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""40""]
+  }
+   ],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ],
+    ""limit"": 20,
+    ""offset"": 0
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the search 1 fund by Name with DS search and DS Response,funds/search,"{
+   ""fundId"": [],
+   ""fundNameContains"": ""AA%"",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""40""]
+  }
+   ],
+   ""datasheetResponse"": [],
+    ""limit"": 20,
+    ""offset"": 0
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,"Funds_Search_Verify the search by Fund Name, without DS search and DS Response, search will return 2 funds",funds/search,"{
+   ""fundId"": [],
+   ""fundNameContains"": ""Fund%"",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""Y"",
+   ""datasheetSearch"": [],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ],
+    ""limit"": 20,
+    ""offset"": 0
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the Search for Funds with eqInstId,funds/search,"{
+   ""fundId"": [],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [""13064""],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ],
+    ""limit"": 20,
+    ""offset"": 0
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the search all funds but with values in one DS search,funds/search,"{
+   ""fundId"": [],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [],
+    ""limit"": 20,
+    ""offset"": 0
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the Data sheet field value when data sheet exists,funds/search,"{
+    ""isYourFund"": ""Y"",
+    ""datasheetSearch"": [
+        {
+            ""datasheetFieldName"": ""DS_FUND_EMMA_ID"",
+            ""datasheetFieldValue"": [
+                ""98990089""
+            ],
+            ""datasheetName"": ""DS_ATTRIBUTES""
+        }
+    ],
+    ""datasheetResponse"": [
+        {
+            ""datasheetName"": ""DS_ATTRIBUTES"",
+            ""datasheetInstanceName"": [],
+            ""datasheetFieldName"": [
+                ""DS_FUND_EMMA_ID""
+                
+            ]
+        }
+    ],
+    ""limit"": 20,
+    ""offset"": 0
+}",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the Mandatory Fields validation,funds/search,"{
+   ""fundId"": [],
+   ""fundNameContains"": ""A-fund"",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": null,
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [],
+    ""limit"": 20,
+    ""offset"": 0
+ }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the No Data Found for the given criteria,funds/search,"{
+   ""fundId"": [],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""UKNOWN"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [],
+    ""limit"": 20,
+    ""offset"": 0
+ }",204,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the validation on mandatory field datasheetSearch.datasheetName,funds/search,"{
+   ""fundId"": [347186],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": null,
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ],
+    ""limit"": 20,
+    ""offset"": 0
+ }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the validation on mandatory field datasheetSearch.datasheetFieldName,funds/search,"{
+   ""fundId"": [1834],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": null,
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ]
+ }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the validation on mandatory field dataSheetsearch.datasheetFieldValue,funds/search,"{
+   ""fundId"": [1834],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": []
+  }
+   ],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ]
+ }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the validation on no content ,funds/search,"{
+   ""fundId"": [1834],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ]
+ }",204,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the validation on mandatory field datasheetResponse.dataSheetName,funds/search,"{
+   ""fundId"": [1834],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": null,
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ]
+ }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the Invalid API Resource,funds/searchs,"{
+   ""fundId"": [],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [""43567""],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ]
+ }",404,Not Found,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the Invalid Jsonn request body,funds/search,"{
+   ""fundId"": [],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [""43567""],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ],
+ }",400,INVALID_JSON,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Search,Funds_Search_Verify the  UnRecognized request fields in request,funds/search,"{
+   ""fundIds"": [1724],
+   ""fundNameContains"": """",
+   ""fundLongNameContains"": """",
+   ""eqFundId"": [],
+   ""managerId"": [],
+   ""managerName"": [],
+   ""fundGroupId"": [],
+   ""fundGroupName"": [],
+   ""isYourFund"": ""N"",
+   ""datasheetSearch"": [
+     {
+  ""datasheetName"": ""DS_EXPENSES"",
+  ""datasheetInstanceName"": [],
+  ""datasheetFieldName"": ""DS_ANNUAL_EXPENSES_IN_PI_"",
+  ""datasheetFieldValue"": [""22""]
+  }
+   ],
+   ""datasheetResponse"": [
+     {
+       ""datasheetName"": ""DS_EXPENSES"",
+       ""datasheetInstanceName"": [],
+       ""datasheetFieldName"": [""DS_DATE_6"",""DS_ANNUAL_MGMT_FEES_IN_PI"",""DS_ANNUAL_EXPENSES_IN_PI_"",""DS_IRR__"",""DS_ACCRUED_CARRIED_INTERE"",""DS_PAID_CARRIED_INTEREST""]
+     }
+   ]
+ }",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,Funds_SearchId_Verify the validation on mandatory field fundName,funds/searchId,"{
+  ""fundName"" :[]
+ }",400,MISSING_REQUIRED_FIELD,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,"Funds_SearchId_Verify when passing fundName,company as collection. It returns only fundnames data.",funds/searchId,"{
+  ""fundName"" :[""Company020"",""Test Pools Working""]
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,Funds_SearchId_Verify when passing single value  fundName,funds/searchId,"{
+  ""fundName"" :[""Test Pools Working""]
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,Funds_SearchId_Verify when Isyour Fund N,funds/searchId,"{
+  ""fundName"" :[],
+  ""isYourFund"": ""N"",
+  ""limit"": 20,
+  ""offset"": 0
+ } ",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,Funds_SearchId_Verify when Isyour Fund Y,funds/searchId,"{
+  ""fundName"" :[],
+  ""isYourFund"": ""Y"",
+  ""limit"": 20,
+  ""offset"": 0
+ } ",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,Funds_SearchId_Verify with No data found for the given criteria.,funds/searchId,"{
+  ""fundName"" :[""UKNOWN""]
+ }",204,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,Funds_SearchId_Verify when passing multiple fundnames,funds/searchId,"{
+  ""fundName"" :[""YF Test Contrib Discr"",""Test Pools Working""]
+ }",200,,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,Funds_SearchId_Verify Invalid API Resource,funds/searchId111111,"{
+  ""fundName"" :[""Apex Comp"",""JG fund""]
+ }",404,Not Found,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,Funds_SearchId_Verify Invalid Json Request body,funds/searchId,"{
+  ""fundName"" :[""Apex Comp"",""JG fund""
+ }",400,INVALID_JSON,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_SearchId,Funds_SearchId_Verify UnRecognized request fields in request,funds/searchId,"{
+  ""fundNames"" :[""Apex Comp"",""JG fund""]
+ }",400,INVALID_REQUEST,,exists,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST

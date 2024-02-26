@@ -1,0 +1,329 @@
+TestCaseID,Scenario,resource,requestBody,status,errorMessage,Expected Result0,expectEmptyResponse,host,version,method
+Funds_Create_API through postman,Funds_Create_Verify that fund is created successfully  through API,funds,"[
+{
+  ""fundName"": ""vp@createregression-01"",
+  ""fundLongName"": ""sp@fundlongname-01"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""managerId"": 250089,
+  ""fundGroupId"":[],
+  ""fundType"": ""Buyout"",
+  ""fundSize"": ""20"",
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+}
+]",200,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,Funds_Create_Verify that fund is created successfully with different Currencies through API,funds,"[
+{
+  ""fundName"": ""sp@usd11"",
+  ""fundLongName"": ""sp@usd11"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""managerId"": 250089,
+  ""fundType"": ""Buyout"",
+  ""fundSize"": ""20"",
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+}
+]",200,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,Funds_Create_Verify that fund is created successfully by fund name and manager id and other fields as null  through API,funds,"[
+{
+  ""fundName"": ""sp@4856"",
+  ""fundLongName"": null,
+  ""currency"": null,
+  ""currencyTable"": null,
+  ""managerId"": 250089,
+  ""fundType"": null,
+  ""fundSize"": null,
+  ""vintageYear"": null,
+  ""region"": null,
+  ""industry"": null,
+  ""subIndustry"": null
+}
+]",200,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,Funds_Create_Verify that one fund should create with valid data and other fund with invalid data  through API,funds,"[
+{
+  ""fundName"": ""spjg99"",
+  ""fundLongName"": ""sp@EUR"",
+  ""currency"": ""EUR"",
+  ""currencyTable"": ""MAIN"",
+  ""managerId"": ""1409867"",
+  ""fundType"": ""Buyout"",
+  ""fundSize"": ""20"",
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundName"": ""ps@adB"",
+  ""fundLongName"": ""sp@EUR"",
+  ""currency"": ""EUR"",
+  ""currencyTable"": ""MAIN"",
+  ""managerId"": ""14098"",
+  ""fundType"": ""Buyout"",
+  ""fundSize"": ""20"",
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+}
+]",203,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Create_API through postman,Funds_Create_Verify that one fund should create when AllowDuplicate =Y  through API,funds,"[
+    {
+        ""fundName"": ""AllowDupliFund"",
+        ""fundLongName"": ""AllowDupliFund"",
+        ""allowDuplicate"": ""Y"",
+        ""currency"": ""USD"",
+        ""currencyTable"": ""MAIN"",
+        ""managerId"": 14383,
+        ""fundGroupId"": [],
+        ""fundType"": null,
+        ""fundSize"": ""300"",
+        ""vintageYear"": 2022,
+        ""region"": ""North America"",
+        ""industry"": null,
+        ""subIndustry"": ""Growth""
+    }
+]",200,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,Funds_Update_Verify by updating with valid scenario for existing data in velocity through API,funds,"[
+{
+  ""fundId"": 5277,
+  ""fundName"": ""vp@detox-001"",
+  ""fundLongName"": ""vp@detox-01"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""fundGroupId"": [
+    1
+  ],
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 5278,
+  ""fundName"": ""vp@detox-002"",
+  ""fundLongName"": ""vp@detox-02"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""fundGroupId"": [
+    1
+  ],
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 5279,
+  ""fundName"": ""vp@detox-003"",
+  ""fundLongName"": ""vp@detox-03"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""fundGroupId"": [
+    1
+  ],
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 5280,
+  ""fundName"": ""vp@detox-004"",
+  ""fundLongName"": ""vp@detox-04"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""fundGroupId"": [
+    1
+  ],
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 5281,
+  ""fundName"": ""vp@detox-005"",
+  ""fundLongName"": ""vp@detox-05"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""fundGroupId"": [
+    1
+  ],
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 5282,
+  ""fundName"": ""vp@detox-006"",
+  ""fundLongName"": ""vp@detox-06"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""fundGroupId"": [
+    1
+  ],
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 5283,
+  ""fundName"": ""vp@detox-007"",
+  ""fundLongName"": ""vp@detox-07"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""fundGroupId"": [
+    1
+  ],
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 5284,
+  ""fundName"": ""vp@detox-008"",
+  ""fundLongName"": ""vp@detox-08"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""fundGroupId"": [
+    1
+  ],
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 5285,
+  ""fundName"": ""vp@detox-009"",
+  ""fundLongName"": ""vp@detox-09"",
+  ""currency"": ""USD"",
+  ""currencyTable"": ""MAIN"",
+  ""fundGroupId"": [
+    1
+  ],
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+}
+]",200,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,Funds_Update_Verify that fund is Update successfully with different Currencies through API,funds,"[
+{
+  ""fundId"": 5277,
+  ""fundName"": ""vp@detoxeur-01"",
+  ""fundLongName"": ""vp@detoxeur-01"",
+  ""currency"": ""EUR"",
+  ""currencyTable"": ""MAIN"",
+   ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+}
+]",200,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,Funds_Update_Verify by removing placeholder for eqFundGroupId and add logic for eqFundGroupId,funds,"[
+        {
+            ""fundId"": 5196,
+            ""fundName"": ""vptestBERN_112722_update"",
+            ""fundLongName"": ""testBN_112722_long"",
+            ""currency"": ""USD"",
+            ""currencyTable"": ""MAIN"",
+            ""fundGroupId"": [
+                34
+            ],
+            ""fundType"": ""Venture"",
+            ""fundSize"": 3000,
+            ""vintageYear"": 2021,
+            ""region"": ""North America"",
+            ""industry"": ""Credit Driven"",
+            ""subIndustry"": ""Growth""
+        }
+    ]",200,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,Funds_Update_Verify that one fund should create with valid data and other fund with invalid data  through API,funds,"[
+{
+  ""fundId"": 5277,
+  ""fundName"": ""vp@detoxeur-01"",
+  ""fundLongName"": ""vp@detoxeur-01"",
+  ""currency"": ""EUR"",
+  ""currencyTable"": ""MAIN"",
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 525677,
+  ""fundName"": ""vp@detoxeur-01"",
+  ""fundLongName"": ""vp@detoxeur-01"",
+  ""currency"": ""EUR"",
+  ""currencyTable"": ""MAIN"",
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+}
+
+]",203,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
+Funds_Update_API through postman,Funds_Update_Verify that one fund should update when AllowDuplicate = Y  through API,funds,"[
+{
+  ""fundId"": 5277,
+  ""fundName"": ""vp@detoxeur-01"",
+  ""fundLongName"": ""vp@detoxeur-01"",
+  ""currency"": ""EUR"",
+  ""currencyTable"": ""MAIN"",
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+},
+{
+  ""fundId"": 525677,
+  ""fundName"": ""vp@detoxeur-01"",
+  ""fundLongName"": ""vp@detoxeur-01"",
+  ""currency"": ""EUR"",
+  ""currencyTable"": ""MAIN"",
+  ""fundType"": ""Buyout"",
+  ""fundSize"":20,
+  ""vintageYear"": 1997,
+  ""region"": ""Africa"",
+  ""industry"": ""Credit Driven"",
+  ""subIndustry"": ""Turn Around""
+}
+
+]",200,,,,https://goldmanqavil.v3locitydev.com,api/v1/queries,POST
